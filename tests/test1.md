@@ -25,8 +25,13 @@ But if the same code was written like this:
 ```c
 char a[100]={'\0'};
 
-for(int i=0; a[i]!='z'; i++)
+int i==-1;
+
+while(a[i]!='z')
+{
+	++i;
 	scanf("%c", &a[i]);
+}
 
 for(int i=0; i<strlen(a); i++)
 {
