@@ -11,19 +11,8 @@ int main(void)
 	putchar(c);
 	printf("\n");
 
-	getchar();
 
-	int ch;
-
-	ch=getchar();
-
-	while(ch!=EOF)
-	{
-		putchar(ch);
-		ch=getchar();
-	}
-
-	printf("\nend\n");
+	printf("\nEOF = %d\n", EOF);
 
 	return 0;
 }
