@@ -54,3 +54,6 @@ We can also represent an arbitrary bit pattern by `'\xhh'` where `hh` is one or 
 **A string constant or string literal is a sequence of zero or more characters surrounded by double quotes. The quotes are not part of the string, they only serve to delimit it.**
 
 **The internal representation of a string has a null character `'\0'` at the end.**
+**So, the physical storage required is one more than the number of characters written between the quotes.**
+
+**strlen() returns the length of the string excluding the terminal `'\0'`.
