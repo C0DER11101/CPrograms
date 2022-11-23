@@ -62,3 +62,29 @@ We can also represent an arbitrary bit pattern by `'\xhh'` where `hh` is one or 
 ## NOTE
 
 _There is a difference between 'x' and "x". 'x' is an integer used to produce the numeric value of the letter `x` in the machine's character set. "x" is a an array of characters that contains one character(the letter `x`) and a `\0`._
+
+## The enumeration constant
+
+- An enumeration is a list of constant integer vlaues, as in:
+
+```c
+
+enum boolean {NO, YES};
+```
+
+The first name in the enum `boolean` has value 0 and the second name has value 1. Similarly, if there is a third name in `boolean` then it will have value 2, then fourth name will have value 3 and so on......
+
+
+**Names in different enumerations must be distinct.**
+
+```c
+enum Values {first=1, second, third, fourth, fifth, sixth, seventh};
+```
+
+Here in enum `Values` the name `first` has a value 1, the name `second` has a value 2, `third` has a value 3 and so on.....
+
+If we had not specified the value of `first` then the progression would be like this:
+
+`first` would have a value 0, `second` would have a value 1, `third` would have a value 2 and so on.....
+
+---
