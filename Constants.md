@@ -56,4 +56,4 @@ We can also represent an arbitrary bit pattern by `'\xhh'` where `hh` is one or 
 **The internal representation of a string has a null character `'\0'` at the end.**
 **So, the physical storage required is one more than the number of characters written between the quotes.**
 
-**strlen() returns the length of the string excluding the terminal `'\0'`.
+**strlen() returns the length of the string excluding the terminal `'\0'`.**
