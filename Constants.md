@@ -57,3 +57,8 @@ We can also represent an arbitrary bit pattern by `'\xhh'` where `hh` is one or 
 **So, the physical storage required is one more than the number of characters written between the quotes.**
 
 **`strlen(s)` returns the length of the string `s` excluding the terminal `'\0'`.**
+
+
+## NOTE
+
+_There is a difference between 'x' and "x". 'x' is an integer used to produce the numeric value of the letter `x` in the machine's character set. "x" is a an array of characters that contains one character(the letter `x`) and a `\0`._
