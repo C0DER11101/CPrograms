@@ -41,7 +41,7 @@ We can also represent an arbitrary bit pattern by `'\xhh'` where `hh` is one or 
 |\r|carriage return|
 |\t|horizontal tab|
 |\v|vertical tab|
-|\\|backslash|
+|\\ |backslash|
 |\?|question mark|
 |\'|single quote|
 |\"|double quote|
