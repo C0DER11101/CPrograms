@@ -34,16 +34,16 @@ We can also represent an arbitrary bit pattern by `'\xhh'` where `hh` is one or 
 
 |Escape character|Meaning|
 |:---------------|:-----:|
-|\a|alert(bell) character|
-|\b|backspace|
-|\f|formfeed|
-|\n|newline|
-|\r|carriage return|
-|\t|horizontal tab|
-|\v|vertical tab|
-|\\ |backslash|
-|\?|question mark|
-|\'|single quote|
-|\"|double quote|
-|\ooo|octal number|
-|\xhh|hexadecimal number|
+|`\a`|alert(bell) character|
+|`\b`|backspace|
+|`\f`|formfeed|
+|`\n`|newline|
+|`\r`|carriage return|
+|`\t`|horizontal tab|
+|`\v`|vertical tab|
+|`\\`|backslash|
+|`\?`|question mark|
+|`\'`|single quote|
+|`\"`|double quote|
+|`\ooo`|octal number|
+|`\xhh`|hexadecimal number|
