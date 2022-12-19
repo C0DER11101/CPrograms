@@ -25,3 +25,21 @@ _All input functions stop reading from a text file when this character is encoun
 `C doesnot insert the end-of-file character in the file, it can be entered through keyboard by pressing CTRL+Z(or CTRL+D on some systems).`
 
 _In binary files, no character represents the end-of-file._
+
+
+## Buffer
+
+_Buffer is an area in memory where the data is temporarily stored before being written to the file._
+
+When we open a file, a buffer is automatically associated with its file pointer.
+
+**Whatever data we send to the file is not directly written to the file. First it is sent to the buffer and when the buffer is full, its contents are written to the file. When the file is closed all the contents of the buffer are automatically written to the file even if the buffer is not full. This is called _flushing the buffer_.**
+
+There can be **three** types of buffering:
+1. Fully buffered.
+2. Line buffered.
+3. Unbuffered.
+
+* In _fully buffered_ streams, data is transferred only when the buffern is full.
+* In _line buffered_ streams, the data is transferred either when the buffer is full or when a newline character is written to the buffer.
+* In _unbuffered_ streams, the data is transferred as quickly as possible.
