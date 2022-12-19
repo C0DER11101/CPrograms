@@ -40,6 +40,6 @@ There can be **three** types of buffering:
 2. Line buffered.
 3. Unbuffered.
 
-* In _fully buffered_ streams, data is transferred only when the buffern is full.
+* In _fully buffered_ streams, the data is transferred only when the buffer is full.
 * In _line buffered_ streams, the data is transferred either when the buffer is full or when a newline character is written to the buffer.
 * In _unbuffered_ streams, the data is transferred as quickly as possible.
