@@ -31,7 +31,7 @@ FILE *fp1;
 fp1=fopen("hello.txt", "w");
 ```
 
-Here, if `fopen()` succeeds in opening `hello.txt` then it returns a pointer of type `FILE` and that pointer is assigned to `fp1`.
+Here, if `fopen()` succeeds in opening `hello.txt` then it returns a pointer of type `FILE` and that pointer is assigned to `fp1`. If `fopen()` fails to open `hello.txt` then it returns `NULL` which is assigned to `fp1`.
 
 
 **The name of the file is limited to _FILENAME_MAX_ characters.**
