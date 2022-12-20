@@ -12,7 +12,7 @@ When the program starts executing, the operating system opens three standard tex
 _The standard input is generally associated with keyboard while the standard output and standard error streams are associated with the screen._
 
 
-**Functions used in I/O:**
+#### Functions used in I/O
 
 * **Character I/O** $\rightarrow$ **fgetc()**, **fputc()**, **getc()**, **putc()**
 * **String I/O** $\rightarrow$ **fgets()**, **fputs()**
