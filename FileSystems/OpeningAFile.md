@@ -54,3 +54,12 @@ Now, if we have to perform any operations on `hello.txt` then we will use the fi
 `"wb"` $\rightarrow$ _File opened in binary mode for writing._
 
 `"ab+"` or `"a+b"` $\rightarrow$ _File opened in binary mode for appending._
+
+### Errors in opening a file
+
+1. If we try to open a file in read/update mode and the file doesnot exist.
+2. If we try to create a file but there is no space in the disk.
+3. If we try to create a file that already exists.
+4. Operating system limits the number of files that can be opened at a time and we are trying to open more files than that number.
+
+**Never put the modes in single quotes because it's a string.**
