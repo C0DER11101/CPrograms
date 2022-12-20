@@ -44,4 +44,5 @@ Now, if we have to perform any operations on `hello.txt` then we will use the fi
 2. `"a"`(append) $\rightarrow$ _If the file doesnot exist then this mode creates a new file. If the file already exists then the new data entered is appended at the end of the existing data._
 3. `"r"`(read) $\rightarrow$ _This mode is used for opening an existing file for reading purpose only. The file to be opened **must exist**._
 4. `"w+"`(write+read) $\rightarrow$ _This mode is same as `"w"`, but in this mode we can also read and modify the data. If file doesn't exist then a new file is created and if the file exists then the previous data is erased._
-5. `"r+"`(read+write)
+5. `"r+"`(read+write) $\rightarrow$ _This mode is same as `"r"`, but in this mode we can also write and modify existing data. The file to be opened **must exist** and the previous data is not erased._
+6. `"a+"`(append+read) $\rightarrow$ _This mode is same as `"a"` but in this mode we can also read the data stored in the file. If the file doesn't exist then a new file is created and if the file already exists then new data is appended at the end of existing data.
