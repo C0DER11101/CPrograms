@@ -15,7 +15,7 @@ After closing the file, connection between file pointer and the file is broken. 
 
 _Error in **fclose()** may occur when there is not sufficient space on the disk._
 
-We can also close multiple file calling a single function called `fcloseall()`.
+We can also close multiple file by calling a single function called `fcloseall()`.
 
 **Declaration:**
 
