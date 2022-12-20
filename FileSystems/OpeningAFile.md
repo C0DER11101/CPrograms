@@ -35,3 +35,13 @@ Here, if `fopen()` succeeds in opening `hello.txt` then it returns a pointer of 
 
 
 **The name of the file is limited to _FILENAME_MAX_ characters.**
+
+Now, if we have to perform any operations on `hello.txt` then we will use the file pointer `fp1` that's why the name of the file is called _external name_ and the file pointer associated with it is called _internal name_.
+
+### Modes of a file
+
+1. `"w"`(write) $\rightarrow$ _If the file doesnot exist then this mode creates a new file for writing and if the file already exists then the previous data is erased and the new data entered is written to the file._
+2. `"a"`(append) $\rightarrow$ _If the file doesnot exist then this mode creates a new file. If the file already exists then the new data entered is appended at the end of the existing data._
+3. `"r"`(read) $\rightarrow$ _This mode is used for opening an existing file for reading purpose only. The file to be opened **must exist**._
+4. `"w+"`(write+read) $\rightarrow$ _This mode is same as `"w"`, but in this mode we can also read and modify the data. If file doesn't exist then a new file is created and if the file exists then the previous data is erased._
+5. `"r+"`(read+write)
