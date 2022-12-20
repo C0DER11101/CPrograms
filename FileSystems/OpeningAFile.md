@@ -46,3 +46,10 @@ Now, if we have to perform any operations on `hello.txt` then we will use the fi
 4. `"w+"`(write+read) $\rightarrow$ _This mode is same as `"w"`, but in this mode we can also read and modify the data. If file doesn't exist then a new file is created and if the file exists then the previous data is erased._
 5. `"r+"`(read+write) $\rightarrow$ _This mode is same as `"r"`, but in this mode we can also write and modify existing data. The file to be opened **must exist** and the previous data is not erased._
 6. `"a+"`(append+read) $\rightarrow$ _This mode is same as `"a"` but in this mode we can also read the data stored in the file. If the file doesn't exist then a new file is created and if the file already exists then new data is appended at the end of existing data._
+
+
+**To open a file in binary mode we can append `'b'` to the mode, and to open the file in text mode `'t'` can be appended to the mode. Text mode is the default mode so `'t'` is generally omitted while opening files in text mode.**
+
+**Example:**
+`"wb"` $\rightarrow$ _File opened in binary mode for writing._
+`"ab+"` or `"a+b"` $\rightarrow$ _File opened in binary mode for appending._
