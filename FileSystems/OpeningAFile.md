@@ -52,4 +52,5 @@ Now, if we have to perform any operations on `hello.txt` then we will use the fi
 
 **Example:**
 `"wb"` $\rightarrow$ _File opened in binary mode for writing._
+
 `"ab+"` or `"a+b"` $\rightarrow$ _File opened in binary mode for appending._
