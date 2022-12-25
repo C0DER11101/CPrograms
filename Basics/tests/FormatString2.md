@@ -13,7 +13,7 @@ Have a look at [this](https://github.com/C0DER11101/CPrograms/blob/CProgramming/
 printf("%8.3s\n", "Priyanuj");
 ```
 
-Basically this displays the first 3 chracters of the name `Priyanuj` with (8-3) leading whitespaces.
+Basically this displays the first 3 characters of the name `Priyanuj` with (8-3) leading whitespaces.
 
 
 ---
