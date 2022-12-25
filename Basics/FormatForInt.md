@@ -10,3 +10,10 @@
 `%wd`
 
 `w` is the integer number specifying the field width of the output data. If length of the variable is less than the specified field width then the output is right justified with leading blanks.
+
+
+# Format for floating numeric input
+
+`%wf`
+
+`w` is the integer number specifying the total width of the data(including the digits before and after the decimal and the decimal itself).
