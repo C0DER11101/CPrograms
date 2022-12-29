@@ -33,8 +33,8 @@ These are the rules for automatic binary conversion:
 3. If one operand is `float`, the other will be converted to `float` and the result will be `float`.
 4. If one operand is `unsigned long int`, then other will be converted to `unsigned long int` and the result will be `unsigned long int`.
 5. If one operand is `long int` and other is `unsigned int`.
-	(a) if `long int` can represent all values of `unsigned int`, then `unsigned int` will be converted to `long int` and the result will be `long int`.
-	(b) else both the operands will be converted to `unsigned long int` and the result will be `unsigned long int`.
-	6. Otherwise if one operand is `long int` then the other will be converted to `long int` and the result will be `long int`.
-	7. Otherwise if one operand is `unsigned int`, then the other will be converted to `unsigned int` and the result will be `unsigned int`.
-	8. Otherwise both operands will be `int` and the result will be `int`.
+	* if `long int` can represent all values of `unsigned int`, then `unsigned int` will be converted to `long int` and the result will be `long int`.
+	* else both the operands will be converted to `unsigned long int` and the result will be `unsigned long int`.
+	*. Otherwise if one operand is `long int` then the other will be converted to `long int` and the result will be `long int`.
+	*. Otherwise if one operand is `unsigned int`, then the other will be converted to `unsigned int` and the result will be `unsigned int`.
+	*. Otherwise both operands will be `int` and the result will be `int`.
