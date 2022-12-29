@@ -30,9 +30,9 @@
 |`!=`|Not equal to|7|Left to right|
 |`&`|Bitwise AND|8|Left to right|
 |`^`|Bitwise XOR|9|Left to right|
-|`|`|Bitwise OR|10|Left to right|
+|`\|`|Bitwise OR|10|Left to right|
 |`&&`|Logical AND|11|Left to right|
-|`||`|Logical OR|12|Left to right|
+|`\|\|`|Logical OR|12|Left to right|
 |`? :`|Conditional operator|13|_Right to left_|
 |`=`|Assignment operator|14|_Right to left_|
 |`*=  /=  %=`|Assignment operators|14|_Right to left_|
