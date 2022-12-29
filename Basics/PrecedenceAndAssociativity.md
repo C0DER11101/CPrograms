@@ -37,6 +37,6 @@
 |`=`|Assignment operator|14|_Right to left_|
 |`*=  /=  %=`|Assignment operators|14|_Right to left_|
 |`+=  -=`|Assignment operators|14|_Right to left_|
-|`&=  ^=  |=`|Assignment operators|14|_Right to left_|
+|`&=  ^=  =`|Assignment operators|14|_Right to left_|
 |`<<=  >>=`|Assignment operators|14|_Right to left_|
 |`,`|Comma operator|15|Left to right|
