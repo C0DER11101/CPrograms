@@ -41,7 +41,7 @@ These are the rules for automatic binary conversion:
 	* Otherwise if one operand is `unsigned int`, then the other will be converted to `unsigned int` and the result will be `unsigned int`.
 	* Otherwise both operands will be `int` and the result will be `int`.
 
-### Type conversion in assignment
+### 2. Type conversion in assignment
 
 **If the types of two operands in an assignment expression are different, then _the type of the right hand side operand_ is converted to the _type of the left hand side operand_.**
 
