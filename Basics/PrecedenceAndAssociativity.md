@@ -15,6 +15,7 @@
 |`*`|Indirection|2|_Right to left_|
 |`&`|Address|2|_Right to left_|
 |`(datatype)`|Typecast|2|_Right to left_|
+|`sizeof`|Size in bytes|2|_Right to left_|
 |`*`|Multiplication|3|Left to right|
 |`/`|Division|3|Left to right|
 |`%`|Modulus|3|Left to right|
