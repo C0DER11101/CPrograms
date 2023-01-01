@@ -140,3 +140,16 @@ This is the memory representation of pointer to double `p4`:
 
 
 **The size of the pointer variable is same for all type of pointers but the memory that will be accessed while dereferencing is different.**
+
+
+# Pointer Arithmetic
+
+
+_Valid operations that can be performed with pointers:_
+
+* Addition of an integer to a pointer and increment operation.
+* Subtraction of an integer from a pointer and decrement operation.
+* Subtraction of a pointer from another pointer of same type.
+
+## Precedence of dereferencing operator and increment/decrement operator
+
