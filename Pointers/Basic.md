@@ -220,11 +220,18 @@ int (*ptr)[10];
 
 The snippet above declares a pointer to an array of integer type that can store 10 integers!!
 
+**Note:** _Subscripts have higher precedence than the indirection operator._
 
 Here is a [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t1.c) that illustrates the working of pointer to array.
 
 **Output:**
 
 <img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t1Output.png" width="50%" height="50%">
+
+THe address of the array and the $0^{th}$ element of the array are same. This [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t2.c) shows the addresses of the array and the $0{th}$ element of the array.
+
+**OUtput:**
+
+<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t2Output.png" width="50%" height="50%">
 
 ---
