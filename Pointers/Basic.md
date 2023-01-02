@@ -199,3 +199,5 @@ The relational operators `==`, `!=`, `<`, `<=`, `>` and `>=` are used to compare
 
 
 ## Pointers and arrays
+
+**The name of an array is a _constant_ pointer and it will always point to the $0^{th}$ element of the array.**
