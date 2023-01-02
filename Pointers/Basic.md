@@ -201,3 +201,30 @@ The relational operators `==`, `!=`, `<`, `<=`, `>` and `>=` are used to compare
 ## Pointers and arrays
 
 **The name of an array is a _constant_ pointer and it will always point to the $0^{th}$ element of the array.**
+
+## Pointer to arrays
+
+> This pointer can point one whole array.
+
+_Syntax:_
+
+```
+datatype (*pointerName)[size];
+```
+
+**Example:**
+
+```c
+int (*ptr)[10];
+```
+
+The snippet above declares a pointer to an array of integer type that can store 10 integers!!
+
+
+Here is a [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t1.c) that illustrates the working of pointer to array.
+
+**Output:**
+
+<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t1Output.png" width="50%" height="50%">
+
+---
