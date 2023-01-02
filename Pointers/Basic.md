@@ -234,4 +234,37 @@ THe address of the array and the $0^{th}$ element of the array are same. This [p
 
 <img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t2Output.png" width="50%" height="50%">
 
+## Pointers and 2-D arrays
+
+```c
+int arr[3][4];
+```
+
+This above declaration basically declares a 2-d array.
+
+`arr[3][4];` means that there are 3 1-d arrays and each 1-d array has 4 elements.
+
+**In simple words, a 2-d array is an array of 1-d arrays.**
+
+NOw, `arr` is the name of the 2-D array.
+
+Now, `arr` is an array of 3 1-D arrays or simply 3 arrays.
+
+We know that the name of the array is a constant pointer to the $0^{th}$ element of the array.
+
+So the same thing happens with 2-D arrays, the name `arr` is a constant pointer to the $0{th}$ element which in this case is the $0^{th}$ 1-D array.
+
+Here is an image showing the representation of 2-D array two dimensionally:
+
+<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/2DMatrixRepresentation.png" width="50%" height="50%">
+
+Here is the image showing the representation of 2-D array as an array of arrays:
+
+<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/2DMatrixRepresentation2.png" width="50%" height="50%">
+
+From the linear representation of the 2D matrix `arr` it is clear that the $0^{th}$ element is the $0^{th}$ 1D array.
+
+
+## Subscripting pointer to array
+
 ---
