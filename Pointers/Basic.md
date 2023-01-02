@@ -153,3 +153,49 @@ _Valid operations that can be performed with pointers:_
 
 ## Precedence of dereferencing operator and increment/decrement operator
 
+Precedence of `*` and increment/decrement operators is the same, their associativity is from right to left.
+
+
+**Interpretation of some expressions on pointer arithmetic:**
+
+Suppose we have an integer variable `x` and an integer pointer `ptr`, `ptr` has some address stored in it.
+
+
+```c
+x=*ptr++;
+```
+
+Here, first the post-increment operation is applied to `ptr` then dereferencing is done. Basically `x=*ptr++` is equivalent to `x=*(ptr++);`.
+
+
+```c
+x=*++ptr;
+```
+
+Here, first the pre-increment operation is applied to `ptr` then dereferencing is done on `ptr`. In simple words, `x=*++ptr` is equivalent to `x=*(++ptr);`
+
+```c
+x=++*ptr;
+```
+
+Here, first dereferencing is done on `ptr` and then incrementation operation is applied to it. `x=++*ptr` is equivalent to `x=++(*ptr);`.
+
+
+```c
+x=(*ptr)++;
+```
+
+Here, since the brackets have the highest precedence, so first the content within the brackets is evaluated i.e. `(*ptr)` and then the incrementation operation is applied to `ptr`.
+
+
+## Pointer comparison
+
+The relational operators `==`, `!=`, `<`, `<=`, `>` and `>=` are used to compare pointers of same type or between a NULL pointer and another pointer(possibly non-null).
+
+
+### Pointer to Pointer
+
+> A pointer to pointer is basically a variable that stores the address of another pointer provided that that pointer belongs to the same type as this pointer to pointer.
+
+
+## Pointers and arrays
