@@ -260,7 +260,6 @@ Here is an image showing the representation of 2-D array two dimensionally:
 
 Here is the image showing the representation of 2-D array as an array of arrays:
 
-<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/2DMatrixRepresentation2.png" width="50%" height="50%">
 
 From the linear representation of the 2D matrix `arr` it is clear that the $0^{th}$ element is the $0^{th}$ 1D array.
 
