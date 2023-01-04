@@ -267,4 +267,10 @@ From the linear representation of the 2D matrix `arr` it is clear that the $0^{t
 
 ## Subscripting pointer to array
 
+[t3.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t3.c) shows how a pointer to array works with 2D array.
+
+**Output:**
+
+<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t3Output.png" width="50%" height="50%">
+
 ---
