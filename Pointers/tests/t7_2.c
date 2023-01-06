@@ -9,7 +9,7 @@ int main(void)
 	vptr=a; // vptr=&a[0];
 
 	for(int i=0; i<5; i++)
-		printf("%d\t", *(int*)vptr+i);
+		printf("%d\t", *((int*)vptr+i));
 
 	printf("\n");
 	return 0;
