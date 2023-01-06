@@ -275,7 +275,7 @@ From the linear representation of the 2D matrix `arr` it is clear that the $0^{t
 
 # Pointers and functions
 
-**Arguments can be passed to functions in two ways:
+**Arguments can be passed to functions in two ways:**
 
 1. _Call by value._
 2. _Call by reference._
