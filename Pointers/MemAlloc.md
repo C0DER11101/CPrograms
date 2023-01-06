@@ -98,6 +98,6 @@ ptr=(int*)realloc(ptr, newsize);
 
 Allocates memory space of `newsize` bytes and the starting address is stored in `ptr`. `newsize` may be smaller or larger than `size`.
 
-_If `newsize` is larger then the old data is not lost and newly allocated bytes are uninitialized._
+_If_ `newsize` _is larger then the old data is not lost and newly allocated bytes are uninitialized._
 
 ---
