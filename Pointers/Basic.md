@@ -402,7 +402,11 @@ void *vptr;
 <img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t7Output.png" width="50%" height="50%">
 
 
-So from the program `t7.c` one thing can be said that before dereferencing the void pointer it first needs to be typcast and then it can be dereferenced.
+So from the program `t7.c` one thing can be said that before dereferencing the void pointer it first needs to be typcast and then it can be dereferenced. _Even when performing arithmetic with void pointer, it first needs to be typcast and this shown by [t7_2.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t7_2.c)_
+
+**Output of t7_2.c:**
+
+<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t7_2Output.png" width="50%" height="50%">
 
 
 We know that we typecast a variable of one type to another type as follows:
