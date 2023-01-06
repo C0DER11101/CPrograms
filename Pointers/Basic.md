@@ -303,4 +303,59 @@ This [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointer
 
 <img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t5Output.png" width="50%" height="50%">
 
+# Some points about arrays
+
+### 1D array
+#### Passing 1D array as argument to a function
+
+```c
+void func(int[]);
+
+int main(void)
+{
+	int arr[]={1, 2, 3, 4, 5};
+	...
+	...
+	func(arr);
+
+	return 0;
+}
+
+
+void func(int arr[])
+{
+	...
+	...
+}
+```
+Note that the size of the array in the parameter list of `func` is optional i.e you can also write the declaration like this:
+```c
+void func(int[5]);
+
+...
+main
+...
+...
+void func(int arr[5])
+{
+	...
+	...
+}
+```
+
+### 2D array
+**Important: _The first dimension can be omitted._**
+
+```c
+int a[][3]={
+	{1, 2, 3},
+	{4, 5, 6},
+	{7, 8, 9}
+	};
+```
+
+Here the first dimension is omitted but the second dimension i.e. `3` is important, the first dimension is taken as 3 as there are 3 1D arrays, each containing 3 elements.
+
+The first dimension can be omitted for higher dimensional arrays as well!!
+
 ---
