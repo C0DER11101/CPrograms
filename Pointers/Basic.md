@@ -386,4 +386,41 @@ int *arr[5];
 
 # Void pointers
 
+A pointer to void is a generic pointer that can point to any data type(pretty much like templates in C++).
+
+**Syntax:**
+
+```c
+void *vptr;
+```
+
+[t7.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t7.c) shows how we can use a void pointer to display value of variables of different datatypes.
+
+
+**Output:**
+
+<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t7Output.png" width="50%" height="50%">
+
+
+So from the program `t7.c` one thing can be said that before dereferencing the void pointer it first needs to be typcast and then it can be dereferenced.
+
+
+We know that we typecast a variable of one type to another type as follows:
+
+```
+(datatype)variableName;
+```
+
+Similarly to typcast a void pointer to a pointer to another type we do the following:
+
+```
+(datatype*)voidPointer;
+```
+
+And to dereference it:
+
+```
+*(datatype*)voidPointer;
+```
+
 ---
