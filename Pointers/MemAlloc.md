@@ -123,6 +123,6 @@ The function **free()** does the work of releasing the memory space dynamically.
 The memory released by **free()** is made available to heap again.
 
 
-_When the program terminates all the memory is released automatically by the operating system. But it's a good practice to free whatever memory has been allocated dynamically. If we don't free the memory then this would lead to memory leak while the program is running an can make the program run slow.__
+_When the program terminates all the memory is released automatically by the operating system. But it's a good practice to free whatever memory has been allocated dynamically. If we don't free the memory then this would lead to memory leak while the program is running an can make the program run slow._
 
 ---
