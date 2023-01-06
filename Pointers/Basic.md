@@ -358,4 +358,32 @@ Here the first dimension is omitted but the second dimension i.e. `3` is importa
 
 The first dimension can be omitted for higher dimensional arrays as well!!
 
+# Array of pointers(Pointer array)
+
+> Array of pointers is an containing pointers as its elements.
+
+_Syntax:_
+
+```c
+datatype *arrayName[size];
+```
+
+Example:
+
+```c
+int *arr[5];
+```
+
+`arr` is an array of 5 pointers to integer i.e. `arr[0]` is a pointer to integer, `arr[1]` is a pointer to integer and so on till `arr[4]`
+
+
+[t6.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t6.c) shows how the array of pointers is used.
+
+**Output:**
+
+<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t6Output.png" width="50%" height="50%">
+
+
+# Void pointers
+
 ---
