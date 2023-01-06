@@ -273,4 +273,34 @@ From the linear representation of the 2D matrix `arr` it is clear that the $0^{t
 
 <img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t3Output.png" width="50%" height="50%">
 
+# Pointers and functions
+
+**Arguments can be passed to functions in two ways:
+
+1. _Call by value._
+2. _Call by reference._
+
+**In call by value, only the values of arguments are sent to the function.**
+
+**In call by reference, addresses of the arguments are sent to the function.**
+
+_C doesnot have **call by reference**, but we can simulate it by passing addresses of variables as arguments to the function._
+
+[This program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t4.c) shows how to simulate **call by reference** using pointers in C.
+
+
+**Output:**
+
+<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t4Output.png" width="50%" height="50%">
+
+## Returning more than one value from a function
+
+Obviously, we can return only a single value from a function by using the `return` statement. But if we wish to return more than one values from a function then we must use pointers instead of `return` statement.
+
+This [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t5.c) shows how we can return more than one values from a function without using the return statement.
+
+**Output:**
+
+<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t5Output.png" width="50%" height="50%">
+
 ---
