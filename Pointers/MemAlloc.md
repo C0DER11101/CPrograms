@@ -98,6 +98,14 @@ ptr=(int*)realloc(ptr, newsize);
 
 Allocates memory space of `newsize` bytes and the starting address is stored in `ptr`. `newsize` may be smaller or larger than `size`.
 
-_If_ `newsize` _is larger then the old data is not lost and newly allocated bytes are uninitialized._
+_If_ `newsize` _is larger, then the old data is not lost and newly allocated bytes are uninitialized._
+
+_The starting address contained in_ `ptr` _may change if there is not sufficient memory at the old address to store all the bytes consecutively._
+
+_This function moves the contents of old block into the new block and the data of the old block is not lost._
+
+**On failure, realloc() returns NULL and in this case the old memory is not deallocated and it remains unchanged.**
+
+_If **ptr** is a null pointer, **realloc()** behaves like **malloc()** function._
 
 ---
