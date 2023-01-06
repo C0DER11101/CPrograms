@@ -108,4 +108,21 @@ _This function moves the contents of old block into the new block and the data o
 
 _If **ptr** is a null pointer, **realloc()** behaves like **malloc()** function._
 
+## free()
+
+**Declaration:**
+
+```c
+void free(void*p);
+```
+
+_The dynamically allocated memory exsits till the end of the program._
+
+The function **free()** does the work of releasing the memory space dynamically.
+
+The memory released by **free()** is made available to heap again.
+
+
+_When the program terminates all the memory is released automatically by the operating system. But it's a good practice to free whatever memory has been allocated dynamically. If we don't free the memory then this would lead to memory leak while the program is running an can make the program run slow.__
+
 ---
