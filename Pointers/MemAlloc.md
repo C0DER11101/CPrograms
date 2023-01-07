@@ -228,7 +228,7 @@ This statement is quite interesting. We all know that the name of a 2D array is 
 int arr[3][3];
 ```
 
-Now, if I simply write `arr` then it would mean that I am talking about `&arr[0]` i.e. the address of the $0^{th}$ element which in this case is the $0^{th}$ 1D array(in case you don't remember have a look at [this](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/Basic.md#pointers-and-2-d-arrays). Now, `arr[0]` means that I am talking about `&arr[0][0]` i.e. address of $0^{th}$ element of this $0^{th}$ 1D array. So, using this concept `arr=(int**)calloc(row, sizeof(int*));` can be understood as:
+Now, if I simply write `arr` then it would mean that I am talking about `&arr[0]` i.e. the address of the $0^{th}$ element which in this case is the $0^{th}$ 1D array(in case you don't remember have a look at [this](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/Basic.md#pointers-and-2-d-arrays)). Now, `arr[0]` means that I am talking about `&arr[0][0]` i.e. address of $0^{th}$ element of this $0^{th}$ 1D array. So, using this concept `arr=(int**)calloc(row, sizeof(int*));` can be understood as:
 
 **Since `arr` is going to be a 2D array we first need to be a pointer to pointer to int. So that's why we first allocate an array of `row` pointers to int and we know that since calloc also returns a void pointer which stores the address of the starting block(which in this case is that of a pointer, that's why it's a void pointer to pointer and just a void pointer) we need to typecast it into a pointer to pointer to int. The rest is well understood.**
 
