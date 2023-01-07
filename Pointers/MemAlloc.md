@@ -100,6 +100,9 @@ Allocates memory space of `newsize` bytes and the starting address is stored in 
 
 _If_ `newsize` _is larger, then the old data is not lost and newly allocated bytes are uninitialized._
 
+_If_ `newsize` _is smaller than `size` then there no change._
+
+
 _The starting address contained in_ `ptr` _may change if there is not sufficient memory at the old address to store all the bytes consecutively._
 
 _This function moves the contents of old block into the new block and the data of the old block is not lost._
@@ -124,5 +127,11 @@ The memory released by **free()** is made available to heap again.
 
 
 _When the program terminates all the memory is released automatically by the operating system. But it's a good practice to free whatever memory has been allocated dynamically. If we don't free the memory then this would lead to memory leak while the program is running an can make the program run slow._
+
+This [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t8.c) shows how the realloc works.
+
+**Output:**
+
+<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t8Output.png" width="50%" height="50%">
 
 ---
