@@ -100,7 +100,7 @@ Allocates memory space of `newsize` bytes and the starting address is stored in 
 
 _If_ `newsize` _is larger, then the old data is not lost and newly allocated bytes are uninitialized._
 
-_If_ `newsize` _is smaller than `size` then there no change._
+_If_ `newsize` _is smaller than_ `size` _then there is no change._
 
 
 _The starting address contained in_ `ptr` _may change if there is not sufficient memory at the old address to store all the bytes consecutively._
