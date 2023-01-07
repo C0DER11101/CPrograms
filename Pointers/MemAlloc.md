@@ -136,6 +136,8 @@ This [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointer
 
 # Dynamic array
 
+## 1D array
+
 [t9.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t9.c) shows a dynamic array.
 
 **Output:**
@@ -201,5 +203,19 @@ This [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointer
 **Output:**
 
 <img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t9_2Output.png" width="50%" height="50%">
+
+## 2D array
+
+[t10.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t10.c) shows us a dynamic 2D array.
+
+**Output:**
+
+<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t10Output.png" width="50%" height="50%">
+
+```c
+scanf("%d", (*(arr+i)+j);
+```
+
+This statement is pretty easy to understand once you understand what `*(p+i)` and `(p+i)` do in
 
 ---
