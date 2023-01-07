@@ -134,4 +134,72 @@ This [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointer
 
 <img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t8Output.png" width="50%" height="50%">
 
+# Dynamic array
+
+[t9.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t9.c) shows a dynamic array.
+
+**Output:**
+
+<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t9Output.png" width="50%" height="50%">
+
+Notice that in `t9.c` there is a **scanf()** statement which contains this expression:
+
+```c
+&*(p+i);
+```
+
+Let's break this expression and understand what it means:
+
+So first of all:
+
+```c
+p=(int*)calloc(size, sizeof(int));
+```
+
+Here `size` number of memory blocks(each 4 bytes) are allocated and `p` stores the address of the starting block.
+
+Now, since `int` is 4 bytes, if we add 1 to `p` i.e. `p+1` it means that we are pointing to the next consecutive memory block after the current memory block. It looks as if we are adding `1` to `p` but in reality we are actually adding 4 bytes to the address contained in `p`, as soon as 4 bytes are added to the starting address we reach the next consecutive address right after the starting address, now if we add 2 to `p` like this: `p+2`, then we are basically adding `2x4` bytes i.e. 8 bytes to the starting address which as a result will take us to the third memory block's address and this goes on until we reach the final block.
+
+Let's look at this expression:
+
+```c
+(p+i);
+```
+
+This is just what I had said previously, i can take any value between `0` and `size-1`.
+
+
+```c
+*(p+i);
+```
+
+This means that whatever address we have reached, we will dereference it i.e. we will access the value at that address.
+
+`*(p+i)` can also be written as `p[i]`
+
+So, now:
+
+```c
+&*(p+i);
+```
+this means _address of the value_.
+
+
+```c
+scanf("%d", &*(p+i));
+```
+this can also be written as:
+
+```c
+scanf("%d", (p+i));
+```
+
+Since `p` stores the starting address and whatever the value of `i`, it is added with `p` and we reach an address of elements of the array, we insert the value input by the user into the address.
+
+This [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t9_2.c) will make things clearer.
+
+**Output:**
+
+<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t9_2Output.png" width="50%" height="50%">
+
 ---
