@@ -96,4 +96,65 @@ int (*fp)(int); // a function pointer that can point to any function returning a
 
 
 
+Look at [this program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t13.c).
+
+
+
+**Output:**
+
+<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t13Output.png" width="50%" height="50%">
+
+
+
+Here, you will see this:
+
+
+
+```c
+int sum(int, int, int(*)(int, int));
+```
+
+The `sum` function takes two arguments of integer type and a third argument is for address of a function.
+
+
+
+If you look at the program you will see:
+
+```c
+result=sum(a, b, add);
+```
+
+Here, `a`, `b` and `add` are sent as arguments. The address of `add()` function goes as argument here.
+
+
+
+```c
+int sum(int a int b, int(*addNums)(int, int))
+{
+    int result=(*addNums)(a, b);
+}
+```
+
+Here, if you look at the third argument, you will see that we have not provided any argument names inside the argument-list of `addNums` because it's just a function pointer declaration in there. But if you look in the body of `sum` we have provided the arguments in the argument-list of `addNums`. That's because this time we are calling the function through the function pointer `addNums`.
+
+
+
+Now, notice one thing that I have not provided any return statement in `sum` and yet the output was printed correctly. Why? I have to find that out!!
+
+
+
+Now, look at this [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t13_2.c) . It's the same program but with a difference of just one line. I added `return result;` in `sum()`.
+
+
+
+**Output:**
+
+<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t13_2Output.png" width="50%" height="50%">
+
+
+
+And yet the output is the same!!
+
+
+
 ---
