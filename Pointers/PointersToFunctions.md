@@ -1,4 +1,4 @@
-# Pointers and Functions
+# Pointers to Functions
 
 > Every function has an address like all other variables in the program.
 
