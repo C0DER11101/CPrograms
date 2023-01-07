@@ -216,6 +216,8 @@ This [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointer
 scanf("%d", (*(arr+i)+j);
 ```
 
-This statement is pretty easy to understand once you understand what `*(p+i)` and `(p+i)` do in
+This statement is pretty easy to understand once you understand what `*(p+i)` and `(p+i)` do in [1D array](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/MemAlloc.md#1d-array).
+
+_Always remember: **array name is a pointer to its**_ $0^{th}$ _**element be it a 1D array or a 2D array or any higher dimensional array and the**_ $0^{th}$ _**element neednot be a single element, it can be a 1D array or a 2D array depending on the dimension of the main array we are dealing with. If we are dealing with 1D array then the**_ $0^{th}$ _**element will be the the first element with index 0. If we are dealing with 2D array then the**_ $0^{th}$ _**element will be the**_ $0^{th}$ _**1D array(since 2D array is an array of 1D arrays). And like this the**_ $0^{th}$ _**element goes on changing on as we start dealing with higher dimensional arrays.**_
 
 ---
