@@ -210,7 +210,7 @@ _When we enter a string using_ `%s`_, the null character is automatically stored
 
 If we want to enter strings with whitespaces then we can use `gets()`. It stops reading only when it encounters a newline character and replaces the newline character with the null character.
 
-This [program]() shows the usage of `gets()` and `puts()`.
+This [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t5.c) shows the usage of `gets()` and `puts()`.
 
 
 
