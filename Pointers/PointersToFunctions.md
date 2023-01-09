@@ -155,6 +155,75 @@ Now, look at this [program](https://github.com/C0DER11101/CPrograms/blob/CProgra
 
 And yet the output is the same!!
 
+## Arrays of function pointers
+
+_Function pointer can be used in applications where we don't know in advance which function will be called._
+
+**Syntax of declaring an array of function pointers:**
+
+
+
+```c
+returnType (*functionPointerName[number_of_functions])(type1, type1, ...);
+```
+
+**Example:**
+
+
+
+```c
+float(*fp[4])(float, int);
+```
+
+_Array of function pointers can be declared only when we know for sure that there are certain number of functions that have the same return type and accept the same number and same type of arguments._
+
+**Example:**
+
+```c
+float add(float, int);
+float sub(float, int);
+float div(float, int);
+float mul(float, int);
+```
+
+Now, for these functions we can have an array of function pointers:
+
+```c
+float(*fp[4])(float, int);
+```
+
+Now, this is how we will assign the address of each function to each function pointer:
+
+
+
+```c
+fp[0]=add;
+fp[1]=sub;
+fp[2]=div;
+fp[3]=mul;
+```
+
+**OR**
+
+there is one more way:
+
+
+
+```c
+float(*fp[])(float, int)={add, sub, div, mul};
+```
+
+Again, the size withing the `[]` is optional in this type of assignment, remember it's just like simple array declaration!!
+
+Now, look these function calls:
+
+```c
+(*fp[0])(a, b); // equivalent to add(a, b);
+(*fp[1])(a, b); // equivalent to sub(a, b);
+(*fp[2])(a, b); // equivalent to div(a, b);
+(*fp[3])(a, b); // equivalent to mul(a, b);
+```
+
 
 
 ---
