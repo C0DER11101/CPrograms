@@ -87,6 +87,43 @@ Now, look at this program: [t2.c](https://github.com/C0DER11101/CPrograms/blob/C
 
 <img src="https://user-images.githubusercontent.com/96164229/211261910-f385dc9b-bf36-42d3-aa9b-08c4db1bf492.png" width="70%" height="60%">
 
+```c
+printf("%c\n", "software"[4]);
+```
+
+What does this mean?
+
+Let us see part by part what it really means.
+
+
+
+We all know "software" is a string constant and string is replaced by pointer to character.
+
+
+
+So when you write:
+
+```c
+printf("software");
+```
+
+It gets replaced by a pointer to character.
+
+So when we wrote `printf("%c\n", "software"[4]);`, first `"software"` was replaced by a pointer to character, let's assume the pointer to character to be `p`. Then `p[4]` means `*(p+4)` as we had seen in [here](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/MemAlloc.md#dynamic-array). So in short, `"software"[4]` is accessing the character in index number `4` which is `w`. "software" is a string constant which is a pointer to the character `s`. So when you write `"software"[4]` it basically means that we are using the pointer to `s` and adding `4` to it and then dereferencing it which gives us the value character `w`.
+
+`"software"[4]` is equivalent to writing `*("software"+4)`
+
+If we take it even more simply.
+
+Look at this snippet below:
+
+```c
+char*p="software";
+printf("%c\n", p[4]);
+```
+
+This above snippet displays the same output as `printf("%c\n", "software"[4]);`
+
 
 
 ---
