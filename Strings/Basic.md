@@ -29,7 +29,7 @@ _Consider the string_ "Hello".
 
 **This is how it's stored in the memory:**
 
-![image](https://user-images.githubusercontent.com/96164229/211252130-2154b88a-3a15-4035-91ac-b50283fce80c.png)
+<img src="https://user-images.githubusercontent.com/96164229/211252130-2154b88a-3a15-4035-91ac-b50283fce80c.png" width="50%" height="50%">
 
 _The compiler automatically inserts a null character at the end._
 
