@@ -85,7 +85,7 @@ Now, look at this program: [t2.c](https://github.com/C0DER11101/CPrograms/blob/C
 
 **Output:**
 
-<img src="https://user-images.githubusercontent.com/96164229/211261910-f385dc9b-bf36-42d3-aa9b-08c4db1bf492.png" width="30%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/211261910-f385dc9b-bf36-42d3-aa9b-08c4db1bf492.png" width="70%" height="60%">
 
 
 
