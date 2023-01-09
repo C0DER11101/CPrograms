@@ -194,6 +194,18 @@ Here is a [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/St
 
 <img src="https://user-images.githubusercontent.com/96164229/211333908-522cc591-a9ba-41f3-952e-c02b4e21cd84.png" width="60%" height="60%">
 
+Notice in the output that when I entered the string `"Linux Ubuntu"` then the output came out to be only `"Linux"`. The reason is that `scanf()` stops taking input once it encounters a whitespace.
 
+You might be wondering why didn't I take the input like this:
+
+```c
+scanf("%s", &name);
+```
+
+Well that's because name is the string variable(1d array) and it itself is a pointer and stores address so we neednot write `&name`.
+
+
+
+_When we enter a string using_ `%s`_, the null character is automatically stored at the end of array._
 
 ---
