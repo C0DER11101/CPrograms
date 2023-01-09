@@ -15,6 +15,8 @@ Examples of string constants:
 "Hello world."
 
 ""
+
+"Value is %d\n"
 ```
 
 All these are valid string constants because each of them ends with a null character(`\0`), even `""`.
@@ -109,13 +111,11 @@ printf("software");
 
 It gets replaced by a pointer to character.
 
-So when we wrote `printf("%c\n", "software"[4]);`, first `"software"` was replaced by a pointer to character, let's assume the pointer to character to be `p`. Then `p[4]` means `*(p+4)` as we had seen in [here](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/MemAlloc.md#dynamic-array). So in short, `"software"[4]` is accessing the character in index number `4` which is `w`. "software" is a string constant which is a pointer to the character `s`. So when you write `"software"[4]` it basically means that we are using the pointer to `s` and adding `4` to it and then dereferencing it which gives us the value character `w`.
+So when we wrote `printf("%c\n", "software"[4]);`, first `"software"` was replaced by a pointer to character, let's assume the pointer to character to be `p`. Then `p[4]` means `*(p+4)` as we had seen in [here](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/MemAlloc.md#dynamic-array). So in short, `"software"[4]` is accessing the character in index number `4` which is `w`. `"software"` is a string constant which is a pointer to the character `s`. So when you write `"software"[4]` it basically means that we are using the pointer to `s` and adding `4` to it and then dereferencing it which gives us the value character `w`.
 
 `"software"[4]` is equivalent to writing `*("software"+4)`
 
-If we take it even more simply.
-
-Look at this snippet below:
+If we take it even more simply, look at the snippet below:
 
 ```c
 char*p="software";
@@ -124,6 +124,36 @@ printf("%c\n", p[4]);
 
 This above snippet displays the same output as `printf("%c\n", "software"[4]);`
 
+**Never alter string constants.**
 
+**_When string constant is used as an initializer for a character array then it does not represent any address and it is not stored anywhere in memory._**
+
+
+
+Example:
+
+```c
+char str[]="Program";
+```
+
+`"Program"` is not stored in memory and therefore has no address.
+
+Memory is reserved for `str` not for `"Program"`.
+
+`char str[]="Program";` is equivalent to writing:
+
+```c
+char str[]={'P', 'r', 'o', 'g', 'r', 'a', 'm', '\0'};
+```
+
+If we have a statement like this:
+
+```c
+char*ptr="Program";
+```
+
+Here, space is allocated for pointer variable `ptr` and string constant `"Program"` is stored separately in memory and `ptr` is initialized with the starting address of `"Program"` which is the address of `'P'`.
+
+_There is a difference between `'b'` and `"b"` . `'b'` is a character constant which represents the ASCII value of `'b'`; `"b"` is a string constant which contains the character `'b'` and the null character `'\0'`.
 
 ---
