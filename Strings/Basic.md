@@ -71,6 +71,12 @@ And also the following Output!!
 
 <img src="https://user-images.githubusercontent.com/96164229/211259010-44261ad1-d4c2-4c80-bde4-a9f8a99940c8.png" width="50%" height="50%">
 
+[t1_2.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t1_2.c) format specifier put into `printf`.
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/211260401-5677b61e-6d9e-45ea-931a-b7ebede8ecdd.png" width="70%" height="70%">
+
 
 
 
