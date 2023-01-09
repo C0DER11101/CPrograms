@@ -156,4 +156,22 @@ Here, space is allocated for pointer variable `ptr` and string constant `"Progra
 
 _There is a difference between_ `'b'` _and_ `"b"` . `'b'` _is a character constant which represents the ASCII value of_ `'b'`_;_ `"b"` _is a string constant which contains the character_ `'b'` _and the null character_ `'\0'`.
 
+## String variables
+
+> A string variable is 1d-array of ASCII characters terminated by a null character.
+
+
+
+```c
+char str[]="New Delhi";
+```
+
+`str` is a string variable.
+
+**Here the string constant "New Delhi" doesn't represent an address. _The array_ `str` _will be stored in the memory as:_**
+
+<img src="https://user-images.githubusercontent.com/96164229/211316030-5b032143-f8ef-4ebc-9ae8-751c9f3ad48a.jpg" width="60%" height="60%">
+
+
+
 ---
