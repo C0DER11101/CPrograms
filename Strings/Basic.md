@@ -154,6 +154,6 @@ char*ptr="Program";
 
 Here, space is allocated for pointer variable `ptr` and string constant `"Program"` is stored separately in memory and `ptr` is initialized with the starting address of `"Program"` which is the address of `'P'`.
 
-_There is a difference between `'b'` and `"b"` . `'b'` is a character constant which represents the ASCII value of `'b'`; `"b"` is a string constant which contains the character `'b'` and the null character `'\0'`.
+_There is a difference between_ `'b'` _and_ `"b"` . `'b'` _is a character constant which represents the ASCII value of_ `'b'`_;_ `"b"` _is a string constant which contains the character_ `'b'` _and the null character_ `'\0'`.
 
 ---
