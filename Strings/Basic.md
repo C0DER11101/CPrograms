@@ -29,7 +29,9 @@ _Consider the string_ "Hello".
 
 **This is how it's stored in the memory:**
 
-![image](https://user-images.githubusercontent.com/96164229/211251204-d9cba394-808d-48ea-9212-bc0d18a40932.png)
+![image](https://user-images.githubusercontent.com/96164229/211252130-2154b88a-3a15-4035-91ac-b50283fce80c.png)
+
+
 
 
 
