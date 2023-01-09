@@ -59,6 +59,18 @@ printf("C is fun!\n");
 
 Here, actually a pointer to character is passed to the `printf()` function.
 
+Program [t1.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t1.c) shows a pointer to character passed to `printf`. However, when I compile it it gives me the following warning:
+
+
+
+<img src="https://user-images.githubusercontent.com/96164229/211258890-da27149b-fed0-4449-bc76-df11c6ee1e38.png" width="50%" height="50%">
+
+And also the following Output!!
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/211259010-44261ad1-d4c2-4c80-bde4-a9f8a99940c8.png" width="50%" height="50%">
+
 
 
 
