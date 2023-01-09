@@ -216,7 +216,7 @@ This [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings
 
 **Output(after getting warnings):**
 
-<img src="https://user-images.githubusercontent.com/96164229/211361832-298df99f-2167-4e49-8f9e-3eed8f5a5682.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/211361832-298df99f-2167-4e49-8f9e-3eed8f5a5682.png" width="70%" height="70%">
 
 
 
