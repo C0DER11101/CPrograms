@@ -29,7 +29,7 @@ _Consider the string_ "Hello".
 
 **This is how it's stored in the memory:**
 
-![image](StoringStringInMemory.png)
+![image](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/StoringStringInMemory.png)
 
 
 
