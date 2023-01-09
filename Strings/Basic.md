@@ -172,6 +172,14 @@ char str[]="New Delhi";
 
 <img src="https://user-images.githubusercontent.com/96164229/211316030-5b032143-f8ef-4ebc-9ae8-751c9f3ad48a.jpg" width="60%" height="60%">
 
+Look at this [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t3.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/211320351-77d1a5c8-e2bf-41f2-bc4e-ab70eb85d24a.png" width="60%" height="60%">
+
+
+
 
 
 ---
