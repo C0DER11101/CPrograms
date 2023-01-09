@@ -202,7 +202,7 @@ You might be wondering why didn't I take the input like this:
 scanf("%s", &name);
 ```
 
-Well that's because name is the string variable(1d array) and it itself is a pointer and stores address so we neednot write `&name`.
+Well that's because `name` is the string variable(1d array) and it itself is a pointer and stores address so we neednot write `&name`.
 
 
 
