@@ -178,7 +178,21 @@ Look at this [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming
 
 <img src="https://user-images.githubusercontent.com/96164229/211320351-77d1a5c8-e2bf-41f2-bc4e-ab70eb85d24a.png" width="60%" height="60%">
 
+The code is self-explanatory, nothing we didn't cover in Pointers!!
 
+
+
+**We can enter and print strings using the `%s` specification in the control string of `printf()` and `scanf()`.**
+
+
+
+Here is a [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t4.c) that performs string input and output.
+
+
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/211333908-522cc591-a9ba-41f3-952e-c02b4e21cd84.png" width="60%" height="60%">
 
 
 
