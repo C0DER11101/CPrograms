@@ -208,4 +208,16 @@ Well that's because name is the string variable(1d array) and it itself is a poi
 
 _When we enter a string using_ `%s`_, the null character is automatically stored at the end of array._
 
+If we want to enter strings with whitespaces then we can use `gets()`. It stops reading only when it encounters a newline character and replaces the newline character with the null character.
+
+This [program]() shows the usage of `gets()` and `puts()`.
+
+
+
+**Output(after getting warnings):**
+
+<img src="https://user-images.githubusercontent.com/96164229/211361832-298df99f-2167-4e49-8f9e-3eed8f5a5682.png" width="60%" height="60%">
+
+
+
 ---
