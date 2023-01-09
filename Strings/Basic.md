@@ -23,4 +23,14 @@ All these are valid string constants because each of them ends with a null chara
 
 
 
+**The string constant itself becomes a pointer to the first character in the array.**
+
+_Consider the string_ "Hello".
+
+**This is how it's stored in the memory:**
+
+![image](StoringStringInMemory.png)
+
+
+
 ---
