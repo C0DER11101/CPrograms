@@ -94,8 +94,46 @@ The second output is also about the same thing, if you look at the end you will 
 
 I don't have say anything about the $3^{rd}$ output!!
 
+Now, we will talk about pointer to character.
 
+Look at this:
 
+```c
+char *ptr="Programming";
+```
 
+Now, we can change the value of `ptr` by assigning it a different string constant. But we cannot the string constant!!
+
+_We already know that changing a string constant leads to undefined behaviour!!_
+
+So if we try to change the string `"Programming"` then the compiler will throw an error.
+
+The following are invalid:
+
+```c
+ptr[0]='B'; // same writing *ptr='B';
+scanf("%s", ptr);
+strcpy(ptr, "Somethingelse");
+```
+
+**Here are the invalid programs and their outputs(there were no errors during compiling)!!**
+
+[t9_1.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t9_1.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/211621814-f8fcb587-8283-4137-a4c2-419982738114.png" width="60%" height="60%">
+
+[t9_2.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t9_2.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/211621972-861be06e-6d28-4729-9d3f-cd0af595fbf8.png" width="60%" height="60%">
+
+[t9_3.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t9_3.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/211622167-bc2995dc-4a21-4f85-818a-34b6b3012759.png" width="60%" height="60%">
 
 ---
