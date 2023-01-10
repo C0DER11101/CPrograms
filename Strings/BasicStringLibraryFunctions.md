@@ -64,4 +64,48 @@ Value returned by `strcmp(s1, s2)` is:
 
 
 
+## 3. strcpy()
+
+**Declaration:**
+
+```c
+char*strcpy(char *destination, const char *source);
+```
+
+Copies `source` string to `destination` string.
+
+
+
+Keep in mind that the `destination` string cannot be a a `const` like `source`, because it has to be modified.
+
+
+
+Hence, function calls like `strcpy("New", str2);` and `strcpy("New", "York");` are invalid because `"New"` in both the function calls is a string constant(meaning that it is non-modifiable)!!
+
+
+
+## 4. strcat()
+
+**Declaration:**
+
+```c
+char *strcat(char *str1, const char *str2);
+```
+
+_This function is used to append a copy of string at the end of another string._
+
+Notice that the second string `str2` is a string constant meaning that it won't be changed but the first argument `str1` will be modified i.e. that `str2` will be added at the end of `str`, obviously the null character at the end of `str1` will be removed.
+
+
+
+**You can nest `strcat()` and `strcpy()` because both of them return a pointer to the first string.**
+
+
+
+
+
+
+
+---
+
 
