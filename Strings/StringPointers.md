@@ -20,6 +20,7 @@ char *ptr="Chennai";  // 2
 In `2` the address of string constant is assigned to the pointer variable `ptr`.
 
 **Memory representation:**
+
 `str`
 
 <img src="https://user-images.githubusercontent.com/96164229/211498539-3f5c2371-2d7c-4b21-afd0-bd6b8a62ed2a.jpg" width="60%" height="60%">
