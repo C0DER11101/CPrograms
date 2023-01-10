@@ -36,7 +36,8 @@ _The elements of the array are initialized with the characters of the string._
 Look at `2` in the snippet, in this case the string constant `"Chennai"` is stored somewhere in memory with 8 consecutive bytes reserved for it. This string constant returns the address of the first character i.e. `'C'` that is assigned to `ptr.` Here a total of **12 bytes** are reserved: **4 bytes** for `ptr` and **8 bytes** for the string constant.
 
 **_Main difference between_ `str` and `ptr`:**
- `str` is a constant pointer and will always point to 1000 which is the address of the $0^{th}$ character `'M'`; while `ptr` is a pointer variable(not a constant pointer) and may contain another address.
+
+ `str` is a constant pointer and will always point to 1000 which is the address of the $0^{th}$ character `'M'`; while `ptr` is a pointer variable(not a constant pointer) and may contain other address.
 
 [t8.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t8.c) is an errornous program that demonstrates the unmodifiability of constant pointer `str`.
 
