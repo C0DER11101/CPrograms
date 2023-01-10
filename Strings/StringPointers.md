@@ -88,7 +88,7 @@ Here are some outputs of this program:
 
 <img src="https://user-images.githubusercontent.com/96164229/211535429-ef8d5c1a-79a3-4f63-a30f-68db440db921.png" width="60%" height="60%">
 
-The first output is shows that the array was initially of size 5 so when I entered `Program` as input, actually I entered a string whose length was 6 so that's why we got that `Aborted(core dumped)`.
+The first output is shows that the array was initially of length 5 so when I entered `Program` as input, actually I entered a string whose length was 6 so that's why we got `Aborted(core dumped)`.
 
 The second output is also about the same thing, if you look at the end you will see an output: `Overd`, so actually I manually initialized only 4 elements of `str` and $5^{th}$ element stayed unchanged(i.e. it remaind `'d'`).
 
