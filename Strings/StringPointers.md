@@ -40,6 +40,8 @@ Look at `2` in the snippet, in this case the string constant `"Chennai"` is stor
 [t8.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t8.c) is an errornous program that demonstrates the unmodifiability of constant pointer `str`.
 
 **Output:**
+
+
 <img src="https://user-images.githubusercontent.com/96164229/211529828-e42be28e-638a-4372-8fb6-5ab09784d9f7.png" width="70%" height="70%">
 
 However, you can do this:
