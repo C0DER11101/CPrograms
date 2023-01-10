@@ -25,6 +25,7 @@ char arr[5][10]={
 ```
 
 `5` in `arr[5][10]` denotes the number of strings in the 2D array.
+
 `10` in `arr[5][10]` denotes the maximum length of each string.
 
 ---
