@@ -151,4 +151,6 @@ Next, we did `scanf("%s", ptr);` in **t9_2.c**, here we tried to insert a new st
 
 Next, we did `strcpy(ptr, "NewString");` in **t9_3.c**, here also we are trying to store `"NewString"` in `ptr` by overwriting it in the addresses of the existing string constant `"Programming"` which is again not possible because `"Programming"` is a string constant!!
 
+**We cannot use `scanf()`, `gets()` and `fgets()` with an _uninitialized pointer_ since it contains garbage value and points to invalid location. _First we should allocate memory to it, then we must use these functions._**
+
 ---
