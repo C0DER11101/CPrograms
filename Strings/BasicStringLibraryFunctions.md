@@ -4,7 +4,7 @@
 
 
 
-## strlen()
+## 1. strlen()
 
 **Declaration:**
 
@@ -38,7 +38,29 @@ _[This](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/
 
 
 
+## 2. strcmp()
 
+**Declaration:**
+
+```c
+int strcmp(const char*s1, const char*s2);
+```
+
+_This function is used for lexicographic comparison of two strings._
+
+**_If two strings match,_ `strcmp()` _returns a value 0, otherwise it returns a non-zero value._**
+
+
+
+**NOTE:**
+
+Value returned by `strcmp(s1, s2)` is:
+
+1. <0 when `s1`<`s2`.
+
+2. =0 when `s1`=`s2`.
+
+3. \>0 when `s1`>`s2`.
 
 
 
