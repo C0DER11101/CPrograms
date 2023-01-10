@@ -92,7 +92,7 @@ The first output is shows that the array was initially of length 5 so when I ent
 
 The second output is also about the same thing, if you look at the end you will see an output: `Overd`, so actually I manually initialized only 4 elements of `str` and $5^{th}$ element stayed unchanged(i.e. it remaind `'d'`).
 
-I don't have say anything about the $3^{rd}$ output!!
+I don't have to say anything about the $3^{rd}$ output!!
 
 Now, we will talk about pointer to character.
 
