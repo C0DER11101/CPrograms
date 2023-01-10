@@ -218,10 +218,7 @@ This [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings
 
 <img src="https://user-images.githubusercontent.com/96164229/211361832-298df99f-2167-4e49-8f9e-3eed8f5a5682.png" width="70%" height="70%">
 
-**There is a problem with `gets`(); it can't check the buffer space, if more input is provided than the size of the array then it will overwrite locations after the end of the array.**
-
-
-
+**There is a problem with `gets()`; it can't check the buffer space, if more input is provided than the size of the array then it will overwrite locations after the end of the array.**
 
 
 ---
