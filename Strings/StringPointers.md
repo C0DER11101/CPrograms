@@ -43,7 +43,6 @@ Look at `2` in the snippet, in this case the string constant `"Chennai"` is stor
 
 **Output:**
 
-
 <img src="https://user-images.githubusercontent.com/96164229/211529828-e42be28e-638a-4372-8fb6-5ab09784d9f7.png" width="60%" height="60%">
 
 However, you can do this:
@@ -88,5 +87,15 @@ Here are some outputs of this program:
 **Output-3:**
 
 <img src="https://user-images.githubusercontent.com/96164229/211535429-ef8d5c1a-79a3-4f63-a30f-68db440db921.png" width="60%" height="60%">
+
+The first output is shows that the array was initially of size 5 so when I entered `Program` as input, actually I entered a string whose length was 6 so that's why we got that `Aborted(core dumped)`.
+
+The second output is also about the same thing, if you look at the end you will see an output: `Overd`, so actually I manually initialized only 4 elements of `str` and $5^{th}$ element stayed unchanged(i.e. it remaind `'d'`).
+
+I don't have say anything about the $3^{rd}$ output!!
+
+
+
+
 
 ---
