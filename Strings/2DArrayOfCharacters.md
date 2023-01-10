@@ -28,4 +28,8 @@ char arr[5][10]={
 
 `10` in `arr[5][10]` denotes the maximum length of each string.
 
+On dereferencing `arr` we will get the address of $0^{th}$ element in the $0^{th}$ string and on dereferencing that address we will get the value in that address which will be `'w'` of `"white"`.
+
+`arr` stores the address of $0^{th}$ string, the concept here is the same as 2D arrays of integers.
+
 ---
