@@ -53,4 +53,35 @@ So, `arr[0]` is same as `ptr`.
 
 <img src="https://user-images.githubusercontent.com/96164229/211726621-438d2e3b-3ad8-46b2-8818-9894b21cb312.jpg" width="60%" height="60%">
 
+There is a lot of memory wastage as we can see from the image above.
+
+If we didn't assign strings to `arr`:
+
+```c
+char arr[5][10];
+```
+
+And if we had initialized it with strings later:
+
+```c
+arr[0]="white";
+arr[1]="red";
+.
+.
+```
+
+The above snippet is invalid, you cannot initialize an array of strings like this, also the following is also invalid:
+
+```c
+arr[0]=arr[1];
+```
+
+[t11.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t11.c) gives us information what exactly `arr[0]` means. First look at this error:
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/211733355-91595ebe-2f32-4273-b217-063f10b78403.png" width="60%" height="60%">
+
+This of error occurs when we are trying to modify a constant pointer, i.e. an array of characters. That basically indicates that `arr[0]` is actually a constant pointer, it's same as `char str[]="Hello";`. Therefore it is **unmodifiable**.
+
 ---
