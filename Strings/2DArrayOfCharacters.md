@@ -86,4 +86,12 @@ This of error occurs when we are trying to modify a constant pointer, i.e. an ar
 
 _So this is difference that I had talked about when I said that **`arr[0]` is quite similar to `ptr`.**_
 
+So, in order to really modify `arr[0]` or to be more precise `arr[i]`, we need to use `scanf()`, `gets()`, `fgets()`, `strcpy()` or manually assign characters to it.
+
+[t12.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t12.c) shows one of the methods used to modify the constant pointer `arr[0]`. _Remember, the rest of the methods will also work._
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/211736124-341b0952-6682-4121-b8c8-5d6b1af66ff5.png" width="60%" height="60%">
+
 ---
