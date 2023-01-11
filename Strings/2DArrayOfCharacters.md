@@ -47,7 +47,7 @@ But when we write `arr[0]` then we are dereferencing `arr` and that gives us the
 char *ptr="Hello";
 ```
 
-So, `arr[0]` is same as `ptr`.
+So, `arr[0]` is quite similar to `ptr`. But there is a difference which we will talk about below.
 
 **This is the internal storage representation of `arr`:**
 
@@ -83,5 +83,7 @@ arr[0]=arr[1];
 <img src="https://user-images.githubusercontent.com/96164229/211733355-91595ebe-2f32-4273-b217-063f10b78403.png" width="60%" height="60%">
 
 This of error occurs when we are trying to modify a constant pointer, i.e. an array of characters. That basically indicates that `arr[0]` is actually a constant pointer, it's same as `char str[]="Hello";`. Therefore it is **unmodifiable**.
+
+_So this is difference that I had talked about when I said that **`arr[0]` is quite similar to `ptr`.**_
 
 ---
