@@ -144,6 +144,22 @@ The pointers occupy 20 bytes(since pointers occupy 4 bytes and there are 5 point
 
 So, a total of 48 are occupied.
 
+Here, however such kind of initialization valid:
+
+```c
+char *arrp[3];
+
+arrp[0]="white";
+arrp[1]="red";
+arrp[2]="green";
+```
+
+This illustrated in [t14.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t14.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/211842956-54e812b0-eea0-48bf-8dc5-9897bd7949e8.png" width="60%" height="60%">
+
 
 
 ---
