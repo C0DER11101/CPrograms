@@ -17,7 +17,7 @@ int main(void)
 	printf("3rd string: %s\n", arr[3]);
 	printf("4th string: %s\n", arr[4]);
 
-	// arr[0] acts like a pointer to character
+	// arr[0] acts like a pointer to character for the 0th string; similarly arr[1] acts like a pointer to character for the 1st string, and so on....
 
 	return 0;
 }
