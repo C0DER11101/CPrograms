@@ -118,6 +118,26 @@ In [t13.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tes
 
 <img src="https://user-images.githubusercontent.com/96164229/211807890-0dd0a55c-d5c4-4b2a-910c-f6a906a5b62f.png" width="60%" height="60%">
 
+`arrp` points to the $0^{th}$ pointer to character.
+
+
+```c
+char *arrp[]={
+	"white",
+	"red",
+	"green",
+	"yellow",
+	"blue"
+	};
+```
+
+Here when we write `arrp` we are basically talking about the address of the $0^{th}$ pointer to character i.e. `arrp[0]`.
+When we write `arrp[0]`, we are talking about the address of the $0^{th}$ character of the string that is pointed to by `arrp[0]` and `arrp[0]` points to `"white"` and the $0^{th}$ character is `"w"`. `arrp[0]` stores the address of `"w"`.
+
+Here is the **Memory representation of** `arrp`:
+
+<img src="https://user-images.githubusercontent.com/96164229/211831267-0588fe65-827f-499d-b333-b4a6b83478c5.jpg" width="60%" height="60%">
+
 
 
 ---
