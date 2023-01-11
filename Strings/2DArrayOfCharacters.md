@@ -94,4 +94,30 @@ So, in order to really modify `arr[0]` or to be more precise `arr[i]`, we need t
 
 <img src="https://user-images.githubusercontent.com/96164229/211736124-341b0952-6682-4121-b8c8-5d6b1af66ff5.png" width="60%" height="60%">
 
+## Array of pointers to strings
+
+_This is same as array of pointers to integers._
+
+```c
+char *arrp[]={
+	"white",
+	"red",
+	"green",
+	"yellow",
+	"blue"
+	};
+```
+
+`arrp` is an array of pointers to strings.
+
+_Array of pointers to strings is an array of **pointers to characters** in which each pointer points to the first character of a string i.e. each element of this array contains the base address of a string._
+
+In [t13.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t13.c), I have created an array of **pointer to characters**.
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/211807890-0dd0a55c-d5c4-4b2a-910c-f6a906a5b62f.png" width="60%" height="60%">
+
+
+
 ---
