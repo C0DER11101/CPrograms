@@ -40,4 +40,17 @@ Look at this [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming
 
 <img src="https://user-images.githubusercontent.com/96164229/211704884-d163d513-e1a1-488d-aa05-61a19ab7d553.png" width="60%" height="60%">
 
+`arr` stores the address of the $0^{th}$ string(the address of the whole string, not of the $0^{th}$ character of that string).
+
+But when we write `arr[0]` then we are dereferencing `arr` and that gives us the address of the $0^{th}$ character of that $0^{th}$ string which what happens when you do this:
+```c
+char *ptr="Hello";
+```
+
+So, `arr[0]` is same as `ptr`.
+
+**This is the internal storage representation of `arr`:**
+
+<img src="https://user-images.githubusercontent.com/96164229/211726621-438d2e3b-3ad8-46b2-8818-9894b21cb312.jpg" width="60%" height="60%">
+
 ---
