@@ -138,6 +138,12 @@ Here is the **Memory representation of** `arrp`:
 
 <img src="https://user-images.githubusercontent.com/96164229/211831267-0588fe65-827f-499d-b333-b4a6b83478c5.jpg" width="60%" height="60%">
 
+Here the strings occupy a total of 28 bytes.
+
+The pointers occupy 20 bytes(since pointers occupy 4 bytes and there are 5 pointers to characters).
+
+So, a total of 48 are occupied.
+
 
 
 ---
