@@ -51,4 +51,20 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/211996556-ae974d95-8dce-4652-b7e7-2d21dd0d441a.png" width="60%" height="60%">
 
+## _3._ strncmp()
+
+**Declaration:**
+```c
+int *strncmp(const char *arr1, const char *arr2, size_t length);
+```
+
+_This function compares the characters of strings for a specified length._
+
+Program:
+[t18.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t18.c) compares the first 5 characters of two strings.
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/211999152-9046495d-f9a3-4476-a028-bc0c7776482b.png" width="60%" height="60%">
+
 ---
