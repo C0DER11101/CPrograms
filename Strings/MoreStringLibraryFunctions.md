@@ -79,6 +79,13 @@ _Returns a pointer to the first(**leftmost**) occurence of the character_ `ch` _
 
 _If the character is not present in the string then it returns_ `NULL`.
 
+Program:
+[t19.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t19.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212141510-0e2ada88-242e-43ab-bd9b-a3c8d261d4a1.png" width="60%" height="60%">
+
 ### strrchr()
 **Declaration:**
 ```c
@@ -88,5 +95,12 @@ char *strrchr(const char *str, int ch);
 _Returns a pointer to the last(**rightmost**) occurence of the character_ `ch` _in the string pointed to by_ `str`.
 
 _If the character is not present in the string then it returns_ `NULL`.
+
+Program:
+[t19_2.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t19_2.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212142620-f8a2f500-22a5-4cd4-8008-3e91e0bfce89.png" width="60%" height="60%">
 
 ---
