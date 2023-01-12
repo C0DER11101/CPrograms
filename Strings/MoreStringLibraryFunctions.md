@@ -67,4 +67,26 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/211999152-9046495d-f9a3-4476-a028-bc0c7776482b.png" width="60%" height="60%">
 
+## _4._ strchr() and strrchr()
+
+### strchr()
+**Declaration:**
+```c
+char *strchr(const char *str, int ch);
+```
+
+_Returns a pointer to the first(**leftmost**) occurence of the character_ `ch` _in the string pointed to by_ `str`.
+
+_If the character is not present in the string then it returns_ `NULL`.
+
+### strrchr()
+**Declaration:**
+```c
+char *strrchr(const char *str, int ch);
+```
+
+_Returns a pointer to the last(**rightmost**) occurence of the character_ `ch` _in the string pointed to by_ `str`.
+
+_If the character is not present in the string then it returns_ `NULL`.
+
 ---
