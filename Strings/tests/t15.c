@@ -11,5 +11,13 @@ int main(void)
 	strncpy(str1, str2, 3);
 
 	printf("\nNew string: %s\n", str1);
+
+	printf("\nDisplaying the new string using \"for loop\":\n");
+
+	for(int i=0; str1[i]!='\0'; i++)
+		printf("%c", str1[i]);
+
+	printf("\nLength of new string: %lu\n", strlen(str1));
+	printf("\n");
 	return 0;
 }
