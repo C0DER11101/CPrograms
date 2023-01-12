@@ -21,4 +21,4 @@ Program:
 
 **Output:**
 
-<img src="https://user-images.githubusercontent.com/96164229/211981739-50012afa-1490-498c-b7be-5b58cd6866bd.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/211985915-58f075ad-8c4c-412f-84af-f0c9e46deea6.png" width="60%" height="60%">
