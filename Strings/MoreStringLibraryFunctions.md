@@ -23,6 +23,7 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/211985915-58f075ad-8c4c-412f-84af-f0c9e46deea6.png" width="60%" height="60%">
 
+Program:
 [t16.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t16.c).
 
 **Output:**
