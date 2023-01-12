@@ -22,3 +22,9 @@ Program:
 **Output:**
 
 <img src="https://user-images.githubusercontent.com/96164229/211985915-58f075ad-8c4c-412f-84af-f0c9e46deea6.png" width="60%" height="60%">
+
+[t16.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t16.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/211986888-2fc8843c-5258-481f-84b5-da108a58c597.png" width="60%" height="60%">
