@@ -124,6 +124,6 @@ Program:
 printf("%s\n", strpbrk("abcmnop", "lmn"));
 ```
 
-_Here_, `"abcmnop"` _and_ `"lmn"` _are two strings of different sizes. Each character of_ `"abcmnop"` _is compared with_ `"lmn"` _until_ `'m'` _is found to be common between both the strings. So_ `strpbrk()` _returns a pointer to_ `'m'` _which is the first character to be found common between_ `"abcmnop"` _and_ `"lmn"`. `'m'` _is a part of the substring_ `"mnop"`, _that's why we get the output as:_ `mnop`. _The whole substring gets stored in the pointer to character._
+_Here_, `"abcmnop"` _and_ `"lmn"` _are two strings of different sizes. Each character of_ `"abcmnop"` _is compared with_ `"lmn"` _until_ `'m'` _is found to be common between both the strings. So_ `strpbrk()` _returns a pointer to_ `'m'` _which is the first character to be found common between_ `"abcmnop"` _and_ `"lmn"`. `'m'` _is a part of the substring_ `"mnop"`, _that's why we get the output as:_ `mnop`. _The pointer to character points to the substring_ `"mnop"` _since it stores the address of_ `'m'`.
 
 ---
