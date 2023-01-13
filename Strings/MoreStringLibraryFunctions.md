@@ -266,5 +266,9 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/212335842-fcf53b92-e51f-4696-8d5e-b9b2bb4b9bc3.png" width="60%" height="60%">
 
+_One thing that I noticed here is that_ `sprintf()` _doesn't work with pointer to character even when they have been initialized with string. This compelled me to think that maybe_ `sprintf()` _allocates one character at a time to each element of the string. So, if we initialized a pointer to character with a string then_ `sprintf()` _allocates a single character to the address pointed to by the pointer to character and tries to add this character to that address but we can't do that because the string initialized to the pointer is actually a string constant and we cannot modify a string constant and that's why we get a_ `segmentation fault`. _And if we use an uninitialized pointer, it points to some invalid address, so trying to store single character in such a pointer is again going to give us_ `segmentation fault`.
+
+_So, we need to reserve some memory dynamically when we are using a pointer to character with_ `sprintf()` _using either_ `malloc()` _or_ `calloc()`.
+
 
 ---
