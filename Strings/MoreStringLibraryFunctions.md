@@ -233,7 +233,8 @@ _This is the modified_ `str`.
 ```
 ...why?but;not?oh!, where when
 ```
-_This is the original_ `str`. _So, one thing is clear from here that we cannot use pointer to character in place of_ `str` _or make_ `str` _a pointer to character, because in pointer to characters, string constants are involved and_ `strtok()` _modifies strings, so it will also try to modify the string constant which will lead to_ `segmentation fault`.
+_This is the original_ `str`. 
+_So, one thing is clear from here that we cannot use pointer to character in place of_ `str` _or make_ `str` _a pointer to character, because in pointer to characters, string constants are involved and_ `strtok()` _modifies strings, so it will also try to modify the string constant which will lead to_ `segmentation fault`.
 
 
 ---
