@@ -242,7 +242,7 @@ _Also you will see an output like this:_
 ```
 ...why
 ```
-_This is also_ `str`. _But it's printed using the_ `printf()` _function, now, observe clearly, it only prints till_ `why` _what happened to the rest of the words? Well, remember that_ `strtok()` _adds a null character after every token that it encounters, so_ `strtok()`, _when it encountered_ `...why` _it added a null character after it and that's the reason why we are unable to see the rest of the characters. But you can see the rest of the characters using the_ `for` _loop._
+_This is also_ `str`. _But it's printed using the_ `printf()` _function, now, observe carefully, it only prints till_ `why` _what happened to the rest of the words? Well, remember that_ `strtok()` _adds a null character after every token that it encounters, so_ `strtok()`, _when it encountered_ `...why` _it added a null character after it and that's the reason why we are unable to see the rest of the characters. But you can see the rest of the characters using the_ `for` _loop._
 ## _9._ sprintf()
 **Declaration:**
 ```c
