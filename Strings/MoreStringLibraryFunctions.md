@@ -160,7 +160,7 @@ _Here the first 4 characters will be taken by_ `strspn()`, _but as soon as it en
 ```c
 strspn("qbcdmnop", "abcdmnop");
 ```
-_Here, the output is_ `0`. _Because_ `strspn()` _stops once it encounters a character in the first string that isn't present in the second string. So when_ `strspn()` _encounters_ `'q'` _of_ `"qbcdmnop"`, _it compares_ `'q'` _with each character of_ `"abcdmnop"` _and finds that_ `'q'` _isn't present in_ `"abcdmnop"`, _so it aborts its search and hence we get the output:_ `0`. _So, no matter how many common letters we have between two strings, if there is even one character in the first string that is not present in the second string, then_ `strspn()` _stops its search and aborts the process._
+_Here, the output is_ `0`. _Because_ `strspn()` _stops once it encounters a character in the first string that isn't present in the second string. So when_ `strspn()` _encounters_ `'q'` _of_ `"qbcdmnop"`, _it compares_ `'q'` _with each character of_ `"abcdmnop"` _and finds that_ `'q'` _isn't present in_ `"abcdmnop"`, _so it aborts its search and hence we get the output:_ `0`. _So, no matter how many common letters we have between two strings, if there is even one character in the first string that is not present in the second string, then_ `strspn()` _stops its search and aborts the process even if there were common characters after that uncommon character._
 
 ### strcspn()
 **Declaration:**
@@ -169,5 +169,14 @@ size_t strcspn(const char *str1, const char *str2);
 ```
 
 _This functions returns the number of characters in the beginning of_ `str1` _that don't match any of the characters in_ `str2`.
+
+Program:
+[t21_2.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t21_2.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212250694-95cd8e06-2abd-4383-a045-7fb62924a311.png" width="60%" height="60%">
+
+_This function does just the opposite of what_ `strspn()` _does. It stops its search as soon as it encounters a character in the first string that is present in the second string, no matter how many uncommon characters are there in the first string after that common character._
 
 ---
