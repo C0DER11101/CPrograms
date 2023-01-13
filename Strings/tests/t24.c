@@ -9,7 +9,7 @@ int main(void)
 
 	int x=450;
 
-	sprintf(str, "%d", x);
+	printf("Number of characters sent: %d\n", sprintf(str, "%d", x));
 
 	printf("\nstr=%s\n", str);
 
