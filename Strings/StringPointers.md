@@ -102,7 +102,7 @@ Look at this:
 char *ptr="Programming";
 ```
 
-Now, we can change the value of `ptr` by assigning it a different string constant. But we cannot the string constant!!
+Now, we can change the value of `ptr` by assigning it a different string constant. But we cannot change the string constant!!
 
 _We already know that changing a string constant leads to undefined behaviour!!_
 
