@@ -223,5 +223,17 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/212305409-a1b4fa30-c713-47ac-8c24-191009f466f8.png" width="60%" height="60%">
 
+_Here_, `str` _gets modified by_ `strtok()`, _if you look at the output, then you will see a string like this:_
+```
+...whybutnotoh, wherewhen
+```
+_This is the modified_ `str`.
+
+
+```
+...why?but;not?oh!, where when
+```
+_This is the original_ `str`. _So, one thing is clear from here that we cannot use pointer to character in place of_ `str` _or make_ `str` _a pointer to character, because in pointer to characters, string constants are involved and_ `strtok()` _modifies strings, so it will also try to modify the string constant which will lead to_ `segmentation fault`.
+
 
 ---
