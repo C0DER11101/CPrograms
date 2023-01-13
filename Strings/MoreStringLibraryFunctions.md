@@ -147,7 +147,7 @@ Program:
 strspn("abcdmnop", "abcefdmnopq");
 ```
 
-_Here, first_ `strscpn()` _compares the first character_ `'a'` _of_ `"abcdmnop"` _with each character of_ `"abcefdmnopq"`. _When it found a match, it moved the next character of_ `"abcdmnop"` _i.e._ `'b'` _which was also present in_ `"abcefdmnopq"`. _So it moved to the next character of_ `"abcdmnop"` _which was_ `'c'` _which was also present in_ `"abcefdmnopq"` _and the process went on and we go the output to be_ `8` _meaning that all the characters of_ `"abcdmnop"` _were present in_ `"abcefdmnopq"`.
+_Here, first_ `strspn()` _compares the first character_ `'a'` _of_ `"abcdmnop"` _with each character of_ `"abcefdmnopq"`. _When it found a match, it moved the next character of_ `"abcdmnop"` _i.e._ `'b'` _which was also present in_ `"abcefdmnopq"`. _So it moved to the next character of_ `"abcdmnop"` _which was_ `'c'` _which was also present in_ `"abcefdmnopq"` _and the process went on and we go the output to be_ `8` _meaning that all the characters of_ `"abcdmnop"` _were present in_ `"abcefdmnopq"`.
 
 _Now, this function has a very unique behaviour and that it will explained through the example below:_
 
@@ -162,6 +162,12 @@ strspn("qbcdmnop", "abcdmnop");
 ```
 _Here, the output is_ `0`. _Because_ `strspn()` _stops once it encounters a character in the first string that isn't present in the second string. So when_ `strspn()` _encounters_ `'q'` _of_ `"qbcdmnop"`, _it compares_ `'q'` _with each character of_ `"abcdmnop"` _and finds that_ `'q'` _isn't present in_ `"abcdmnop"`, _so it aborts its search and hence we get the output:_ `0`. _So, no matter how many common letters we have between two strings, if there is even one character in the first string that is not present in the second string, then_ `strspn()` _stops its search and aborts the process._
 
+### strcspn()
+**Declaration:**
+```c
+size_t strcspn(const char *str1, const char *str2);
+```
 
+_This functions returns the number of characters in the beginning of_ `str1` _that don't match any of the characters in_ `str2`.
 
 ---
