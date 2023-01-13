@@ -235,5 +235,20 @@ _This is the modified_ `str`.
 ```
 _This is the original_ `str`. _So, one thing is clear from here that we cannot use pointer to character in place of_ `str` _or make_ `str` _a pointer to character, because in pointer to characters, string constants are involved and_ `strtok()` _modifies strings, so it will also try to modify the string constant which will lead to_ `segmentation fault`.
 
+## _9._ sprintf()
+**Declaration:**
+```c
+int sprintf(char *str, const char *controlstring[,argument1, argument2, ......]);
+```
+**Header file:** _stdio.h_
+
+_This function is not like_ `printf()`. _This function stores the formatted output in a character array._
+
+_With the help of this function we can convert variables of any data type to strings._
+
+_A null character is appended at end automatically._
+
+**_This function returns the number of characters stored in the character array, excluding the null character._**
+
 
 ---
