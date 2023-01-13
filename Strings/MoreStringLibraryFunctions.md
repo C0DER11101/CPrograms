@@ -252,5 +252,12 @@ _A null character is appended at end automatically._
 
 **_This function returns the number of characters stored in the character array, excluding the null character._**
 
+Program:
+[t24.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t24.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212334620-f34ef8d8-5e4e-4890-b921-b8f2825b5546.png" width="60%" height="60%">
+
 
 ---
