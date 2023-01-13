@@ -270,5 +270,22 @@ _One thing that I noticed here is that_ `sprintf()` _doesn't work with pointer t
 
 _So, we need to reserve some memory dynamically when we are using a pointer to character with_ `sprintf()` _using either_ `malloc()` _or_ `calloc()`.
 
+## _10._ sscanf()
+**Declaration:**
+```c
+int sscanf(const char *str, const char *controlstring[,address1, address2, .....]);
+```
+**Header file:** _stdio.h_
+
+_In this function, data is read from a string rather from standard input._
+
+_We can read the formatted text from a string and convert it into variables of different data types!!_
+
+Program:
+[t25.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t25.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212354024-f189d394-8d74-4bfc-b0d7-b98fb042ad6b.png" width="60%" height="60%">
 
 ---
