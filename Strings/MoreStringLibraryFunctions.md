@@ -109,4 +109,15 @@ Program:
 char *strpbrk(const char *str1, const char *str2);
 ```
 
+_This function returns a pointer to first character of string_ `str1`, _which matches with any character of_ `str2`.
+
+_It returns_ `NULL` _if there are no common characters in the two strings._
+
+Program:
+[t20.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t20.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212229774-df696645-6d39-44e5-9418-9fdd2522b466.png" width="60%" height="60%">
+
 ---
