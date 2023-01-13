@@ -103,4 +103,10 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/212142620-f8a2f500-22a5-4cd4-8008-3e91e0bfce89.png" width="60%" height="60%">
 
+## _5._ strpbrk()
+**Declaration:**
+```c
+char *strpbrk(const char *str1, const char *str2);
+```
+
 ---
