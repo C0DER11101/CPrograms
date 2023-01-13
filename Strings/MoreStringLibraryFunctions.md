@@ -227,7 +227,7 @@ _Here_, `str` _gets modified by_ `strtok()`, _if you look at the output, then yo
 ```
 ...whybutnotoh, wherewhen
 ```
-_This is the modified_ `str`.
+_This is the modified_ `str` _which I printed using a_ `for` _loop._
 
 
 ```
@@ -237,6 +237,12 @@ _This is the original_ `str`.
 
 _So, one thing is clear from here that we cannot use pointer to character in place of_ `str` _or make_ `str` _a pointer to character, because in pointer to characters, string constants are involved and_ `strtok()` _modifies strings, so it will also try to modify the string constant which will lead to_ `segmentation fault`.
 
+
+_Also you will see an output like this:_
+```
+...why
+```
+_This is also_ `str`. _But it's printed using the_ `printf()` _function, now, observe clearly, it only prints till_ `why` _what happened to the rest of the words? Well, remember that_ `strtok()` _adds a null character after every token that it encounters, so_ `strtok()`, _when it encountered_ `...why` _it added a null character after it and that's the reason why we are unable to see the rest of the characters. But you can see the rest of the characters using the_ `for` _loop._
 ## _9._ sprintf()
 **Declaration:**
 ```c
