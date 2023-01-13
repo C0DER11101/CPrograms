@@ -197,4 +197,31 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/212256976-0fa24f0c-6257-4916-92ff-68dd4610ec38.png" width="60%" height="60%">
 
+## _8._ strtok()
+**Declaration:**
+```c
+char *strtok(char *s1, const char *s2);
+```
+_This function is used to extract tokens from a string based on some separator characters._
+
+`strtok()` _breaks the string_ `s1` _into tokens, where each token is delimited by a character from the string_ `s2`.
+
+_This function is called multiple times depending on the number of tokens in_ `s1`.
+
+_The first call to_ `strtok()` _has a non-NULL first argument, while the subsequent calls have a NULL first argument._
+
+_The second argument is a string containing separator characters._
+
+_This second argument can differ from call to call._
+
+_Each time_ `strtok()` _is called, it finds a token in the string_ `s1` _and appends a null character to the token and returns a pointer to it. It returns NULL when there are no tokens left in_ `s1`.
+
+Program:
+[t23.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t23.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212305409-a1b4fa30-c713-47ac-8c24-191009f466f8.png" width="60%" height="60%">
+
+
 ---
