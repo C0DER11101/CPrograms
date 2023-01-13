@@ -288,4 +288,8 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/212354024-f189d394-8d74-4bfc-b0d7-b98fb042ad6b.png" width="60%" height="60%">
 
+**Here is a program that I wrote to check if the input is a valid integer or not or whether it is a string!!.**
+
+Program: [t26.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t26.c).
+
 ---
