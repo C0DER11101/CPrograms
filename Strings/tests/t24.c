@@ -14,6 +14,5 @@ int main(void)
 	printf("\nstr=%s\n", str);
 
 	free(str);
-
 	return 0;
 }
