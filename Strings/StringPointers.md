@@ -145,7 +145,7 @@ char *ptr="Programming";
 ```
 basically the address of the $0^{th}$ element i.e. `'P'` was assigned to `ptr` and we also know that `"Programming"` is a string constant.
 
-When we did `ptr[0]='B';` in **t9_1.c**, what we actually did was access the put the value `'B'` in the address of `'P'` which is not possible since `"Programming"` is a string constant and that's why we get `segmentation fault`!!
+When we did `ptr[0]='B';` in **t9_1.c**, what we actually did was access the address of `'P'` and put the value `'B'` in the address of `'P'` which is not possible since `"Programming"` is a string constant and that's why we get `segmentation fault`!!
 
 Next, we did `scanf("%s", ptr);` in **t9_2.c**, here we tried to insert a new string into ptr which was storing the address of `'P'` of `"Programming"` which is again not possible because `"Programming"` is a string constant!!
 
