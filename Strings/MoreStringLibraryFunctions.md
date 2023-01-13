@@ -179,4 +179,22 @@ Program:
 
 _This function does just the opposite of what_ `strspn()` _does. It stops its search as soon as it encounters a character in the first string that is present in the second string, no matter how many uncommon characters are there in the first string after that common character._
 
+## _7._ strstr()
+**Declaration:**
+```c
+char *strstr(const char *s1, const char *s2);
+```
+_This function is used to locate the first occurence of a substring in another string._
+
+_Here_ `s2` _is the substring which is to be searched in_ `s1`.
+
+_This function returns a pointer to the beginning of the first occurence of the substring_ `s2` _in_ `s1`.
+
+Program:
+[t22.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t22.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212256976-0fa24f0c-6257-4916-92ff-68dd4610ec38.png" width="60%" height="60%">
+
 ---
