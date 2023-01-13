@@ -259,5 +259,12 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/212334620-f34ef8d8-5e4e-4890-b921-b8f2825b5546.png" width="60%" height="60%">
 
+Program:
+[t24_2.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Strings/tests/t24_2.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212335842-fcf53b92-e51f-4696-8d5e-b9b2bb4b9bc3.png" width="60%" height="60%">
+
 
 ---
