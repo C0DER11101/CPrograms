@@ -171,5 +171,16 @@ struct sample
 
 _Then the ouput would still be 8. In this case there would be 3 bytes gap between char and int._
 
+_This is the memory representation of_ `sample` _when its declaration is:_
+```c
+struct sample
+{
+	int num;
+	char ch;
+};
+```
+
+<img src="https://user-images.githubusercontent.com/96164229/212471940-e426d349-ef3a-4d03-8a86-76d46cbf2654.jpg" width="60%" height="60%">
+
 
 ---
