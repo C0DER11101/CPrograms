@@ -155,7 +155,7 @@ _But the output was this:_
 
 <img src="https://user-images.githubusercontent.com/96164229/212461634-111f2ed6-1d6c-4bee-96cc-8d55f9359583.png" width="60%" height="60%">
 
-_The size of one_ `char` _and one_ `int` _is 5 bytes(1 byte occupied by_ `char` _and 4 bytes occupied by_ `int`), _but in my machine it's showing me 8 bytes. This output is machine dependent._
+_The size of one_ `char` _and one_ `int` _together is 5 bytes(1 byte occupied by_ `char` _and 4 bytes occupied by_ `int`), _but in my machine it's showing me 8 bytes. This output is machine dependent._
 
 _Since my output was 8 bytes, that means there is space of 3 bytes after the last member. Those 3 bytes are unused bytes. This is done to satisfy alignment requirements._
 
@@ -182,5 +182,74 @@ struct sample
 
 <img src="https://user-images.githubusercontent.com/96164229/212471940-e426d349-ef3a-4d03-8a86-76d46cbf2654.jpg" width="60%" height="60%">
 
+_This is the memory representation of_ `sample` _when its declaration is:_
+```c
+struct sample
+{
+	char ch;
+	int num;
+};
+```
+
+<img src="https://user-images.githubusercontent.com/96164229/212472938-46379903-ae41-4aaf-b47a-95f616decbaa.jpg" width="60%" height="60%">
+
+# Array of structures
+
+_Array of structures can be declared as:_
+```c
+struct structName StructureVariable[size];
+```
+
+**Example:**
+```c
+struct student stu[10];
+```
+
+_Here_ `stu` _is an array of 10 elements, each of which is a structure of type_ `struct student`.
+
+Program:
+[t5.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t5.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212474088-3674dd81-7e98-4e9e-a604-21b4f9bf9088.png" width="60%" height="60%">
+
+```c
+struct student
+{
+	char name[30];
+	int rollno;
+	float marks;
+};
+```
+_The structure array can also be initialized like this:_
+```c
+struct student stuarr[3]={
+	{"Mary", 12, 98.5},
+	{"John", 11, 97},
+	{"Tom", 12, 89.5}
+		};
+```
+
+# Nested structures
+
+```c
+struct tag1
+{
+	member1;
+	member2;
+	.....
+	struct tag2
+	{
+		member1;
+		member2;
+		......
+		memberM;
+	}var1;
+
+	.....
+	memberN;
+};
+```
 
 ---
