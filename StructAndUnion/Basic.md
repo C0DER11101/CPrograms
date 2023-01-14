@@ -249,7 +249,22 @@ struct tag1
 
 	.....
 	memberN;
-};
+}var2;
 ```
+
+_For accessing_ `member1` _of structure_ `tag2`, _we write:_
+
+```c
+var2.var1.member1;
+```
+
+_If we break down this statement:_
+
+`var2` _is the structure variable of structure_ `tag1`, _structure_ `tag2` _is a member of_ `tag1`. _So, to access any member of_ `tag1`, _we will need to use_ `var2` _and the dot(.) operator to access members of_ `tag1`. _Since_ `tag2` _is a member of_ `tag1` _its variables are also members of_ `tag1`. _So_ `var1` _is also a member of_ `tag1`. _So, to access_ `var1` _we will have to write:_
+```c
+var2.var1;
+```
+
+_Also_ `tag2` _also has members, so to access a member, say_ `member1` _of_ `tag2`, _we write the above statement i.e_ `var2.var1.member1;`
 
 ---
