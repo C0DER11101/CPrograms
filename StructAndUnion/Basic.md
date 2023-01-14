@@ -155,5 +155,21 @@ _But the output was this:_
 
 <img src="https://user-images.githubusercontent.com/96164229/212461634-111f2ed6-1d6c-4bee-96cc-8d55f9359583.png" width="60%" height="60%">
 
+_The size of one_ `char` _and one_ `int` _is 5 bytes(1 byte occupied by_ `char` _and 4 bytes occupied by_ `int`), _but in my machine it's showing me 8 bytes. This output is machine dependent._
+
+_Since my output was 8 bytes, that means there is space of 3 bytes after the last member. Those 3 bytes are unused bytes. This is done to satisfy alignment requirements._
+
+_If my structure was declared like this:_
+
+```c
+struct sample
+{
+	char ch;
+	int num;
+};
+```
+
+_Then the ouput would still be 8. In this case there would be 3 bytes gap between char and int._
+
 
 ---
