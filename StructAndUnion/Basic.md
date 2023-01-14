@@ -121,5 +121,12 @@ _Here, the members_ `rollno` _and_ `marks` _will be initialized to zero._
 
 _We can assign values of a structure variable to another structure variable, **if both variables are defined of the same structure type**._
 
+Program:
+[t2.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t2.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212457248-0b18f1e4-dd59-46fb-88d9-798853c7a07b.png" width="60%" height="60%">
+
 
 ---
