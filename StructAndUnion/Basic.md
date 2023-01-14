@@ -144,5 +144,16 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/212458626-2d8a1715-6c45-44e7-8288-3edcc6847157.png" width="60%" height="60%">
 
+_The output of the program below was unexpected, I expected the output to be_ `5`.
+
+Program:
+[t4.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t4.c).
+
+_But the output was this:_
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212461634-111f2ed6-1d6c-4bee-96cc-8d55f9359583.png" width="60%" height="60%">
+
 
 ---
