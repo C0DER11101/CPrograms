@@ -349,4 +349,31 @@ Like in the above program, I wanted to nest the structure `second` inside the st
 
 **Nesting of a structure within itself is INVALID.**
 
+_You can also initialize nested structures at the time of declaration_.
+
+Example:
+
+```c
+struct date
+{
+	int day;
+	int month;
+	int year;
+};
+
+struct teacher
+{
+	char name[20];
+	int age;
+	float salary;
+	struct data birthdate, joindate;
+};
+
+struct teacher t1={"Sam", 34, 9000, {8, 12, 1970}, {1, 7, 1995}};
+```
+
+_This is quite easy to understand._
+
+# Pointers to structures
+
 ---
