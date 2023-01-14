@@ -274,7 +274,7 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/212485114-6a9e60d2-db47-4b64-aa78-bd7d58fcbf13.png" width="60%" height="60%">
 
-_So, one thing is clear from the above program that, **you can declare variables the structure nested inside of another structure in any function**_.
+_So, one thing is clear from the above program that, **you can declare variables of the structure nested inside of another structure in any function**_.
 
 
 Program:
