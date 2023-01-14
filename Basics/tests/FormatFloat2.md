@@ -5,14 +5,14 @@
 
 # When length of the variable is less than the total width
 
-<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Basics/tests/FormatFloat2_Output1.png" width="40%" height="70%">
+<img src="https://user-images.githubusercontent.com/96164229/212459980-cc31c479-51fe-4bae-a81d-c0ed388ac87b.png" width="60%" height="60%">
 
 # When length of the variable is equal to the total width
 
-<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Basics/tests/FormatFloat2_Output2.png" width="40%" height="70%">
+<img src="https://user-images.githubusercontent.com/96164229/212459996-e12db2a8-3ed4-43fc-8865-789b965ab991.png" width="60%" height="60%">
 
 # When length of the variable is greater than the total width
 
-<img src="https://github.com/C0DER11101/CPrograms/blob/CProgramming/Basics/tests/FormatFloat2_Output3.png" width="40%" height="70%">
+<img src="https://user-images.githubusercontent.com/96164229/212460028-82a3cff6-4aba-40d5-866e-3745c4218f35.png" width="60%" height="60%">
 
 ---
