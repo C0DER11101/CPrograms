@@ -267,4 +267,86 @@ var2.var1;
 
 _Also_ `tag2` _also has members, so to access a member, say_ `member1` _of_ `tag2`, _we write the above statement i.e_ `var2.var1.member1;`
 
+Program:
+[t6.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t6.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212485114-6a9e60d2-db47-4b64-aa78-bd7d58fcbf13.png" width="60%" height="60%">
+
+_So, one thing is clear from the above program that, **you can declare variables the structure nested inside of another structure in any function**_.
+
+
+Program:
+[t7.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t7.c).
+
+**Warning:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212485679-73012a05-afa4-42b1-92ec-a7a060c7fbd9.png" width="60%" height="60%">
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212485689-3dfacd58-5de3-492f-b195-aac41eba3fd4.png" width="60%" height="60%">
+
+_From_ `t7.c`, _the warning was shown because I didn't declare any variable of structure type_ `second`. _When you are declaring a nested structure then you must also declare a structure variable along with it like this:_
+
+```c
+struct first
+{
+	int value;
+	struct second
+	{
+		int val;
+	}var;
+};
+```
+_If you don't declare_ `var` _then the compiler will throw that warning._
+
+_The compiler throws warning even when you declare_ `var` _like this:_
+```c
+struct first
+{
+	int value;
+	struct second
+	{
+		int val;
+	};
+
+	struct second var;
+};
+```
+
+_Nested structure can also be declared as below:_
+```c
+struct date
+{
+	int day;
+	int month;
+	int year;
+};
+
+struct student
+{
+	char name[30];
+	int rollno;
+	float marks;
+	struct data birthdate;
+};
+```
+_Here the structure_ `date` _is nested within_ `student`. _This another way of declaring nested structures._
+
+Program:
+[t8.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t8.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212487108-dcefa9ac-0269-4c5c-a0ac-eef5ea21188c.png" width="60%" height="60%">
+
+**An important note:**
+_If you want to nest a structure within another in this above way, then the structure that is to be nested should be declared before the structure in which you are going to nest that structure._
+
+Like in the above program, I wanted to nest the structure `second` inside the structure `first`, so I declared it before declaring `first` and after declaring `second` I declared `first` in which I put a variable of type `second`. Hence I created nested structures.
+
+**Nesting of a structure within itself is INVALID.**
+
 ---
