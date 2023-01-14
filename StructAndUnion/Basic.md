@@ -128,5 +128,21 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/212457248-0b18f1e4-dd59-46fb-88d9-798853c7a07b.png" width="60%" height="60%">
 
+**Unary**, **relational**, **arithmetic**, **bitwise** operators are **not allowed** with structure variables.
+
+
+# Storage allocation and size of structure
+
+_We can find the size of a structure by using the_ `sizeof` _operator_.
+
+_We can either use the structure variable name or the tagname with the_ `sizeof` _operator._
+
+Program:
+[t3.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t3.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212458626-2d8a1715-6c45-44e7-8288-3edcc6847157.png" width="60%" height="60%">
+
 
 ---
