@@ -490,7 +490,7 @@ Program:
 
 **Output:**
 
-<img src="https://user-images.githubusercontent.com/96164229/212553072-e5202e2b-6b61-4e3c-a5d1-821acae8e111.png width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/212553072-e5202e2b-6b61-4e3c-a5d1-821acae8e111.png" width="60%" height="60%">
 
 
 
