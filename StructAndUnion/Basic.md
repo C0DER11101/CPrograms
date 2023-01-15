@@ -372,6 +372,13 @@ struct teacher
 struct teacher t1={"Sam", 34, 9000, {8, 12, 1970}, {1, 7, 1995}};
 ```
 
+Program:
+[t9.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t9.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212535219-71d147c5-16e2-472f-b2d9-cc5b80ec0034.png" width="60%" height="60%">
+
 _This is quite easy to understand._
 
 # Pointers to structures
@@ -427,5 +434,15 @@ float *ftp=&stu.marks;
 
 `&stu.rollno` _is same as_ `&(stu.rollno)` _because the precedence of dot operator is more than the precedence of address operator._
 
+
+# Pointers within structures
+
+```c
+struct student
+{
+	char name[20];
+	int *ptrmem;
+};
+```
 
 ---
