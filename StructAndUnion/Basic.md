@@ -443,6 +443,55 @@ struct student
 	char name[20];
 	int *ptrmem;
 };
+
+struct student stu, *stuptr=&stu;
 ```
+
+_If we want to access the value of_ `ptrmem` _through_ `stu` _then we will write:_
+```c
+*stu.ptrmem;
+```
+
+_Since the precedence of the dot operator is more than the dereference operator so the above statement is equivalent to:_
+```c
+*(stu.ptrmem);
+```
+
+_If we want to access the value of_ `ptrmem` _through_ `stuptr` _then we will write:_
+```c
+*((*stuptr).ptrmem);
+```
+
+Program:
+[t10.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t10.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212553046-26d5cba1-b308-4f46-ae27-7515ed0ca954.png" width="60%" height="60%">
+
+_If we want to access the value of_ `ptrmem` _through_ `stuptr` _using the arrow operator, then we will write:_
+```c
+*stuptr->ptrmem;
+```
+
+_The precedence of the arrow operator is more than that of the dereference operator, so the above statement is equivalent to:_
+```c
+*(stuptr->ptrmem);
+```
+
+
+_We can also write this:_
+```c
+(*(*stuptr).ptrmem);
+```
+
+Program:
+[t10_2.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t10_2.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212553072-e5202e2b-6b61-4e3c-a5d1-821acae8e111.png width="60%" height="60%">
+
+
 
 ---
