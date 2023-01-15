@@ -376,4 +376,56 @@ _This is quite easy to understand._
 
 # Pointers to structures
 
+_Pointers to structures point to the starting address of a structure variable._
+
+**Declaration:**
+```c
+struct student
+{
+	char name[30];
+	int rollno;
+	double marks;
+};
+
+struct student stu, *ptr;
+```
+
+_We will make_ `ptr` _point to the structure variable of_ `struct student` _type._
+
+```c
+ptr=&stu;
+```
+
+_Here we are basically assigning the starting address of_ `stu` _to_ `ptr`.
+
+## Two ways of accessing the members of a structure through structure pointer.
+
+### First way - using the dot(.) operator
+
+```c
+(*ptr).name;
+(*ptr).rollno;
+(*ptr).marks;
+```
+
+_The parentheses around_ `ptr` _is mandatory because the precedence of_ `.` _(dot operator) is more than_ `*`_(dereference operator)._
+
+### Second way - using the arrow(->) operator
+
+```c
+ptr->name;
+ptr->rollno;
+ptr->marks;
+```
+
+_We can also have pointers that point to individual members of a structure variable._
+
+```c
+int *p=&stu.rollno;
+float *ftp=&stu.marks;
+```
+
+`&stu.rollno` _is same as_ `&(stu.rollno)` _because the precedence of dot operator is more than the precedence of address operator._
+
+
 ---
