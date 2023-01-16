@@ -87,6 +87,30 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/212724025-a3a68592-5d6b-4775-b009-302e943c0501.png" width="60%" height="60%">
 
+_The ways used for accessing the members of a union are same as those used for accessing the members of a structure. If we have a union variable then members can be accessed using the dot(_ `.` _) operator and if we have a pointer to union then the members can be accessed using the arrow(_ `->` _) operator._
+
+
+In [this program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t19.c) we are trying initialize all the members of the union simultaneously.
+
+This is the **warning** produced:
+
+<img src="https://user-images.githubusercontent.com/96164229/212730561-8e0fae41-ff80-495b-8d85-42aaf19ac4c4.png" width=60%" height="60%">
+
+
+[Here](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t20.c), we have initialized the members union one at a time.
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212731522-2b04a8d3-352e-41e1-af6c-06ba2782e275.png" width="60%" height="60%">
+
+**Only one member of a union can hold value at a time, all members can't be used simultaneously as there is sharing of the same memory.**
+
+_You also can't do what I did in [this](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t20_2.c) program. It would show you some unexpected value(except for the member that was initialized at the last)._
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212733580-8299db9f-e15b-49c3-b783-d950ea721f9d.png" width="60%" height="60%">
+
 
 
 ---
