@@ -50,4 +50,26 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/212665604-7d8ae6d6-7b7c-4fd7-88db-5cc8228a2974.png" width="60%" height="60%">
 
+## 5. Returning a pointer to structure from a function
+
+Program:
+[t15.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t15.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212682078-4df9bb63-4e74-44ac-addf-a8e0062a6990.png" width="60%" height="60%">
+
+## 6. Passing array of structures as argument
+Program:
+[t16.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t16.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212684736-b4f62186-65af-4c54-be83-e42d065a0d18.png" width="60%" height="60%">
+
+_Working with array of structures is exactly same as working with array of integers._
+
+
+
+
 ---
