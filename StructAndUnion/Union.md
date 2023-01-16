@@ -153,5 +153,22 @@ _Here I tried to initialize_ `grade` _but_ `marks` _got initialized._
 
 <img src="https://user-images.githubusercontent.com/96164229/212740919-a1679d43-17bb-4fd1-b139-291aa0456979.png" width="60%" height="60%">
 
+_If you observe then you will see that the address of the union variable_ `u` _and the members of the union_ `utag` _are the same. Whereas in case of the structure_ `stag` _only the first member has the same address as that of the structure variable_ `s` _but others have different addresses._
+
+**Unions save a lot of memory.**
+
+_We can have a structure nested in a union or vice versa._
+
+
+# Features of union
+
+1. Arrays of unions can be declared.
+2. Functions take union variable as argument and return union variables.
+3. Pointers to unions can be declared.
+4. Unions can be nested.
+5. Unions can be self referential like structures.
+
+**We can declare an array of unions where each element of array can be used to hold values of different type.**
+
 
 ---
