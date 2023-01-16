@@ -94,7 +94,7 @@ In [this program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Stru
 
 This is the **warning** produced:
 
-<img src="https://user-images.githubusercontent.com/96164229/212730561-8e0fae41-ff80-495b-8d85-42aaf19ac4c4.png" width=60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/212730561-8e0fae41-ff80-495b-8d85-42aaf19ac4c4.png" width="60%" height="60%">
 
 
 [Here](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t20.c), we have initialized the members union one at a time.
