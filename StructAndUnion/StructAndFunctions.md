@@ -40,4 +40,14 @@ Program:
 
 _So, since we are working with pointers to structures here, changes made to the structure variable in the called function_(`Display()`) _will be reflected on the calling function_(`main()`).
 
+## 4. Returning a structure variable from function
+_Structure variables can be returned from functions as any other ordinary variable._
+
+Program:
+[t14.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t14.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212665604-7d8ae6d6-7b7c-4fd7-88db-5cc8228a2974.png" width="60%" height="60%">
+
 ---
