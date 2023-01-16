@@ -29,4 +29,15 @@ _From t12.c, one thing is clear that changes made to the structure variable in t
 
 ## 3. Passing pointers to structures as arguments
 
+_If the size of the structure is very large, then passing the whole structure may prove to be inefficient, so instead we can send the address of that structure as argument._
+
+Program:
+[t13.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t13.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212626754-743c6c01-0e81-430a-a51b-863fcf08956c.png" width="60%" height="60%">
+
+_So, since we are working with pointers to structures here, changes made to the structure variable in the called function_(`Display()`) _will be reflected on the calling function_(`main()`).
+
 ---
