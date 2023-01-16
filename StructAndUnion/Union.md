@@ -111,6 +111,29 @@ _You also can't do what I did in [this](https://github.com/C0DER11101/CPrograms/
 
 <img src="https://user-images.githubusercontent.com/96164229/212733580-8299db9f-e15b-49c3-b783-d950ea721f9d.png" width="60%" height="60%">
 
+_Union variables can be initialized, but not like we did in [t19.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t19.c)._
+
+_During initialization, only one member can be initialized in union and that one member is the first member of the union._
+
+_So initialization of union is only done for the first member._
+
+```c
+union result
+{
+	int marks;
+	char grade;
+	float per;
+};
+
+union result res={78};
+```
+_We can only initialize_ `marks` _here._
+
+Program [t21.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t21.c) explains it better.
+
+**output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212737184-d1f0192d-d866-4123-a45f-ff5c3e9e218e.png" width="60%" height="60%">
 
 
 ---
