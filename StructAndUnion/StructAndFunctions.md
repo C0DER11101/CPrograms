@@ -7,7 +7,7 @@ Program:
 
 **Output:**
 
-<img src="https://user-images.githubusercontent.com/96164229/212591911-5412f2ed-de95-42f4-a5d4-89c056d65526.png" width="60%" height="60%">.
+<img src="https://user-images.githubusercontent.com/96164229/212591911-5412f2ed-de95-42f4-a5d4-89c056d65526.png" width="60%" height="60%">
 
 _We can pass individual structure members as arguments to functions like any other ordinary variable._
 
