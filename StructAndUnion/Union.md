@@ -131,9 +131,27 @@ _We can only initialize_ `marks` _here._
 
 Program [t21.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t21.c) explains it better.
 
+_This was the union declaration:_
+```c
+union result
+{
+	double marks;
+	char grade;
+	float per;
+};
+```
+
 **output:**
 
 <img src="https://user-images.githubusercontent.com/96164229/212737184-d1f0192d-d866-4123-a45f-ff5c3e9e218e.png" width="60%" height="60%">
+
+_Here I tried to initialize_ `grade` _but_ `marks` _got initialized._
+
+[This program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t22.c) _compares the amount of memory occupied by a structure and a union and also the addresses of their members._
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212740919-a1679d43-17bb-4fd1-b139-291aa0456979.png" width="60%" height="60%">
 
 
 ---
