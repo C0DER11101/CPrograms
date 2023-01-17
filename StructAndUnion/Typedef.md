@@ -139,6 +139,79 @@ typedef int func(int, int);
 ```
 
 ## _4._ Defining new names for structures.
+```c
+struct Student
+{
+	char name[30];
+	size_t rollno;
+	size_t age;
+};
+```
+Now, if you want to declare variables for this structure then you will have to write this statement:
+```c
+struct student stu1, stu2;
+```
+which is pretty long. But with `typedef` you can make it shorter.
+
+We can use `typedef` to define a new name for `struct student` like this:
+```c
+typedef struct student student;
+```
+
+So now, `student` is the new name for `struct student`. So now, if you want to declare variables of `struct student` then you won't have to write that long statement, instead you can write this comparatively short statement:
+```c
+student stu1, stu2;
+```
+This statement is equivalent to writing: `struct student stu1, stu2;`.
+
+`typedef` can also be used with structure declarations like below:
+
+```c
+typedef struct tagname
+{
+	datatype member1;
+	...............
+	...............
+}newname;
+```
+
+Here, `newname` is not a structure variable but an alias name for `struct tagname`.
+
+Now, if you want to declare variables of type `struct tagname` then you won't have to write:
+```c
+struct tagname t1, t2;
+```
+Instead you can write:
+```c
+newname t1, t2;
+```
+Since `newname` is the alias for `struct tagname`.
+
+Program:
+[t27.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t27.c) illustrates what I just said.
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212826023-d39007fa-c9ec-4e60-a192-bcfff9125914.png" width="60%" height="60%">
+
+
+`typedef` **WITH STRUCTURES WITH NO TAGNAMES**
+```c
+typedef struct
+{
+	char name[30];
+	size_t age;
+}person;
+```
+Here `person` is a new name for the above nameless structure. Using this new name we can declare structure variables of this structure.
+
+Program[t28.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t28.c) explains everything.
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212828103-069b17dd-3f8c-4a3b-957b-72d1425312a9.png" width="60%" height="60%">
+
+If you look at [this](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/Basic.md#1-with-structure-declaration) topic, I said we cannot declare any new variables of a structure with no tagname because to declare structure variables we need the structure tagname. **But this is not the case when you are using** `typedef` **with that structure. With** `typedef` **you can name a nameless structure, like I did in** `t28.c` **and create structure variables for that nameless structure as well.**
 
 
 ---
