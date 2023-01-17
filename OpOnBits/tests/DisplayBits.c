@@ -15,5 +15,6 @@ void DisplayBits(int dec)
 		if(j%8==7)
 			printf(" ");
 	}
+	printf("\n");
 	return;
 }
