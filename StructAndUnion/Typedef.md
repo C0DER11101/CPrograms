@@ -49,4 +49,43 @@ typedef extern int marks;
 
 ## _1._ Defining new names for pointers.
 
+```c
+typedef float* fptr;
+```
+
+Now, `fptr` is a synonym for `float*`.
+
+```c
+fptr p, q, *r;
+```
+
+Here, `p` and `q` are pointers to float and `r` is a pointer to pointer to float.
+
+Program:
+[t24.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t24.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212810201-47d4084f-e0e5-4ad7-80f8-ed884e40ca84.png" width="60%" height="60%">
+
+**Remember:** _With_ `typedef` _we only create alias, we donot change the way a variable works._
+
+Like in program `t24.c`, we only created a name for `float*` and declared some pointers, but we didn't change the way of their working i.e. if you want to access the value stored in `p`, then you will have to dereference it like this: `*p`. `fptr p, q, *r;` may look like we have declared two float variables and one pointer, but keep in mind that `fptr` is an alias for `float*` not for `float`, so here we have actually created two float pointers and one pointer to pointer to float.
+
+## _2._ Defining new names for arrays.
+```c
+typedef int intarr[10];
+```
+Here, `intarr` means integer array consisting of 10 elements. `intarr[10]` is not the alias of `int`. `intarr` is an alias of `int` here. The `[10]` just represents that if I write `intarr` before any variable it will mean that I have created an integer array of 10 integers.
+
+**Example:**
+```c
+intarr a;
+```
+
+It's equivalent to writing:
+```c
+int a[10];
+```
+
 ---
