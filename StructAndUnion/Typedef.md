@@ -28,3 +28,12 @@ Example:
 typedef int age, marks, units;
 ```
 Here we have defined 3 names for the data type `int`.
+
+Program:
+[t23.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t23.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212790361-f572f97b-8961-497e-ae5f-4adfed9e2e1a.png" width="60%" height="60%">
+
+---
