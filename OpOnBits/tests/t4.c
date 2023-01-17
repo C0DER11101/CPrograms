@@ -12,7 +12,7 @@ int main(void)
 	printf("\nOriginal message: %x\n", a);
 	printf("Binary equivalent:\n");
 	DisplayBits(a);
-	printf("\nencrpyted message: %x\n", ~a);
+	printf("\nEncrpyted message: %x\n", ~a);
 	printf("Binary equivalent:\n");
 	DisplayBits(~a);
 	printf("\nDecrypted message %x\n", ~(~a));
