@@ -24,7 +24,7 @@ _To enter and display values in hexadecimal, we use_ `%x`.
 
 _All bitwise operators, except the complement operator, can be combined with the assignment operator to form the compound assignment operators:_
 
-`&=     \|=     <<=     >>=     ^=`
+`&=     |=     <<=     >>=     ^=`
 
 ## 1. _Logical operators(&, \|, ^, ~)_
 
