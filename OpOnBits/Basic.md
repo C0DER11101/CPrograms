@@ -75,5 +75,11 @@ _When the bitwise operators_ `&`, `|` _and_ `^` _operate on two operands of diff
 
 **_If the smaller operand is_ `unsigned` _then all these extra bits are filled with zeroes, and if it is_ `signed` _then these extra bits are filled with the sign bit._**
 
+[This](https://github.com/C0DER11101/CPrograms/blob/CProgramming/OpOnBits/tests/t2.c) is a program that displays the 32-bit binary equivalent of a hexadecimal number.
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212882478-5a9dd661-48e7-41ab-a948-130a899deb4c.png" width="60%" height="60%">
+
 
 ---
