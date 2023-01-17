@@ -16,3 +16,10 @@
 |long double|10|3.4E-4932 to 1.1E+4932|
 
 _size and range of different data types are machine and compiler dependent._
+
+Program:
+[t1.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Basics/tests/t1.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212971636-2bad9f16-ee67-4502-9203-a1d8c5180d30.png" width="60%" height="60%">
