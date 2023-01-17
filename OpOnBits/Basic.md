@@ -57,6 +57,7 @@ _All bitwise operators, except the complement operator, can be combined with the
 ### d) Bitwise complement(~)
 
 |Bit of operand|Resulting bit|
+|:------------:|:-----------:|
 |0|1|
 |1|0|
 
