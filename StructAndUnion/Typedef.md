@@ -215,5 +215,11 @@ If you look at [this](https://github.com/C0DER11101/CPrograms/blob/CProgramming/
 
 ## \#define directive vs typedef
 
+_There is a difference between_ `typedef` _and_ `#define` _directive_.
+
+The `typedef` declarations are interpreted by the compiler while `#define` directives are processed by the preprocessor.
+
+**In** `#define` **directive, we can define an expansion for any text. But in** `typedef` **we can only define new names for data types that already exists.**
+
 
 ---
