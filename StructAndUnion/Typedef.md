@@ -205,7 +205,7 @@ typedef struct
 ```
 Here `person` is a new name for the above nameless structure. Using this new name we can declare structure variables of this structure.
 
-Program[t28.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t28.c) explains everything.
+Program [t28.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t28.c) explains everything.
 
 **Output:**
 
