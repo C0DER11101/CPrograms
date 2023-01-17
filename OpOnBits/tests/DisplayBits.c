@@ -1,6 +1,6 @@
 int bits[32]; // 32 bits
 
-void DisplayBits(int dec)
+void DisplayBits(size_t dec)
 {
 	int i=31;
 	while(dec!=0 && i>=0)
