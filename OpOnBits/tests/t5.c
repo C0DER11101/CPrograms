@@ -8,7 +8,7 @@ int main(void)
 	printf("\nx=%lx\nBinary equivalent:\n", x);
 	DisplayBits(x);
 
-	printf("After shifting towards left by 4 bits:\n");
+	printf("\nAfter shifting towards left by 4 bits:\n");
 	printf("x=%lx\nBinary equivalent:\n", x<<4);
 	DisplayBits(x<<4);
 
