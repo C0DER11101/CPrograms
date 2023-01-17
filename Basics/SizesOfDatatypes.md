@@ -1,4 +1,5 @@
-# Sizes
+# Standard sizes of data types
+
 
 | Data types with type qualifiers|Size(bytes)|Range|
 |:------------------------------:|:---------:|:---:|
