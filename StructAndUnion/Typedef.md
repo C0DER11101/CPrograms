@@ -133,7 +133,10 @@ Just like we created an alias for `int` to create arrays of 10 integers by writi
 typedef int intarr[10];
 ```
 
-Similarly, we created an alias for `int`, but this time, to create functions returning integers and taking two arguments of integer types.
+Similarly, we created an alias for `int`, but this time, to create functions returning integers and taking two arguments of integer types by writing this statement:
+```c
+typedef int func(int, int);
+```
 
 ## _4._ Defining new names for structures.
 
