@@ -49,6 +49,7 @@ _All bitwise operators, except the complement operator, can be combined with the
 ### c) Bitwise XOR(^)
 
 |Bit of operand 1|Bit of operand 2|Resulting bit|
+|:--------------:|:--------------:|:-----------:|
 |0|0|0|
 |0|1|1|
 |1|0|1|
