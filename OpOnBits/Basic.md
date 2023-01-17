@@ -81,5 +81,11 @@ _When the bitwise operators_ `&`, `|` _and_ `^` _operate on two operands of diff
 
 <img src="https://user-images.githubusercontent.com/96164229/212882478-5a9dd661-48e7-41ab-a948-130a899deb4c.png" width="60%" height="60%">
 
+Here is a [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/OpOnBits/tests/t3.c) that performs all the bitwise operations on two hexadecimal numbers.
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212910008-caee0801-3027-42bc-941b-cad0d4df9d07.png" width="60%" height="60%">
+
 
 ---
