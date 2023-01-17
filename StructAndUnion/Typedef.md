@@ -88,4 +88,24 @@ It's equivalent to writing:
 int a[10];
 ```
 
+We can also declare 2D arrays:
+```c
+intarr c[3];
+```
+This is equivalent to writing:
+```c
+int c[3][10];
+```
+
+Program:
+[t25.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t25.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212813267-1e078963-4d70-4581-9645-e2cb5f93dfb2.png" width="60%" height="60%">
+
+## _3._ Defining new names for functions.
+
+
+
 ---
