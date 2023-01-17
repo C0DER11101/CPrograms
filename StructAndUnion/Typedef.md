@@ -213,7 +213,7 @@ Program [t28.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Struct
 
 If you look at [this](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/Basic.md#1-with-structure-declaration) topic, I said we cannot declare any new variables of a structure with no tagname because to declare structure variables we need the structure tagname. **But this is not the case when you are using** `typedef` **with that structure. With** `typedef` **you can name a nameless structure, like I did in** `t28.c` **and create structure variables for that nameless structure as well.**
 
-## \#define preprocessor vs typedef
+## \#define directive vs typedef
 
 
 ---
