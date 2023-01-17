@@ -36,4 +36,17 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/212790361-f572f97b-8961-497e-ae5f-4adfed9e2e1a.png" width="60%" height="60%">
 
+`typedef` _is considered as a storage class so we can't include a storage class in_ `typedef` _statement._
+
+The following statements are invalid:
+
+```c
+typedef static char schar;
+typedef extern int marks;
+```
+
+# Defining new names for pointers, arrays, functions and structures.
+
+## _1._ Defining new names for pointers.
+
 ---
