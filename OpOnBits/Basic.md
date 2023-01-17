@@ -98,5 +98,12 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/212915871-39b846e8-b921-465f-bd5c-5fc784668c05.png" width="60%" height="60%">
 
+_The order of precedence of these operators from highest to lowest is:_
+
+1. Bitwise complement(~)
+2. Bitwise AND(&)
+3. Bitwise XOR(^)
+4. Bitwise OR(|)
+
 
 ---
