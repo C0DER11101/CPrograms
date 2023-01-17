@@ -22,6 +22,13 @@ _In bit pattern, the numbering of bits starts from 0 and they are numbered from 
 
 _To enter and display values in hexadecimal, we use_ `%x`.
 
+Program:
+[t1.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/OpOnBits/tests/t1.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212870128-fff2deae-5125-4e5b-a621-bab748922cdf.png" width="60%" height="60%">
+
 _All bitwise operators, except the complement operator, can be combined with the assignment operator to form the compound assignment operators:_
 
 `&=     |=     <<=     >>=     ^=`
