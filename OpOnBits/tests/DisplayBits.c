@@ -16,5 +16,8 @@ void DisplayBits(int dec)
 			printf(" ");
 	}
 	printf("\n");
+
+	for(int i=0; i<32; i++)
+		bits[i]=0;
 	return;
 }
