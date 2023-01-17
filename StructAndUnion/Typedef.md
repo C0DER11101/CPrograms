@@ -105,7 +105,37 @@ Program:
 <img src="https://user-images.githubusercontent.com/96164229/212813267-1e078963-4d70-4581-9645-e2cb5f93dfb2.png" width="60%" height="60%">
 
 ## _3._ Defining new names for functions.
+```c
+typedef float funct(float, int);
+```
+Here, `funct` is a function that takes two values: one `float` and one `int` and returns a `float` value.
 
+Program:
+[t26.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/StructAndUnion/tests/t26.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212821515-69127227-07ea-4614-956a-7e3ca0d77600.png" width="60%" height="60%">
+
+The statement:
+```c
+func add, sub, divd;
+```
+in `t26.c` is equivalent to writing:
+```c
+int add(int, int);
+int sub(int, int);
+int divd(int, int);
+```
+
+Just like we created an alias for `int` to create arrays of 10 integers by writing this statement:
+```c
+typedef int intarr[10];
+```
+
+Similarly, we created an alias for `int`, but this time, to create functions returning integers and taking two arguments of integer types.
+
+## _4._ Defining new names for structures.
 
 
 ---
