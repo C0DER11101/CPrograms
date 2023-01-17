@@ -28,5 +28,14 @@ _All bitwise operators, except the complement operator, can be combined with the
 
 ## 1. _Logical operators(&, \|, ^, ~)_
 
+### a) Bitwise AND(&)
+
+|Bit of operand 1|Bit of operand 2|Resulting bit|
+|:--------------:|:--------------:|:-----------:|
+|0|0|0|
+|0|1|0|
+|1|0|0|
+|1|1|1|
+
 
 ---
