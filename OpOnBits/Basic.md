@@ -62,4 +62,10 @@ _All bitwise operators, except the complement operator, can be combined with the
 |1|0|
 
 
+_When the bitwise operators_ `&`, `|` _and_ `^` _operate on two operands of different sizes, the size of smaller operand is increased to match the size of larger operand. For example: if there are two operands of sizes 16 and 32 bits, then the 16-bit operand will be converted to 32-bit operand. The extra bits are added to the left of the smaller operand._
+
+
+**_If the smaller operand is_ `unsigned` _then all these extra bits are filled with zeroes, and if it is_ `signed` _then these extra bits are filled with the sign bit._**
+
+
 ---
