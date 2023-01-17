@@ -37,5 +37,28 @@ _All bitwise operators, except the complement operator, can be combined with the
 |1|0|0|
 |1|1|1|
 
+### b) Bitwise OR(\|)
+
+|Bit of operand 1|Bit of operand 2|Resulting bit|
+|:--------------:|:--------------:|:-----------:|
+|0|0|1|
+|0|1|1|
+|1|0|1|
+|1|1|1|
+
+### c) Bitwise XOR(^)
+
+|Bit of operand 1|Bit of operand 2|Resulting bit|
+|0|0|0|
+|0|1|1|
+|1|0|1|
+|1|1|0|
+
+### d) Bitwise complement(~)
+
+|Bit of operand|Resulting bit|
+|0|1|
+|1|0|
+
 
 ---
