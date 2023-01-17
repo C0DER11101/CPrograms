@@ -87,5 +87,16 @@ Here is a [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Op
 
 <img src="https://user-images.githubusercontent.com/96164229/212910008-caee0801-3027-42bc-941b-cad0d4df9d07.png" width="60%" height="60%">
 
+_When the complement operator is applied to an operand twice, the result is the original operand i.e._ `~(~a)` is equal to `a`.
+
+**This feature of the complement operator can be used for encrypting and decrypting data.**
+
+Program:
+[t4.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/OpOnBits/tests/t4.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212915871-39b846e8-b921-465f-bd5c-5fc784668c05.png" width="60%" height="60%">
+
 
 ---
