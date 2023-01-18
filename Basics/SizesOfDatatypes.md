@@ -44,8 +44,48 @@ $2^{32} = 4294967296$
 
 $4294967296/2 = 2147483648$
 
+In `t2.c`, `a` can take positive values upto 2147483647. So, I stored the value `2147483648`in `a` and the output was `-2147483648`.
 
+Again, when I enterd `2147483649`, the output was: `-2147483647`. Then when I entered 2147483650 in `a` the output was `-2147483646`.
 
+One thing that I noticed that when I continued entering values greater than `2147483648` in `a` then difference between that entered number and 2147483648 was getting added with `-2147483648`.
 
+Example:
+1) when
+```c
+a=2147483648;
+```
+
+Output:
+```
+-2147483648
+```
+$2147483648-2147483648+(-2147483648)=-2147483648$
+2) when
+```c
+a=214783649;
+```
+Output:
+```
+-2147483647
+```
+$2147483649-2147483648+(-2147483648)=-2147483647$
+
+1) Similarly when:
+```c
+a=4293771354
+```
+$4293771354-2147483648+(-2147483648)=−1195942$
+
+Here are the images of calculation:
+
+## Image-1
+<img src="https://user-images.githubusercontent.com/96164229/213101476-50565ee4-2164-4040-85af-bb1d087812e6.png" width="70%" height="70%">
+
+## Image-2
+<img src="https://user-images.githubusercontent.com/96164229/213101504-bfcc6ab8-0798-4efc-b77f-148ff8616533.png" width="70%" height="70%">
+
+## Image-3
+<img src="https://user-images.githubusercontent.com/96164229/213101543-5302e843-8d6e-4ecb-9454-29302e5be527.png" width="70%" height="70%">
 
 ---
