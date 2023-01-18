@@ -23,3 +23,29 @@ Program:
 **Output:**
 
 <img src="https://user-images.githubusercontent.com/96164229/212971636-2bad9f16-ee67-4502-9203-a1d8c5180d30.png" width="60%" height="60%">
+
+
+Program:
+[t2.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Basics/tests/t2.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213092228-b236066d-97bb-4818-822c-7008fc8a4c03.png" width="60%" height="60%">
+
+Here, I have used `int` or `signed int`. Here the size of `int` as shown by my program is 4 bytes(32 bits).
+
+Since I have `int`, the range of values will be from:
+
+-2147483648 to 2147283647
+
+**Note:**
+
+$2^{32} = 4294967296$
+
+$frac{4294967296}{2} = 2147483648$
+
+
+
+
+
+---
