@@ -170,7 +170,12 @@ Program:
 ```c
 10<<1;
 ```
-basically means in simple terms $10 \times 2^1$
+basically means in simple terms $10 \times 2^1$.
+
+```c
+10>>1;
+```
+in simple terms, means $10/2^1$
 
 
 
