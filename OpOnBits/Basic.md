@@ -170,7 +170,7 @@ Program:
 ```c
 10<<1;
 ```
-basically means in simple terms `10 x $2^1$`
+basically means in simple terms $ 10 \times 2^1$
 
 
 
