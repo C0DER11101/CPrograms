@@ -80,12 +80,12 @@ $4293771354-2147483648+(-2147483648)=−1195942$
 Here are the images of calculation:
 
 ## Image-1
-<img src="https://user-images.githubusercontent.com/96164229/213101476-50565ee4-2164-4040-85af-bb1d087812e6.png" width="70%" height="70%">
+<img src="https://user-images.githubusercontent.com/96164229/213101476-50565ee4-2164-4040-85af-bb1d087812e6.png" width="100%" height="100%">
 
 ## Image-2
-<img src="https://user-images.githubusercontent.com/96164229/213101504-bfcc6ab8-0798-4efc-b77f-148ff8616533.png" width="70%" height="70%">
+<img src="https://user-images.githubusercontent.com/96164229/213101504-bfcc6ab8-0798-4efc-b77f-148ff8616533.png" width="100%" height="100%">
 
 ## Image-3
-<img src="https://user-images.githubusercontent.com/96164229/213101543-5302e843-8d6e-4ecb-9454-29302e5be527.png" width="70%" height="70%">
+<img src="https://user-images.githubusercontent.com/96164229/213101543-5302e843-8d6e-4ecb-9454-29302e5be527.png" width="100%" height="100%">
 
 ---
