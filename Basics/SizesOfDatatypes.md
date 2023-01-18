@@ -42,7 +42,7 @@ Since I have `int`, the range of values will be from:
 
 $2^{32} = 4294967296$
 
-$\frac{4294967296}{2} = 2147483648$
+$4294967296/2 = 2147483648$
 
 
 
