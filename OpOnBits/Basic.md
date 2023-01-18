@@ -20,6 +20,12 @@ _Different implementations represent signed data in different ways, so it is bet
 
 _In bit pattern, the numbering of bits starts from 0 and they are numbered from right to left._
 
+Consider the following 32-bit binary number:
+```
+00000000000000010010010101001111
+```
+_Here, the rightmost_($0^{th}$) _bit is the least significant bit(low-order bit), while the leftmost bit_($31^{st}) _bit is the most significant bit(high-order bit)._
+
 _To enter and display values in hexadecimal, we use_ `%x`.
 
 Program:
@@ -123,6 +129,48 @@ Program:
 Notice in the output that the first 4 bits from the left i.e. `1101` are gone and extra `0000` have been added to the right of the binary equivalent after shifting the number towards the left by 4 bits.
 
 ### 2. Bitwise right shift operator(>>)
+This operator shifts the bits to the right side. On shifting the bits to the right side, an equal number of bit positions on the left are vacated. These vacant positions are filled in with 0 bits in unsigned integers.
+
+Program:
+[t6.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/OpOnBits/tests/t6.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213142839-6d107684-779a-4a2d-8eb8-8e1d7cc0388c.png" width="60%" height="60%">
+
+Here, the bits `0111` from the right end are gone after shifting the number towards the right by 4 bits and `0000` were added to the left end of the result.
+
+In right shift, if the first operand is a signed integer, some machines perform logical shift while others perform arithmetic shift.
+
+_In logical shift, the vacated bit positions are always filled with zeroes while in arithmetic shift, vacated bit positions are filled with sign bit._
+
+_Sign bit is the leftmost bit(high-order bit) and is 1 for negative integers and 0 for positive integers._
+
+_If the left operand is an unsigned integer or signed non-negative integer then the vacated positions are filled with zeroes. Otherwise the behaviour is undefined and the result is machine dependent._
+
+**While using the left shift and right shift operators, the result is undefined if the right operand is negative or it is more than or equal to the number of bits used to represent the left operand.**
+
+**The shift operators have equal precedence and have left to right associativity.**
+
+## Multiplication and division by 2 using shift operators.
+
+**The effect of shifting one bit towards the right is equivalent to integer division by 2.**
+
+**The effect of shifting one bit towards the left is equivalent to integer multiplication by 2.**
+
+**We can use the shift operators to multiply and divide integers by powers of 2.**
+
+Program:
+[t7.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/OpOnBits/tests/t7.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213243803-141bbed7-1114-4cc6-ba20-0e302743803d.png" width="60%" height="60%">
+
+```c
+10<<1;
+```
+basically means in simple terms `10 x $2^1$`
 
 
 
