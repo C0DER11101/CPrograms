@@ -183,7 +183,7 @@ But, if you notice the last output i.e. of the expression `a<<8`, the output was
 
 The reason why we got this output is given below.
 
-Before we shifted `a` to the left by 8 bits, the value of a in binary was: `00000001 01100000 00000000 00000000`.
+Before we shifted `a` to the left by 8 bits, the value of `a` in binary was: `00000001 01100000 00000000 00000000`.
 
 Now, when we shifted `a` by 8 bits towards the left in `a<<8` the leftmost 8 bits were dropped which contained `1`. So, now our binary equivalent became: `01100000 00000000 00000000 00000000` which has a decimal equivalent `1610612736` which is unexpected.
 
