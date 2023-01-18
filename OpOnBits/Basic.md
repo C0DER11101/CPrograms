@@ -1,6 +1,6 @@
 # Operations on bits
 
-**WELCOME TO BITWISE OPERATORS.**
+## WELCOME TO BITWISE OPERATORS.
 
 |Operator symbol|Operation|
 |:-------------:|:-------:|
@@ -104,6 +104,28 @@ _The order of precedence of these operators from highest to lowest is:_
 2. Bitwise AND(&)
 3. Bitwise XOR(^)
 4. Bitwise OR(|)
+
+_The biwise complement associates from right to left and other three associate from left to right._
+
+**_The operators_** `==` **_and_** `!=` **_have higher precedence than the three binary bitwise operators._**
+
+## Shift operators
+### 1. Bitwise left shift operator(<<)
+_This operator is used for shifting the bits towards left. It requires two operands: **the left operand is the operand whose bits are shifted and the right operand indicates the number of bits to be shifted by**. On shifting the bits towards left, an equal number of bit positions on the right are vacated. These positions are filled with 0 bits._
+
+Program:
+[t5.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/OpOnBits/tests/t5.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/212968768-e570aaa2-4db9-4a42-a0f7-de6579783a41.png" width="60%" height="60%">
+
+Notice in the output that the first 4 bits from the left i.e. `1101` are gone and extra `0000` have been added to the right of the binary equivalent after shifting the number towards the left by 4 bits.
+
+### 2. Bitwise right shift operator(>>)
+
+
+
 
 
 ---
