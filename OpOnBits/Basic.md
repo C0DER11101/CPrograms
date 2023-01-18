@@ -177,6 +177,18 @@ basically means in simple terms $10 \times 2^1$.
 ```
 in simple terms, means $10/2^1$
 
+So, so the number on the right side of the shift operators indicates the power to which 2 is being raised.
+
+But, if you notice the last output i.e. of the expression `a<<8`, the output was supposed to be `5905580032`. But we got `1610612736`.
+
+The reason why we got this output is given below.
+
+Before we shifted `a` to the left by 8 bits, the value of a in binary was: `00000001 01100000 00000000 00000000`.
+
+Now, when we shifted `a` by 8 bits towards the left in `a<<8` the leftmost 8 bits were dropped which contained `1`. So, now our binary equivalent became: `01100000 00000000 00000000 00000000` which has a decimal equivalent `1610612736` which is unexpected.
+
+So, one thing is clear from the last output that **in case of left shift, if a bit with value 1 is shifted and lost, then the effect of multiplication by powers by 2 is not seen.**
+
 
 
 
