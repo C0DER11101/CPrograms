@@ -4,7 +4,7 @@
 
 int main(void)
 {
-	int a=0x5, mask=0x2; // mask for setting the 2nd bit in 0x5
+	int a=0x5, mask=0x2; // mask for setting the 1st bit in 0x5
 	printf("Given number: %x = ", a);
 	DisplayBits(a);
 	printf("Mask: %x = ", mask);
