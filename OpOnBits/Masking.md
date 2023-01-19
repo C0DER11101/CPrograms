@@ -8,7 +8,7 @@ _Masking is performed with the help of bitwise operators._
 
 Consider the following arbitrary bit pattern:
 
-$b_1b_2b_3b_4b_5b_6b_7$
+$b_{31}b_{30}b_{29}b_{28}b_{27}b_{26}b_{25}b_{24}b_{23}b_{22}b_{21}b_{20}b_{19}b_{18}b_{17}b_{16}b_{15}b_{14}b_{13}b_{12}b_{11}b_{10}b_9b_8b_7b_6b_5b_4b_3b_2b_1b_0$
 
 
 
