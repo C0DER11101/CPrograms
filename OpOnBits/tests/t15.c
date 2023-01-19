@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<limits.h>
 #include<stdlib.h>
-#include "DisplayBits.c"
 
 int main(void)
 {
