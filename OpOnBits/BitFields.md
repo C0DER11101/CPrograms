@@ -40,7 +40,15 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/213514718-d3f5ed2c-8ab1-494c-97be-a933a10ecc91.png" width="60%" height="60%">
 
-**If the size of a bit field is** `n` **, then the range of values that the bit field can take is from** $0\ to\ 2^{n-1}$.
+**If the size of a bit field is** `n` **, then the range of values that the bit field can take is from** $0\ to\ 2^{n}-1$.
+
+
+|Bit field|Size in bits|Range of values|
+|:-------:|:----------:|:-------------:|
+|`a`|2|$0\ to\ 2^2-1(0\ to\ 3)$|
+|`b`|5|$0\ to\ 2^5-1(0\ to\ 31)$|
+|`c`|1|$0\ to\ 2^1-1(0\ and\ 1)$|
+|`d`|3|$0\ to\ 2^3-1(0\ to\ 7)$|
 
 
 
