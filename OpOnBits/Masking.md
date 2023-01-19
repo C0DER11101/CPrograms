@@ -29,5 +29,12 @@ Program:
 <img src="https://user-images.githubusercontent.com/96164229/213372497-2c5811f7-02bf-4f04-9613-d6f92306ccb9.png" width="60%" height="60%">
 
 
+Masking with bitwise AND in action: [t9.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/OpOnBits/tests/t9.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213380533-f70c9398-d8d2-4f3d-901a-cb15cafa9c49.png" width="60%" height="60%">
+
+
 
 ---
