@@ -125,5 +125,14 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/213488325-50c45ff1-0703-4fa8-99ce-d3cc67c9a35b.png" width="60%" height="60%">
 
+`CHAR_BIT` is the number of bits in a character(usually 8). It is found in `limits.h`.
+
+Program:
+[t15.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/OpOnBits/tests/t15.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213505771-2d9b1c5c-a937-4741-8463-fc7f753627da.png" width="60%" height="60%">
+
 
 ---
