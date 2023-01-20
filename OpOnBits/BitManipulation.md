@@ -13,7 +13,7 @@ This is the bit representation of `permissions`:
 
 Here's how the bits get stored in the memory(since unsigned int has a size of 32-bits). **Remember:** whatever value you enter into a variable of integer type, that value is stored in the form of bits:
 
-<img src="https://user-images.githubusercontent.com/96164229/213636886-d2477ca9-3c07-4b17-83b7-fec745c6d61e.jpg" width="70%" height="70%">
+<img src="https://user-images.githubusercontent.com/96164229/213636886-d2477ca9-3c07-4b17-83b7-fec745c6d61e.jpg" width="90%" height="90%">
 
 
 
