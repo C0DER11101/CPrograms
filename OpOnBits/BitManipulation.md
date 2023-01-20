@@ -27,6 +27,8 @@ permissions=permissions|W_GRP;
 
 And this is the image after setting up the bit:
 
+<img src="https://user-images.githubusercontent.com/96164229/213641105-cf057fc4-4075-424a-b5ee-26810635f2d4.jpg" width="90%" height="90%">
+
 
 
 
