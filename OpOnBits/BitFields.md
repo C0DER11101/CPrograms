@@ -108,15 +108,29 @@ struct tag
 Here, the unnamed bit field fills out the 15 unused bits of the first integer, so the bitfield `c` starts with the second integer.
 Since, the 15 bits don't have any name, they cannot be accessed from the program.
 
+We can also take the size of the unnamed bitfield as zero. Then we don't have to provide any padding and the next bitfield will start with second integer.
 
+```c
+struct tag
+{
+	unsigned a:10;
+	unsigned b:7;
+	unsigned:0;
+	unsigned c:17;
+};
+```
 
+This time the bitfield `c` starts from the next integer.
 
+_The file permissions example using bitfields:_
 
+[t19.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/OpOnBits/tests/t19.c).
 
+**Output:**
 
+<img src="https://user-images.githubusercontent.com/96164229/213646381-12ebea08-e950-4073-8e61-47f6d6d3ac56.png" width="60%" height="60%">
 
-
-
+Here, we don't have to define masks as we did [here](https://github.com/C0DER11101/CPrograms/blob/CProgramming/OpOnBits/tests/t18.c). Here each member of the structure is 1 bit in size. If we want to change permissions for any member, we just have to assign a 0 or a 1 to that member, we don't need to performing masking!!
 
 
 
