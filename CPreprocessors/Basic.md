@@ -20,7 +20,7 @@ _**To continue a directive on next line, we should put a backslash at the end of
 
 **A directive is active from the point of its appearance till the end of the program.**
 
-_The preprocessor directives that perform these functions are given below:_
+_The preprocessor directives are given below:_
 
 ```
 #define
