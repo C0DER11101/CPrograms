@@ -135,4 +135,54 @@ Program:
 <img src="https://user-images.githubusercontent.com/96164229/213505771-2d9b1c5c-a937-4741-8463-fc7f753627da.png" width="60%" height="60%">
 
 
+**Bit manipulation is useful in maintaining boolean flags.** For example, we can use a character variable to hold 8 flags or an integer variable to hold 32 flags. _Each flag can be used to represent a flag._ This will save memory when many flags are to be used in a program and also it is easy to maintain a single variable for several flags.
+
+_We can test, switch on or off, toggle any individual flag by bitwise operators._ **Different mask is taken for manipulating each flag.**
+
+_Generally, each mask corresponding to a flag is given a name using_ `#define`.
+
+Example:
+
+We will declare a variable of type `unsigned int` and we'll use the individual bits to represent different flags associated with the attributes of a file.
+
+```c
+unsigned int flags;
+```
+
+The various masks:
+```c
+#define F_RW 0x3  /*read/write flag  0th and 1st bit*/
+#define F_RO 0x1 /*read only flag 0th bit*/
+#define F_WO 0x2 /*write only flag 1st bit*/
+#define F_BUFF 0x4 /*buffer data 2nd bit*/
+#define F_LBUFF 0x8 /*line-buffered file 3rd bit*/
+#define F_ERR 0x10 /*Error indicator 4th bit*/
+#define F_EOF 0x20 /*End Of File indicator 5th bit*/
+#define F_BIN 0x40 /*Binary file indicator 6th bit*/
+#define F_IN 0x80 /*Data is incoming 7th bit*/
+#define F_OUT 0x100 /*Data is outgoing 8th bit*/
+#define F_TERM 0x200 /*File is a terminal 9th bit*/
+```
+
+We can perform masking operations to manipulate the different flags:
+
+```c
+// to switch on error flag
+flags=flags|F_ERR;
+
+// to switch off write flag
+flags=flags&~F_WO;
+
+// to toggle incoming flag
+flags=flags^F_IN;
+
+// to test EOF flag
+if((flags&F_EOF)==0)
+	printf("EOF flag is not set\n");
+else
+	printf("EOF flag is set\n");
+```
+
+
+
 ---
