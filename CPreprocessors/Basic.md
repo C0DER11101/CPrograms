@@ -23,9 +23,20 @@ _**To continue a directive on next line, we should put a backslash at the end of
 _The preprocessor directives that perform these functions are given below:_
 
 ```
-#define	       #include	     #if		   #else		 #elif		#endif
-#ifdef	       #ifndef	     #error	   #undef	  #line		#pragma
+#define
+#include
+#if
+#else
+#elif
+#endif
+#ifdef
+#ifndef
+#error
+#undef
+#line
+#pragma
 ```
+
 
 
 
