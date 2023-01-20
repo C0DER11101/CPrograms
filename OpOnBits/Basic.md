@@ -24,7 +24,7 @@ Consider the following 32-bit binary number:
 ```
 00000000000000010010010101001111
 ```
-_Here, the rightmost_($0^{th}$) _bit is the least significant bit(low-order bit), while the leftmost bit_($31^{st}) _bit is the most significant bit(high-order bit)._
+_Here, the rightmost_ ($0^{th}$) _bit is the least significant bit(low-order bit), while the leftmost bit_ ($31^{st}) _bit is the most significant bit(high-order bit)._
 
 _To enter and display values in hexadecimal, we use_ `%x`.
 
