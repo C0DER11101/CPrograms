@@ -8,7 +8,11 @@ _The C preprocessor scans and modifies the source code before compilation(hence 
 4. File inclusion.
 5. Error generation and pragma directives.
 
-The lines starting with _\#_ are known as preprocessor directives.
+The lines starting with \# are known as preprocessor directives.
+
+When the preprocessor finds a line starting with the symbol \#, it considers that line as a command for itself and works accordingly.
+
+**All the directives are executed by the preprocessor, and the compiler does not receive any line  starting with \#.**
 
 
 
