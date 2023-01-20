@@ -14,6 +14,19 @@ When the preprocessor finds a line starting with the symbol \#, it considers tha
 
 **All the directives are executed by the preprocessor, and the compiler does not receive any line  starting with \#.**
 
+_**To continue a directive on next line, we should put a backslash at the end of the line.**_
+
+**Directives don't end with a semicolon.**
+
+**A directive is active from the point of its appearance till the end of the program.**
+
+_The preprocessor directives that perform these functions are given below:_
+
+```
+#define	       #include	     #if		   #else		 #elif		#endif
+#ifdef	       #ifndef	     #error	   #undef	  #line		#pragma
+```
+
 
 
 
