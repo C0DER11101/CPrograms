@@ -80,6 +80,94 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/213769357-7dbbca7d-db52-49a8-ae5c-57e9f496a3c6.png" width="60%" height="60%">
 
+Now, I had a confusion with this statement in `t1.c`:
+```c
+printf(HELLO);
+```
+I thought 'why is the `%s` not used with `printf()`?' But then I realised `HELLO` is not a variable, it's a `macro_name`, and `"Hello world!!"` is a `macro_expansion` for the `macro_name` meaning that wherever the preprocessor will find `HELLO`, it will replace it with `"Hello world!!\n"`. We CAN actually use `%s` with `printf()` and the compiler won't yell at you!!!
+
+I used `%s` with `printf()` in the program and it ran smoothly:
+
+Program:
+[t2.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t2.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213846572-a00bea6f-4efd-4e11-b295-8d9d0e904a45.png" width="60%" height="60%">
+
+**The** `macro_expansion` `"Hello world!!\n"` **is not stored in the** `macro_name`, **it is just a substitute for the** `macro_name` **and therefore we neednot use the** `%s` **with** `printf()` ( **it's optional** ).
+
+
+_We can have macro expansions of any sort:_
+
+```c
+#define AND &&
+#define OR ||
+#define BEGIN int main(void){
+#define END }
+#define INFINITE while(1);
+#define NEW_LINE printf("\n");
+#define ERROR printf("An error occurred!\n");
+```
+
+It seems that the \# define directive ends with a semicolon after all. But the semicolon is to be used cautiously. If used incorrectly then the compiler will throw an error.
+
+Look at [this](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t3.c) program.
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213847639-c1de35db-a984-4169-a985-23bec96cd67b.png" width="60%" height="60%">
+
+Here, in the statement:
+```c
+int a=TRUE
+```
+the macro name `TRUE` is replaced by `1;` by the preprocessor and the statement becomes:
+```c
+int a=1;
+```
+which is a valid C statement.
+
+Also in the statement:
+```c
+int b=MAX;
+```
+the macro name `MAX` is replaced by `100;` by the preprocessor and the statment becomes:
+```c
+int b=100;
+```
+which is again a valid C statement. So the compiler doesnot throw any error.
+
+
+Now, look at [this](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t4.c) program.
+
+**Error:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213847902-43c49446-5900-43b4-bc72-f1081fa12a6d.png" width="60%" height="60%">
+
+From this program it's clear that the semicolon should be put in macro expansion only when it's used in a statement where semicolon is mandatory.
+
+In this statement in `t4.c`:
+```c
+printf("%d\n", MAX);
+```
+macro name `MAX` is replaced by `100;` and the whole `printf()` statement becomes:
+```c
+printf("%d\n", 100;);
+```
+which is an invalid statement.
+
+Also we cannot use `;` with `&&`, but we did in `#define AND &&;` which is also an invalid statement in C and the conditional:
+```c
+if(a>0 AND a<10)
+```
+becomes:
+```c
+if(a>0 &&; a<10)
+```
+which is invalid, that's why the compiler throw errors.
+
+
 
 
 
