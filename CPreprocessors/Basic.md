@@ -269,6 +269,101 @@ Now, the expression `60/PROD(2, 3);` is evaluated as: `60/(2)*(3);`, since `PROD
 
 <img src="https://user-images.githubusercontent.com/96164229/213870713-fa6ec4a2-e79f-41a9-ab9d-435499c4063e.png" width="60%" height="60%">
 
+Here, I wanted to assign the square of `k`(which is storing the value `5`) to `s` and then increment the value of `k` only once i.e. I was expecting the output to be:
+```
+s=25
+k=6
+```
+But the output was unexpected.
+
+:question: **What actually happened** :question:
+
+The expression `s=SQUARE(k++);` was replaced by `s=(k++)*(k++);`( **remember:** it's a macro, not a function) by the preprocessor. Since we are using post-increment operator the value of the variable will be used first and then it will be incremented. So in the first `(k++)` the value of `k`, which is `5`, is used then its value is incremented to `6`. In the next `(k++)` the value of `k`, which is now `6`, is used and the expression `(k++)*(k++)` becomes `5*6` which gives us `30`. Now after the value of `k` was used in the second `(k++)`, the value of `k` was incremented again(since it's the post-incrementation operator) and now the value of `k` is `7` and `30` is stored in `s`. Hence we get the above output i.e.
+```
+s=30
+k=7
+```
+
+[This](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t11.c) resolves the problem of the previous program.
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213877537-4ceadc97-30f0-4d28-a564-f4fbe4369a1c.png" width="60%" height="60%">
+
+Here, I used a function instead of a macro. In such cases it's better to use a function instead of a macro.
+
+```c
+int k=5, s;
+s=SQUARE(k++);
+```
+
+Here, first the value of `k`(which is `5`) is sent as an argument to the `SQUARE` function.
+```c
+int SQUARE(int x)
+{
+	return x*x;
+}
+```
+The value of `x` is `5` and `SQUARE()` returns `25`. The value of `k` is incremented to `6` after returning the value. `s` stores `25` and hence we get the desired output:
+```
+s=25
+k=6
+```
+
+:exclamation: **More problem** :exclamation:
+
+So, [here](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t12.c) I used a macro to swap two numbers and it ran smoothly without problems.
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213879247-17c09142-08cb-4d35-92f0-990bbc331e0f.png" width="60%" height="60%">
+
+
+This [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t13.c) introduces us to another problem.
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213879257-da40f192-060a-4723-a627-de6e112ece74.png" width="60%" height="60%">
+
+So, one thing that we know is that the macro name is always replaced by the macro expansion by the preprocessor.
+
+In the above problem, when we wrote `SWAP(s, t)` it basically go replaced by `{int t; t=s, s=t, t=s;}`
+
+So, in the program the statement:
+```c
+SWAP(s, t)
+```
+is replaced its expansion which is:
+```c
+{int t; t=s, s=t, t=s;}
+```
+But notice one thing that the `t` that is being used in this expansion is not the `t` that was declared in the `main()`, it's the `t` that belongs to the expansion of `SWAP()`. How? Because out of global variables and local variables, the local variables are given the priority in C(we can't use the `::` operator like we do in C++ to access a global variable :') ).
+
+So that is why the `t` inside the scope `{}` of `SWAP()` was used for swapping purpose, not the `t` of `main()`.
+
+If you look at the code after replacing the macro name, then it will look like this:
+```c
+#include<stdio.h>
+#include<stdlib.h>
+#define SWAP(dtype, x, y) {dtype t; t=x, x=y, y=t;}
+
+int main(void)
+{
+	int s=2, t=4;
+
+	printf("\nBefore swapping\n");
+	printf("s=%d\tt=%d\n", s, t);
+
+	{int t; t=s, s=t, t=s;}
+
+	printf("\nAfter swapping\n");
+	printf("s=%d\tt=%d\n", s, t);
+
+	return 0;
+}
+```
+The `t` inside the scope gets used instead of the `t` outside the scope(i.e. defined in the `main()`). That's why the output is wrong.
+
 
 
 
