@@ -130,7 +130,7 @@ which is a valid C statement.
 
 Also in the statement:
 ```c
-int b=MAX;
+int b=MAX
 ```
 the macro name `MAX` is replaced by `100;` by the preprocessor and the statment becomes:
 ```c
