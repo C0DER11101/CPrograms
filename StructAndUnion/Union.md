@@ -20,7 +20,7 @@ _Each member in a structure has its own memory location._
 
 _**Members of a union share the same memory location.**_
 
-_When the a variable of type union is declared, then the compiler allocates sufficient memory to hold the largest member in the union._
+_When a variable of type union is declared, then the compiler allocates sufficient memory to hold the largest member in the union._
 
 **Since all the members share the same memory location, we can use only one member at a time.**
 
