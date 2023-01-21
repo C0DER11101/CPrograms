@@ -165,7 +165,7 @@ becomes:
 ```c
 if(a>0 &&; a<10)
 ```
-which is invalid, that's why the compiler throw errors.
+which is invalid, that's why the compiler throws errors.
 
 
 **If the macro name appears inside a character constant, string constant or a comment then it is not replaced and is left as it is.**
