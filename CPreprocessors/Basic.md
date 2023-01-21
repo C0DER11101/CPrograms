@@ -327,13 +327,13 @@ This [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPrepro
 
 So, one thing that we know is that the macro name is always replaced by the macro expansion by the preprocessor.
 
-In the above problem, when we wrote `SWAP(s, t)` it basically go replaced by `{int t; t=s, s=t, t=s;}`
+In the above problem, when we wrote `SWAP(s, t)` it basically got replaced by `{int t; t=s, s=t, t=s;}`.
 
-So, in the program the statement:
+So, in the program, the statement:
 ```c
 SWAP(s, t)
 ```
-is replaced its expansion which is:
+is replaced by its expansion, which is:
 ```c
 {int t; t=s, s=t, t=s;}
 ```
@@ -362,7 +362,7 @@ int main(void)
 	return 0;
 }
 ```
-The `t` inside the scope gets used instead of the `t` outside the scope(i.e. defined in the `main()`). That's why the output is wrong.
+The `t` inside the scope gets used instead of the `t` outside the scope(i.e. declared in the `main()`). That's why the output is wrong.
 
 
 
