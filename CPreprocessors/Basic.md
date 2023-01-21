@@ -168,6 +168,99 @@ if(a>0 &&; a<10)
 which is invalid, that's why the compiler throw errors.
 
 
+**If the macro name appears inside a character constant, string constant or a comment then it is not replaced and is left as it is.**
+
+**We can also define macros without any macro expansion.**
+
+Example:
+```c
+#define TEST
+```
+
+
+## 2. Parameterized macros
+
+\#define directive can also be used to define macros with parameters.
+
+**Syntax:**
+```c
+#define macro_name(par1, par2, par3, ....) macro_expansion
+```
+`par1`, `par2`, `par3`,.... are formal parameters. The `macro_name` is replaced by the `macro_expansion` and the formal parameters are replaced by the corresponding actual arguments supplied in the macro call.
+
+Program:
+[t5.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t5.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213848861-89f87ab2-8e5f-47f6-8ae7-6a1190ae4fa8.png" width="60%" height="60%">
+
+The arguments can be of any data type.
+
+### Problems with macros
+
+This problem is with not using parentheses in the macro expansion.
+
+Look at [this](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t6.c) program.
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213863641-3e0dda6f-6bc1-4eb8-b866-b52d5b6f43f1.png" width="60%" height="60%">
+
+The output of this program was an unexpected one.
+
+The definition of the macro `SQUARE` was:
+```c
+#define SQUARE(x) x*x
+```
+
+The call to this macro contained the following argument:
+```c
+SQUARE(a+1);
+```
+where `a=5;`. Now the expression `SQUARE(a+1)` is evaluated as: `SQUARE(5+1)` and is expanded as: `5+1*5+1`. We all know that multiplication is performed before addition or subtraction. So here first `1` is multiplied with `5` and then `5+5+1` is evaluated which gives the value `11`. But the output was supposed to be `36`. This is one problem with the macros, without the parentheses the evaluation is done wrongly.
+
+Program:
+[t7.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t7.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213866750-5e64e9ef-3cf9-4f5e-a059-f05d071ba693.png" width="60%" height="60%">
+
+Here we have provided the parentheses :
+```c
+#define SQUARE(x) (x)*(x)
+```
+The macro call:
+```c
+int a=5;
+SQUARE(a+1);
+```
+is evaluated as: `SQUARE(5+1)` which is replaced by `(5+1)*(5+1)` which gives the value `36`, which is the correct output.
+
+This [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t8.c) represents another problem with the macros.
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213867111-6d08c3d4-6ee6-4e6f-ad31-917424f903b0.png" width="60%" height="60%">
+
+Here, the macro `PROD` is defined as:
+```c
+#define PROD(x, y) (x)*(y)
+```
+
+Now, the expression `60/PROD(2, 3);` is evaluated as: `60/(2)*(3);`, since `PROD(2, 3)` becomes `(2)*(3)`. Since, `\` and `*` are associate from left to right, so first `60` is divided by `2` and then the result is multiplied with `3`, but the expected output was `10` and we got the output `90` which was unexpected. That is why we need to enclose the whole macro expansion within parentheses.
+```c
+#define PROD(x, y) ((x)*(y))
+```
+
+[This](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t9.c) program resolves the problem of `t8.c`.
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213870153-4f9bb81d-c7a1-43b1-9a41-f18c9bfbd57e.png" width="60%" height="60%">
+
+
 
 
 
