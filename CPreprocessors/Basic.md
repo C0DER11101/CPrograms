@@ -261,6 +261,15 @@ Now, the expression `60/PROD(2, 3);` is evaluated as: `60/(2)*(3);`, since `PROD
 <img src="https://user-images.githubusercontent.com/96164229/213870153-4f9bb81d-c7a1-43b1-9a41-f18c9bfbd57e.png" width="60%" height="60%">
 
 
+:exclamation: **Another problem with macros** :exclamation:
+
+[This](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t10.c) program shows another problem with the macros.
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213870713-fa6ec4a2-e79f-41a9-ab9d-435499c4063e.png" width="60%" height="60%">
+
+
 
 
 
