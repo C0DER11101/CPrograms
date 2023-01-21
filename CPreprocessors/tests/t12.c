@@ -9,7 +9,7 @@ int main(void)
 	printf("\nBefore swapping\n");
 	printf("a=%d\tb=%d\n", a, b);
 
-	SWAP(int, a, b);
+	SWAP(int, a, b)
 
 	printf("\nAfter swapping\n");
 	printf("a=%d\tb=%d\n", a, b);
