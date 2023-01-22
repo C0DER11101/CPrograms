@@ -364,6 +364,68 @@ int main(void)
 ```
 The `t` inside the scope gets used instead of the `t` outside the scope(i.e. declared in the `main()`). That's why the output is wrong.
 
+:exclamation: **wrong condition problem** :exclamation:
+
+Program:
+[t14.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t14.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213881851-db2f2b10-4063-4b31-b45f-a2be3ce90bfa.png" width="60%" height="60%">
+
+The problem presented by `t14.c` is the **dangling else problem**.
+
+In the dangling else problem the compiler associates the `else` part with the closest unmatched `if` part.
+
+Example:
+```c
+if(grade=='A')
+	if(marks>95)
+		printf("Excellent");
+	
+else
+	printf("Try again!!");
+```
+
+In this above snippet the compiler will associate the `else` part with the closest unmatched `if` part which, in this case, is `if(marks>95)`. But this `else` was meant for the outer `if` i.e. for `if(grade=='A')`. But `if(marks>95)` was closer to the `else` part and so the compiler associated if with the inner `if` part.
+
+To resolve this problem, we put curly braces for the outer if(i.e. `if(grade=='A')`).
+
+```c
+if(grade=='A')
+{
+	if(marks>95)
+		printf("Excellent");
+}
+
+else
+	printf("Try again!!");
+```
+The indentations in C are only for the reader/programmer(**remember:** C is not Python(:snake:)) and has no importance for the compiler.
+
+This is a snippet from `t14.c`:
+```c
+if(runs<100)
+	ZERORUN(runs);
+else
+	printf("Scored over a century\n");
+```
+
+`ZERORUN` is defined as:
+```c
+#define ZERORUN(x) if(x==0) printf("\n0 runs!!\n")
+```
+When the preprocessors encounters the macro call `ZERORUN(runs)` it replaces it with its macro expansion and the snippet now becomes:
+```c
+if(runs<100)
+	if(runs==0) printf("\n0 runs\n");
+
+else
+	printf("Scored over a century\n");
+```
+
+This is another dangling else problem,so that's why we get the output: `Scored over a century`.
+
 
 
 
