@@ -2,7 +2,7 @@
 
 To _undefine_ a macro that was defined using the #define directive, we use the \#undef directive.
 
-**Sytax:**
+**Syntax:**
 ```c
 #undef macro_name
 ```
