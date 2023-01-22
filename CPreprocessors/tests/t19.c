@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#define SQUARE(x) printf(#x" x "#x" = %d\n", x)
+#define SQUARE(x) printf(#x" x "#x" = %d\n", x*x)
 
 
 int main(void)
