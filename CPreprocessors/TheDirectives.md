@@ -74,5 +74,27 @@ Here the token pasting operator `##` pastes `k` and `2` together to produce the 
 
 # _4._ Including files
 
+```c
+#include<stdio.h>
+#include "DisplayBits.c"
+```
+There difference between when we use `<>` with `include` VS when we use `""` with `include`. Let's look at that difference.
+
+The preprocessor replaces the `#include` directive by the contents of the specified file.
+
+**If the filename is in double quotes**, first it is searched in the current directory(where the source file is present), if not found there then it searched in the standard `include` directory.
+
+**If the filename is within angle brackets**, then the file is searched in the standard `include` directory only.
+
+# _5._ \#if and \#endif
+An expression which is followed by \#if is evaluated first,  if the result is non-zero then the statements between \#if and \#endif are compiled, otherwise they are skipped.
+
+Program:
+[t22.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t22.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213932235-29b08acb-b1c8-46dd-a267-c9ad0cffe35a.png" width="60%" height="60%">
+
 
 ---
