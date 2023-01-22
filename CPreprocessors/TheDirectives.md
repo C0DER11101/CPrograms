@@ -1,4 +1,4 @@
-# \#undef
+# _1._ \#undef
 
 To _undefine_ a macro that was defined using the #define directive, we use the \#undef directive.
 
@@ -24,3 +24,55 @@ Program:
 **Error:**
 
 <img src="https://user-images.githubusercontent.com/96164229/213915326-e7711497-62ef-4e22-9a5e-26e5542572af.png" width="60%" height="60%">
+
+# _2._ Stringizing operator(\#)
+
+Program:
+[t19.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t19.c).
+
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213917020-e0edcc02-0777-4b6f-95f4-aef70c7ef21c.png" width="60%" height="60%">
+
+Nothing can best explain this operator than this program.
+
+This stringizing operator copies the name of the actual variable sent as an argument to the macro and places it in the string where this operator was used just like in `t19.c`.
+
+The definition of the macro was:
+```c
+#define SQUARE(x) printf(#x" x "#x" = %d\n", x*x)
+```
+
+`SQUARE()` was called in the `main()` function as: `SQUARE(num)`
+
+Now, in the definition of `SQUARE()`, wherever the portion of the string where `#x` was used, that portion got replaced by the original variable name which was `num` from the `main()` function. The stringizing operator copied the original name of the variable and converted it into a string and hence we got the output: `num x num = 25`.
+Since the stringizing converts the variable name to string, we don't need put `#x` within double quotes.
+
+**A property of C:**
+Program{[t20.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t20.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213917345-a79058d9-cc32-40a0-88f0-cd5fd6bdeba0.png" width="60%" height="60%">
+
+This is the string concatenation property of C.
+
+# _3._ Token pasting operator(\##)
+_This operator is used in a macro definition to concatenate two tokens into a single token._
+
+In simple words: `a##b` generates a token `ab`. `y##1` produces `y1`.
+
+Program:
+[t21.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t21.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213918246-8a6b7d1a-dc93-4ca0-8e1c-4bca0b9622d8.png" width="60%" height="60%">
+
+Here the token pasting operator `##` pastes `k` and `2` together to produce the variable `k2`(declared in `main()`).
+
+# _4._ Including files
+
+
+---
