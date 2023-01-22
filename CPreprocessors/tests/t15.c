@@ -13,6 +13,15 @@ int main(void)
 	scanf("%c", &ch);
 
 	if(ISALNUM(ch))
+		/*first expansion:
+		 * if(ISAPLHA(c) || ISNUM(c))
+		 *
+		 *second expansion:
+		 * if(ISLOWER(c) || ISUPPER(c) || (c>=48 && c<=90))
+		 *
+		 *third expansion:
+		 * if((c>=97 && c<=122) || (c>=65 && c<=90) || (c>=48 && c<=57))
+		 */
 		printf("\nyou entered an alphanumeric character!\n");
 	else
 		printf("\nyou entered something else!\n");
