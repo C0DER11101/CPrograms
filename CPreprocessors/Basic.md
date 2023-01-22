@@ -401,7 +401,7 @@ if(grade=='A')
 else
 	printf("Try again!!");
 ```
-The indentations in C are only for the reader/programmer(**remember:** C is not Python(:snake:)) and has no importance for the compiler.
+The indentations in C are only for the reader/programmer(**remember:** C is not Python(:snake:)) and have no importance for the compiler.
 
 This is a snippet from `t14.c`:
 ```c
