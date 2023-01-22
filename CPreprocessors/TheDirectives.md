@@ -50,7 +50,7 @@ Now, in the definition of `SQUARE()`, wherever the portion of the string where `
 Since the stringizing converts the variable name to string, we don't need put `#x` within double quotes.
 
 **A property of C:**
-Program{[t20.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t20.c).
+Program{[t20.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t20.c)}.
 
 **Output:**
 
