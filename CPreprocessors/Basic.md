@@ -428,19 +428,19 @@ This is another dangling else problem,so that's why we get the output: `Scored o
 
 Following the are the 3 ways to resolve the problem presented by `t14.c`.
 
-[$1^{st}$ way](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t14Resolved_1.c).
+$1^{st}$ way $\rightarrow$ [Program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t14Resolved_1.c).
 
 **Output:**
 
 <img src="https://user-images.githubusercontent.com/96164229/213903949-2c6b7702-ccf1-4ea7-93b6-446a1aa7cf3d.png" width="60%" height="60%">
 
-[$2^{nd}$ way](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t14Resolved_2.c).
+$2^{nd}$ way $\rightarrow$ [Program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t14Resolved_2.c).
 
 **Output:**
 
 <img src="https://user-images.githubusercontent.com/96164229/213903954-5a6ca651-5d9d-4fa6-85c4-ddb26718fbe7.png" width="60%" height="60%">
 
-[$3^{rd}$ way](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t14Resolved_3.c).
+$3^{rd}$ way $\rightarrow$ [Program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t14Resolved_3.c).
 
 **Output:**
 
