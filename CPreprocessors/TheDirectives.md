@@ -98,7 +98,7 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/213932235-29b08acb-b1c8-46dd-a267-c9ad0cffe35a.png" width="60%" height="60%">
 
-**Note:** _The expression of_ `#if` _should  be a **constant expression**, it should not contain enum constants, sizeof operator, cast operator or any keyword or variables. It can contain **arithmetic**, **logical**, **relational** operators. If any undefined appears in the expression, it is treated as having the value zero._
+**Note:** _The expression of_ `#if` _should  be a **constant expression**, it should not contain enum constants, sizeof operator, cast operator or any keyword or variables. It can contain **arithmetic**, **logical**, **relational** operators. If any undefined identifier appears in the expression, it is treated as having the value zero._
 
 Program:
 [t22_2.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t22_2.c).
