@@ -123,5 +123,49 @@ _Here I used a variable in the expression of_ `#if` _and so only the statement a
 #endif
 ```
 
+Program:
+[t23.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t23.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213974217-0a1b3a93-443f-42a2-8fc4-1072534770f5.png" width="60%" height="60%">
+
+\#elif with \#if is analogous to `else...if` ladder.
+
+Program:
+[t24.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t24.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213974795-c9692db9-710e-4de4-acf0-0bd58423aafb.png" width="60%" height="60%">
+
+\#elif also evaluates if the expression is a **constant expression**.
+
+# _7._ defined operator
+**Syntax:**
+```c
+defined(macro_name);
+```
+
+_This operator is used only with_ **\#if** _and_ **\#elif** _it evaluates to 1(true) if the_ `macro_name` _has been defined using_ `#define`, _otherwise it evaluates to zero._
+
+Program:
+[t25.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t25.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213977120-d0268ded-424a-49f1-90a9-74a932b2c29d.png" width="60%" height="60%">
+
+The `!` operator can be used with `defined()` operator.
+
+# _8._ \#ifdef and \#ifndef
+
+These directives are just the alternate forms of `#if defined(macroName)` and `if !defined(macro_name)`.
+
+`#if defined(macro_name)` $\rightarrow$ equivalent to $\rightarrow$ `#ifdef macro_name`
+
+`#if !defined(macro_name)` $\rightarrow$ equivalent to $\rightarrow$ `#ifndef macro_name`.
+
+
 
 ---
