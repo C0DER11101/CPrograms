@@ -89,12 +89,39 @@ The preprocessor replaces the `#include` directive by the contents of the specif
 # _5._ \#if and \#endif
 An expression which is followed by \#if is evaluated first,  if the result is non-zero then the statements between \#if and \#endif are compiled, otherwise they are skipped.
 
+\#endif **must** be included at the end of every \#if \#else conditional compilation.
+
 Program:
 [t22.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t22.c).
 
 **Output:**
 
 <img src="https://user-images.githubusercontent.com/96164229/213932235-29b08acb-b1c8-46dd-a267-c9ad0cffe35a.png" width="60%" height="60%">
+
+**Note:** _The expression of_ `#if` _should  be a **constant expression**, it should not contain enum constants, sizeof operator, cast operator or any keyword or variables. It can contain **arithmetic**, **logical**, **relational** operators. If any undefined appears in the expression, it is treated as having the value zero._
+
+Program:
+[t22_2.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t22_2.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/213971000-1109a520-51f8-4936-97ef-4d5e23202456.png" width="60%" height="60%">
+
+_Here I used a variable in the expression of_ `#if` _and so only the statement after_ `#endif` _got executed._
+
+# _6._ \#else and \#elif
+
+\#else is used the \#if directive. It is analogous to `if....else` control structure.
+
+
+**Syntax:**
+```c
+#if constant-expression
+	statements
+#else
+	statements
+#endif
+```
 
 
 ---
