@@ -166,6 +166,97 @@ These directives are just the alternate forms of `#if defined(macroName)` and `i
 
 `#if !defined(macro_name)` $\rightarrow$ equivalent to $\rightarrow$ `#ifndef macro_name`.
 
+Here as well we'll need `#endif` at the end.
+
+_These short forms, however, can't be used everywhere everytime, for example, we can't use these short forms where the existence of more than one macro is to be checked._
+**Example:**
+```c
+#if defined(ABC) && defined(PQR) && !defined(XYZ)
+```
+
+_Also, we can't use these short forms with_ `#elif`.
+
+# _9._ Predefined macro names
+
+These are some predefined macro names in C:
+
+## 9.1. __DATE__
+_String constant that represents the date of compilation in the format_ `mm dd yyyy`.
+
+## 9.2. __TIME__
+_String constant that represents the time of compilation in the format_ `hh:mm:ss`.
+
+## 9.3. __FILE__
+_String constant that represents the name of the file being compiled._
+
+## 9.4. __LINE__
+_Decimal constant that represents the line number being compiled._
+
+## 9.5. __STDC__
+_Decimal constant which is 1 if compiled with ANSI standard._
+
+[This program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t26.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/214010814-72c20880-37bb-42f4-8e72-29fc65f19988.png" width="60%" height="60%">
+
+# _10._ \#line
+**Syntax:**
+```c
+#line dec_const string_const
+```
+_Here_ `dec_const` _is any decimal constant and_ `string_const` _is any string constant._
+
+_This directive assigns_ `dec_const` _and_ `string_const` _to the macros_ `__LINE__` _and_ `__FILE__` _respectively._
+
+Program:
+[t27.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t27.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/214089791-020503cb-9110-4db2-9448-ec00fc3157a5.png" width="60%" height="60%">
+
+Now, one thing that is noticeable from the output is that I assigned 25 to `__LINE__` but in the output, we see `26` and `27`. How?
+
+When we assign a value to `__LINE__` using `#line`, then the `printf()` right after the `#line` directive will print the value assigned to it.
+
+But the snippet below will print a value added with the number of gaps between the `#line` directive and the `ptinrf()` that is printing the value `__LINE__`.
+
+```c
+#line 25 "hello.c"
+
+printf("%d      %s\n", __LINE__, __FILE__);
+```
+Here the output will be `26` because there is one gap between `#line` and `printf()` statement that is displaying `__LINE__`.
+
+```c
+#line 25 "hello.c"
+
+
+printf("%d      %s\n", __LINE__, __FILE__);
+```
+Here the output will be `27` because there are 2 gaps between `#line` and `printf()` statement that is displaying `__LINE__`.
+
+```c
+#line 25 "hello.c"
+printf("hello\n");
+printf("This is the #line directive!!\n");
+printf("%d      %s\n", __LINE__, __FILE__);
+```
+Here too the output will be `27` because there are 2 gaps between `#line` and the `printf()` statement that is displyaing `__LINE__`. Although here the two gaps are the two `printf()` statements that are between `#line` and the `printf()` statement displaying `__LINE__`.
+
+# _10._ \#error
+\#error directive stops compilation and displays a fatal error attched with it.
+
+Program:
+[t28.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/tests/t28.c)
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/214199840-0afb3729-7832-4735-8e07-1a2a2d14890a.png" width="60%" height="60%">
+
+
 
 
 ---
