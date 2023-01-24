@@ -256,6 +256,15 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/214199840-0afb3729-7832-4735-8e07-1a2a2d14890a.png" width="60%" height="60%">
 
+# _11._ \#pragma
+This is an implementation dependent directive that allows various instructions to be given to the compiler.
+
+**Syntax:**
+```c
+#pragma name
+```
+`name` is the name of the pragma we want.
+
 
 
 
