@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<stdio.h> // must be included in this file as well otherwise the compiler throws a warning(it's just a warning though!!).
 
 int x=10;
 static int y=70;
