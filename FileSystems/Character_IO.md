@@ -43,6 +43,15 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/215336265-7536da50-32e5-4843-9575-7f1d9e626511.png" width="60%" height="60%">
 
+Here is a [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/FileSystems/tests/t3.c) to copy to contents of one file into another.
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/215346272-6bf20c8c-2f31-4037-a1df-b557b59ada57.png" width="60%" height="60%">
+
+### 3. getc() and putc()
+_Operations of_ `getc()` _and_ `putc()` _are similar to that of_ `fgetc()` _and_ `fputc()`. _The only difference is that_ `fputc()` _and_ `fgetc()` _are defined as macros while_ `putc()` _and_ `getc()` _are functions._
+
 
 
 ---
