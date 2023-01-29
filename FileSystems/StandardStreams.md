@@ -16,5 +16,5 @@ _The standard input is generally associated with keyboard while the standard out
 
 * **Character I/O** $\rightarrow$ **fgetc()**, **fputc()**, **getc()**, **putc()**
 * **String I/O** $\rightarrow$ **fgets()**, **fputs()**
-* **Formatted I/O** $\rightarrow$ **fscanf()**, **fprintf()A**
+* **Formatted I/O** $\rightarrow$ **fscanf()**, **fprintf()**
 * **Record I/O** $\rightarrow$ **fread()**, **fwrite()**
