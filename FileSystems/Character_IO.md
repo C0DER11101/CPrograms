@@ -23,7 +23,7 @@ Program:
 
 **cat Test1.txt**
 
-<img src="https://user-images.githubusercontent.com/96164229/215335233-e8f8f1b4-3bf1-45c8-9a4b-e9a2a9e03040.png" width=60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/215335233-e8f8f1b4-3bf1-45c8-9a4b-e9a2a9e03040.png" width="60%" height="60%">
 
 ### 2. fgetc()
 **Declaration:**
