@@ -35,7 +35,7 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/215396397-8c635fc6-7f2c-4901-9409-4f6fe9205248.png" width="90%" height="90%">
 
-The warning `comparison between pointer and integer` pops up because `gets`, on success, returns the string that given as provided as input and, on failure or when end of file occurs(through `CTRL+D`), it returns NULL.
+The warning `comparison between pointer and integer` pops up because `gets`, on success, returns the string that was provided as input and, on failure or when end of file occurs(through `CTRL+D`), it returns NULL.
 
 So, when we entered the string `gets` returned the string because it was entered successfully and the loop condition `gets(str)!=NULL` was checked which basically compared the string returned by `gets` with `NULL`. That's why the error was thrown. Program `t4.c` counters this problem by removing `!=NULL` from the while condition and modifying the condition to `while(gets(str))` because `while` will anyway terminate once it encounters NULL, because NULL is 0(false for the condition).
 
