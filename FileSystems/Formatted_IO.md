@@ -77,7 +77,7 @@ Here is the output:
 
 Now, when `fscanf()` accepts the string `"am"` the whitespace after it fulfills the requirement for a whitespace in the format of `fscanf()`'s input and after that it gets an integer and this time it assigns `"am"` to `name` and `20` to `age`. Then it goes on accepting strings and assigning them to `name` while `age` remains the same i.e. its value remains `20` as there are no more integers in the file.
 
-If replace `fptr` by `stdin` and `stdout` in `fscanf()` and `fprintf()` respectively like so:
+If we replace `fptr` by `stdin` and `stdout` in `fscanf()` and `fprintf()` respectively like so:
 
 ```c
 fprintf(stdout, "My name is %s and I am %d years old!\n", name, age);
