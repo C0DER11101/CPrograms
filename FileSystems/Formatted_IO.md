@@ -47,7 +47,7 @@ Program:
 
 <img src="https://user-images.githubusercontent.com/96164229/215500407-0d9e3b29-159e-4ca1-9792-ddd81ee87442.png" width="90%" height="90%">
 
-Here, there is a `0` between each word(except between `"I"` and `"am"` and the words after them).
+Here, there is a `0` between each word(except between `"am"` and `"year"` and the words after them).
 
 Remember in `scanf()` when we took input in this format:
 
