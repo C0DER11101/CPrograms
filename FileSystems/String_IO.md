@@ -73,11 +73,13 @@ _what happened:_
 Program:
 [t5_2.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/FileSystems/tests/t5_2.c).
 
+In this program, I used a variable `count` to count the number of times the while loop repeats.
+
 **Output:**
 
 <img src="https://user-images.githubusercontent.com/96164229/215415577-04e5268b-a795-467b-a4dd-ad83ec6683c1.png" width="60%" height="60%">
 
-Here, there the output is not the same as the output of `t5.c` because we have used `printf()` instead of `puts()` and `printf()` doesnot print the null character. So, after printing the string till `P` of `Present` it stops and `fgets()` continues reading the rest of the 6 remaining characters of `Present` until encounters the eof and again `printf()` prints the 6 remaining characters that were read by `fgets()` and then `fgets()` reads again from the file but this time there is no character left for reading and it finds only the eof and so it returns NULL which terminates the `while` loop and that's why we see a `2` displayed at the end signifying that there were two iterations and on the third iteration terminated the while loop.
+Here, the output is not the same as the output of `t5.c` because we have used `printf()` instead of `puts()` and `printf()` doesnot print the null character. So, after printing the string till `P` of `Present` it stops and `fgets()` continues reading the rest of the 6 remaining characters of `Present` until it encounters the eof and again `printf()` prints the 6 remaining characters that were read by `fgets()` and then `fgets()` reads again from the file but this time there is no character left for reading and it finds only the eof and so it returns NULL which terminates the `while` loop and that's why we see a `2` displayed at the end signifying that there were two iterations and the third iteration terminated the while loop.
 
 
 
