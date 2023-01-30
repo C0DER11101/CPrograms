@@ -48,8 +48,26 @@ char* fgets(char* str, int n, FILE* fptr);
 >This function is used to read characters from a file and these characters are stored in the string pointed by `str`.
 
 * It reads atmost `n-1` characters from the file where `n` is the second argument. `fptr` is a file pointer which is associated with the file from which characters are read.
+* Reading stops after an EOF or a newline.
 * Returns the string pointed to by `str` on success, and, on error or end of file, returns `NULL`.
 * It appends a null character after the last character read from the file to terminate the string.
+
+`fgets()` _returns NULL on error or when end of file occurs **while no characters have been read**._
+
+Program:
+[t5.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/FileSystems/tests/t5.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/215415526-f821682f-5adc-40b6-a006-710f15b28c51.png" width="60%" height="60%">
+
+_what happened:_
+
+*First iteration:* `fgets()` *reads 79 characters i.e. till* `P` *of* `Present` *and stores those 79 characters in* `str` *and also puts a null character at the end.* `puts()` *displays `str` and puts a newline at the end.*
+
+*Second iteration:* `fgets()` *again starts reading from the* $80^{th}$ *character i.e.* `r` *of* `Present` *it was supposed to read another 79 characters but after reading 6 characters it encounters end of file, but it doesnot return NULL because before encoutering the eof, it had read 6 characters, so it stores those 6 characters in the string pointed to by* `str`.
+
+*Third iteration:* *This time* `fgets()` *goes back to the file again and starts reading again, but this time it finds that no characters are left to be read and only the EOF is left, so it returns NULL and so in this iteration, the condition of the* `while` *loop results into false and the loop terminates.*
 
 
 
