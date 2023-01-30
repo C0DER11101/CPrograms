@@ -5,7 +5,7 @@ int main(void)
 {
 	FILE *fptr;
 	char *name=(char*)calloc(100, sizeof(char));
-	int age;
+	int age=0;
 
 	if((fptr=fopen("Test5.txt", "r"))==NULL)
 	{
