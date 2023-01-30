@@ -53,6 +53,7 @@ char* fgets(char* str, int n, FILE* fptr);
 * It appends a null character after the last character read from the file to terminate the string.
 
 `fgets()` _returns NULL on error or when end of file occurs **while no characters have been read**._
+**More on it [here](https://www.ibm.com/docs/en/zvse/6.2?topic=stream-fgets-returned-value).**
 
 Program:
 [t5.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/FileSystems/tests/t5.c).
