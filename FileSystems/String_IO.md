@@ -41,6 +41,15 @@ So, when we entered the string `gets` returned the string because it was entered
 
 
 ### 2. fgets()
+**Declaration:**
+```c
+char* fgets(char* str, int n, FILE* fptr);
+```
+>This function is used to read characters from a file and these characters are stored in the string pointed by `str`.
+
+* It reads atmost `n-1` characters from the file where `n` is the second argument. `fptr` is a file pointer which is associated with the file from which characters are read.
+* Returns the string pointed to by `str` on success, and, on error or end of file, returns `NULL`.
+* It appends a null character after the last character read from the file to terminate the string.
 
 
 
