@@ -49,7 +49,7 @@ Program:
 
 Here, there is a `0` between each word(except between `"am"` and `"year"` and the words after them).
 
-Remember in `scanf()` when we took input in this format:
+Remember in `scanf()` when we take input in this format:
 
 ```c
 scanf("%c %c", &a, &b);
