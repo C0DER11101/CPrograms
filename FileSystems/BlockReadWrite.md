@@ -101,6 +101,60 @@ Program to write a structure into a file:
 **Fourth argument**: File pointer.
 
 
+### 2. fread()
+**Declaration:**
+```c
+size_t fread(void* ptr, size_t size, size_t n, FILE* fptr);
+```
+
+>This function is used to read an entire block from a given file.
+
+* `ptr` $\rightarrow$ pointer that points to the block of memory which receives the data read from the file.
+* `size` $\rightarrow$ length of each item in bytes.
+* `n` $\rightarrow$ number of items to be read from the file.
+* `fptr` $\rightarrow$ file pointer which points to the file from which data is read.
+
+
+>On success, it reads `n` items from the file and returns the value of `n`.
+
+>On error, or end of file, it returns a value less than `n`.
+
+*We can use* `feof()` *and* `ferror()` *to check these conditions.*
+
+_Everything is same as_ `fwrite()`, _only difference is that_ `fread()` _is used for reading._
+
+Program to read a variable from a file:
+[t8fr.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/FileSystems/tests/t8fr.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/215673794-a0ea4b93-b280-42ce-b69e-f87cd48dfeb3.png" width="60%" height="60%">
+
+
+Program to read an array from a file:
+[t8fr_2.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/FileSystems/tests/t8fr_2.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/215674762-36a2cf79-8bca-4ebc-958e-b2a6ed625b7b.png" width="60%" height="60%">
+
+
+Program to read 5 integers of an array from a file:
+[t8fr_3.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/FileSystems/tests/t8fr_3.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/215676012-0bd3fd9f-5aa5-49c1-8f79-17b4d81c9b63.png" width="60%" height="60%">
+
+
+Program to read a structure from a file:
+[t8fr_4.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/FileSystems/tests/t8fr_4.c).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/215678145-9325802b-bcae-4c39-bb39-628fd713e7fd.png" width="60%" height="60%">
+
+
 
 
 ---
