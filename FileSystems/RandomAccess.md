@@ -111,6 +111,12 @@ Now, we will try to retrieve data from `structProg.c` using random access:
 
 <img src="https://user-images.githubusercontent.com/96164229/215735123-3283b375-2ce8-464b-af29-3a028f152b9d.png" width="60%" height="60%">
 
+Every file is just a series of bytes. The file position indicator is initially pointing to the $0^{th}$ byte which is also the origin and also has the $0^{th}$ student's details. Now, when we write something like this:
+```c
+fseek(fptr, 2*sizeof(student), SEEK_SET);
+```
+this is what it means: move the file position indicator forward by `2*sizeof(student)` bytes from the `origin`. That means `0+2*sizeof(student)` which will take us to the last student's details. That's just what happened in the wrong output. Basically a file behaves like a large array.
+
 
 
 
