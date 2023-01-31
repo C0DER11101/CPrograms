@@ -117,6 +117,30 @@ fseek(fptr, 2*sizeof(student), SEEK_SET);
 ```
 this is what it means: move the file position indicator forward by `2*sizeof(student)` bytes from the `origin`. That means `0+2*sizeof(student)` which will take us to the last student's details. That's just what happened in the wrong output. Basically a file behaves like a large array.
 
+### 2. ftell()
+**Declaration:**
+```c
+long ftell(FILE* fptr);
+```
+>Returns the current position of file position indicator.
+
+*The value is counted from the beginning of the file.*
+
+**On error**, `ftell()` **returns** `-1L` **and sets** `errno` **to a positive value.**
+
+*The functions* `fsetpos()` *and* `fgetpos()` *are like* `fseek()` *and* `ftell()` *but they can be used for huge files while* `fseek()` *and* `ftell()` *can use offsets limited to the range of long int.*
+
+### 3. rewind()
+**Declaration:**
+```c
+void rewind(FILE* fptr);
+```
+>This function is used to move the file position indicator to the beginning of the file.
+
+*Using this function is equivalent to using* `fseek()` *as:*
+```c
+fseek(fptr, 0L, SEEK_SET);
+```
 
 
 
