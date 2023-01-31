@@ -31,7 +31,7 @@ int main(void)
 		printf("Age: ");
 		scanf("%d", &record.age);
 
-		if(fwrite(&record, sizeof(sizeof(record)), 1, fptr)==1)
+		if(fwrite(&record, sizeof(record), 1, fptr)==1)
 			printf("\nDetails written successfully!!\n");
 
 		else
