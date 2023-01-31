@@ -81,6 +81,25 @@ Program to write only 5 elements of an array into a file:
 
 **Fourth argument**: File pointer.
 
+Program to write a structure into a file:
+[t8fw_4.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/FileSystems/tests/t8fw_4.c).
+
+**Program Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/215650251-88006886-8df9-456a-9d92-f2dd3cd29586.png" width="60%" height="60%">
+
+**Text file:**
+
+<img src="https://user-images.githubusercontent.com/96164229/215650300-7da437be-3619-459f-a42d-dc06eef1f7a8.png" width="60%" height="60%">
+
+**First argument**: The address of the structure variable has to go, because we are writing a block(structure) into the file.
+
+**Second argument**: The size of the block(structure) in bytes has to go.
+
+**Third argument**: This is 1, because we are writing only one block(one block is written in each iteration).
+
+**Fourth argument**: File pointer.
+
 
 
 
