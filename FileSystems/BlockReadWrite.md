@@ -90,7 +90,7 @@ Program to write a structure into a file:
 
 **Text file:**
 
-<img src="https://user-images.githubusercontent.com/96164229/215650300-7da437be-3619-459f-a42d-dc06eef1f7a8.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/215651527-e050d899-788b-4b0b-9291-fc2e9da01fe2.png" width="60%" height="60%">
 
 **First argument**: The address of the structure variable has to go, because we are writing a block(structure) into the file.
 
