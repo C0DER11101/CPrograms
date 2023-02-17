@@ -66,7 +66,7 @@ fscanf(fptr, "%s %d", name, &age);
 ```
 obviously the space will be ignored. This space between `%s` and `%d` is not the space between the words in the file, it's the format for how it will accept the input from the file.
 
-So `fscanf()` begins reading input from the file, first it encounters `"My"` and then it gets a whitespace which fulfills the format for input and then it expects an integer but it doesnot get any integer it gets a string, so it assigns `"My"` to `name` and nothing to `age`. The white space is ignored by `fscanf()` just like `scanf()`. **fscanf() ignores whitespaces and newlines just like scanf().**
+So `fscanf()` begins reading input from the file, first it encounters `"My"` then the whitespace is ignored and nothing is assigned to `age`, so it assigns `"My"` to `name` and nothing to `age`. The white space is ignored by `fscanf()` just like `scanf()`. **fscanf() ignores whitespaces and newlines just like scanf().**
 
 Look at this [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/FileSystems/tests/scanfTest.c) to understand.
 
@@ -75,7 +75,7 @@ Here is the output:
 
 <img src="https://user-images.githubusercontent.com/96164229/215524150-cc053c1e-47cb-41b5-8ae9-6fdb7860de15.png" width="60%" height="60%">
 
-Now, when `fscanf()` accepts the string `"am"` the whitespace after it fulfills the requirement for a whitespace in the format of `fscanf()`'s input and after that it gets an integer and this time it assigns `"am"` to `name` and `20` to `age`. Then it goes on accepting strings and assigning them to `name` while `age` remains the same i.e. its value remains `20` as there are no more integers in the file.
+Now, when `fscanf()` accepts the string `"am"` and after ignoring the whitespace it gets an integer and this time it assigns `"am"` to `name` and `20` to `age`. Then it goes on accepting strings and assigning them to `name` while `age` remains the same i.e. its value remains `20` as there are no more integers in the file.
 
 If we replace `fptr` by `stdin` and `stdout` in `fscanf()` and `fprintf()` respectively like so:
 
