@@ -64,7 +64,7 @@ Similarly, I gave a space between `%s` and `%d`:
 ```c
 fscanf(fptr, "%s %d", name, &age);
 ```
-obviously the space will be ignored. This space between `%s` and `%d` is not the space between the words in the file, it's the format for how it will accept the input from the file.
+obviously the space will be ignored. This space between `%s` and `%d` is not necessary. You may or maynot give it.
 
 So `fscanf()` begins reading input from the file, first it encounters `"My"` then the whitespace is ignored and nothing is assigned to `age`, so it assigns `"My"` to `name` and nothing to `age`. The white space is ignored by `fscanf()` just like `scanf()`. **fscanf() ignores whitespaces and newlines just like scanf().**
 
