@@ -66,7 +66,7 @@ fscanf(fptr, "%s %d", name, &age);
 ```
 obviously the space will be ignored. This space between `%s` and `%d` is not necessary. You may or maynot give it.
 
-`fscanf()` starts reading from the file, it reads the contents for both the variables i.e. `name` and `age` but it finds the strings for `name` but doesnot find integers for `age` so it allocates nothing to `age`. So it continues to allocate nothing to `age` until it reaches `"am"` where it finds `20` after it, `fscanf()` assigns `"am"` to `name` and `20`, an integer, to `age`. It's just like `scanf()`. The white space is ignored by `fscanf()` just like `scanf()`. **fscanf() ignores whitespaces and newlines just like scanf().**
+`fscanf()` starts reading from the file, it reads the contents for both the variables i.e. `name` and `age` but it finds the strings for `name` but doesnot find integers for `age` it only finds strings so it ignores the string that it scanned for `age` and so it allocates nothing to `age`. `fscanf()` starts reading from the ignored string(the one that it read for `age`). So it continues to allocate nothing to `age` until it reaches `"am"` where it finds `20` after it, `fscanf()` assigns `"am"` to `name` and `20`, an integer, to `age`. It's just like `scanf()`. The white space is ignored by `fscanf()` just like `scanf()`. **fscanf() ignores whitespaces and newlines just like scanf().**
 
 Look at this [program](https://github.com/C0DER11101/CPrograms/blob/CProgramming/FileSystems/tests/scanfTest.c) to understand.
 
