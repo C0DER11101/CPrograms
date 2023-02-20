@@ -72,5 +72,29 @@ Program: [t16.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Point
 
 <img src="https://user-images.githubusercontent.com/96164229/220125316-639101df-4ea8-443c-b1fb-c4104ecd5cdf.png" width="60%" height="60%">
 
+## A case quite similar to [Important note](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/VoidPointer.md#important-note-here) but yet different!
+*While assigning the address of a void pointer to another pointer type, we need to typecast its address to the type of the pointer to which we are assigning the address.*
+
+
+Programs: [t17.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t17.c) and [t17Counter.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t17Counter.c).
+
+In `t17.c`, we didn't typecast `vptr`'s address before assigning it to the pointer to pointer to int `ptr`. And so we got the following warning:
+
+**Warning:**
+
+<img src="https://user-images.githubusercontent.com/96164229/220148955-203e3db8-6ec2-424e-8fda-d62e64350695.png" width="60%" height="60%">
+
+But it generates the correct output:
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/220148978-501119a5-8826-4eb6-a520-510813fa9408.png" width="60%" height="60%">
+
+In `t17Counter.c`, there is no warning and it generates the following output:
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/220148995-d6101513-11f7-46c8-b753-2fd5d4ff2301.png" width="60%" height="60%">
+
 
 ---
