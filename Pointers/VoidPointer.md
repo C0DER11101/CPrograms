@@ -55,4 +55,22 @@ Program: [t15.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Point
 Even when we want to perform pointer arithmetic on `void` pointers, we will first need to typecast that void pointer to the appropriate type and after that only we can perform arithmetic operations on it.
 
 
+## Important note here.
+*Typecasting a void pointer before assigning it another pointer type is optional because of the following reason:*
+
+**A pointer to** `void` **may be converted to or from a pointer to any object type. A pointer any object type may be converted to a pointer to** `void` **and back again.**
+
+[Source](https://stackoverflow.com/questions/61264207/is-it-necessary-to-typecast-the-void-pointer-before-assigning-it-to-another-poin).
+
+Program: [t16.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t16.c) and [t16_b.c](https://github.com/C0DER11101/CPrograms/blob/CProgramming/Pointers/tests/t16_b.c).
+
+**Output of** `t16.c`:
+
+<img src="https://user-images.githubusercontent.com/96164229/220125278-bd7eb5a5-aeb6-4273-817b-678af790c534.png" width="60%" height="60%">
+
+**Output of** `t16_b.c`:
+
+<img src="https://user-images.githubusercontent.com/96164229/220125316-639101df-4ea8-443c-b1fb-c4104ecd5cdf.png" width="60%" height="60%">
+
+
 ---
