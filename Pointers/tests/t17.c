@@ -8,7 +8,7 @@ int main(void)
 	int a=10, **ptr;
 	vptr=&a;
 
-	ptr=&vptr; // error!!
+	ptr=&vptr; // warning!!
 
 	printf("a = %d\n", **ptr);
 
