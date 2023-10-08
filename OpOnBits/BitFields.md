@@ -71,7 +71,7 @@ Program:
 
 So as you can see that value that is within the range of `a` got stored in `a` after I tried to store a number which was outside the range of `a`.
 
-**We apply** `sizeof()` **and the address operator**(`&`) **to bit fields. That means we can't use** `scanf()` **with bit fields.**
+**We cannot apply** `sizeof()` **and the address operator**(`&`) **to bit fields. That means we can't use** `scanf()` **with bit fields.**
 
 
 _If we have a pointer to structure, then the arrow operator_( `->` ) _can be used to access the bit fields._
