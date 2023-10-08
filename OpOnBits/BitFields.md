@@ -77,7 +77,7 @@ So as you can see that value that is within the range of `a` got stored in `a` a
 _If we have a pointer to structure, then the arrow operator_( `->` ) _can be used to access the bit fields._
 
 
-**If a bitfield is defined as signed int, then it should be atleas 2 bits long because on bit is used for sign.**
+**If a bitfield is defined as signed int, then it should be at least 2 bits long because one bit is used for sign.**
 
 ```c
 struct tag
@@ -88,7 +88,7 @@ struct tag
 };
 ```
 
-Here, the total size should be less or equal to 32-bits i.e. it should be withing the integer boundaries.
+Here, the total size should be less or equal to 32 bits i.e. it should be within the integer boundaries.
 
 But in the above structure, it's not the case, if you look at the sizes in terms of bits for `a` is 10 and for `b` is 7. If we combine those two sizes then we get 17 bits in total. That means to be within the integer boundary we need additional 15 bits, but unfortunately we have got 17 bits(size of `c`) which is more than 15.
 
