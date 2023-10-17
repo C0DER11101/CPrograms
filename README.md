@@ -13,6 +13,8 @@ This repository will contain only the important topics of C programming(like str
 7. [Filesystems](https://github.com/C0DER11101/CPrograms/tree/CProgramming/FileSystems).
 8. [Miscellaneous](https://github.com/C0DER11101/CPrograms/tree/CProgramming/Miscellaneous).
 
+* [This](https://www.c-programming-simple-steps.com/typedef-in-c.html) is a very important link. It's about using `typedef` with function pointers.
+
 ## Links
 [Link two C files](https://randerson112358.medium.com/link-c-programs-7282712fca1f). You can also link more than two files using this command :point_left:
 
