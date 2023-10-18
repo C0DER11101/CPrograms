@@ -33,6 +33,11 @@ int summation(plus Add, int a, int b){
 	return Add(a, b);
 }
 ```
+* Just like when we write `typedef int* IntPtr;` we mean that `IntPtr` is now a synonym to **pointer to integer** and any variables declared using `IntPtr` will be a pointer to integer. In the same way, when we write:
+```c
+typedef int(*plus)(int, int);
+```
+We mean that `plus` is now a synonym to **pointer to function that takes two integer arguments and returns an integer**. Because we have actually defined `plus` as an alias of `int(*)(int, int);`.
 
 <p align="center">
 &#9678; &#9678; &#9678;
