@@ -12,6 +12,7 @@ This repository will contain only the important topics of C programming(like str
 6. [C preprocessors](https://github.com/C0DER11101/CPrograms/tree/CProgramming/CPreprocessors).
 7. [Filesystems](https://github.com/C0DER11101/CPrograms/tree/CProgramming/FileSystems).
 8. [Miscellaneous](https://github.com/C0DER11101/CPrograms/tree/CProgramming/Miscellaneous).
+9. [`typedef` with function pointers](https://github.com/C0DER11101/CPrograms/tree/CProgramming/TypedefWithFunctionPointers).
 
 * [This](https://www.c-programming-simple-steps.com/typedef-in-c.html) is a very important link. It's about using `typedef` with function pointers.
 
